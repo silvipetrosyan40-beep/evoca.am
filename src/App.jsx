@@ -165,7 +165,7 @@ import Businessloan from './components/business-loan'
 import Evocagoloan from './components/evoca-go-loan'
 import Loansprovidedwithintheframeworkofgafenergyefficiencyforsme from './components/loans-provided-within-the-framework-of-gaf-energy-efficiency-for-sme'
 import Loansprovidedwithintheframewokofrenewableenergyandenergysavingprogram from './components/loans-provided-within-the-framewok-of-renewable-energy-and-energy-saving-program'
-
+import Simplebusinessloan from './components/simple-business-loan'
 // Գլխավոր էջի բաղադրիչը
 function Home() {
   return (
@@ -371,6 +371,7 @@ export default function App() {
       <Route path="/business-loans/evoca-go-loan" element={<Evocagoloan/>} />
       <Route path="/business-loans/loans-provided-within-the-framework-of-gaf-energy-efficiency-for-sme" element={<Loansprovidedwithintheframeworkofgafenergyefficiencyforsme/>} />
       <Route path="/business-loans/loans-provided-within-the-framewok-of-renewable-energy-and-energy-saving-program" element={<Loansprovidedwithintheframewokofrenewableenergyandenergysavingprogram/>} />
+      <Route path="/business-loans/simple-business-loan" element={<Simplebusinessloan/>} />
 
 
       {/* Ուղղված ենթաուղիներ */}
