@@ -168,6 +168,7 @@ import Loansprovidedwithintheframewokofrenewableenergyandenergysavingprogram fro
 import Simplebusinessloan from './components/simple-business-loan'
 import Accountlending from './components/account-lending'
 import Renewablecreditline from './components/renewable-credit-line'
+import Loanundertheproductivitypromotionprogram from './components/loan-under-the-productivity-promotion-program'
 // Գլխավոր էջի բաղադրիչը
 function Home() {
   return (
@@ -376,6 +377,7 @@ export default function App() {
       <Route path="/business-loans/simple-business-loan" element={<Simplebusinessloan/>} />
       <Route path="/business-loans/account-lending" element={<Accountlending/>} />
       <Route path="/business-loans/renewable-credit-line" element={<Renewablecreditline/>} />
+      <Route path="/business-loans/loan-under-the-productivity-promotion-program" element={<Loanundertheproductivitypromotionprogram/>} />
 
 
       {/* Ուղղված ենթաուղիներ */}
