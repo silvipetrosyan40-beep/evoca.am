@@ -457,6 +457,142 @@ export default function ArcaUnionPayCard() {
           </div>
         )}
 
+
+        {activeTab === 'conditions' && (
+          <div className="space-y-6 bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-gray-100">
+            <h3 className="text-xl font-bold text-purple-900 mb-4">Վարկավորման մանրամասն պայմաններ</h3>
+            
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-sm text-gray-700 border-collapse border border-purple-100 rounded-2xl overflow-hidden">
+                <tbody>
+                  <tr className="border-b border-purple-100 bg-purple-50/30">
+                    <td className="p-4 font-bold text-gray-900 w-12 text-center align-top">1.</td>
+                    <td className="p-4 font-semibold text-gray-900 w-1/3 align-top">Արժույթը</td>
+                    <td className="p-4 align-top">ՀՀ դրամ[cite: 29]</td>
+                  </tr>
+                  <tr className="border-b border-purple-100">
+                    <td className="p-4 font-bold text-gray-900 text-center align-top">2.</td>
+                    <td className="p-4 font-semibold text-gray-900 align-top">Վարկառուները</td>
+                    <td className="p-4 align-top space-y-1">
+                      <p>• Հայաստանի ռեզիդենտ իրավաբանական և անհատ ձեռնարկատեր անձինք, որոնք համապատասխանում են Միկրո, Փոքր և Միջին ձեռնարկատիրության բնորոշմանը[cite: 29]:</p>
+                      <p>• Վարկառուի ֆինանսական հաշվետվությունների վերլուծության արդյունքները պետք է բավարարեն Բանկի պահանջներին[cite: 29]:</p>
+                    </td>
+                  </tr>
+                  <tr className="border-b border-purple-100 bg-purple-50/30">
+                    <td className="p-4 font-bold text-gray-900 text-center align-top">3.</td>
+                    <td className="p-4 font-semibold text-gray-900 align-top">Նպատակը</td>
+                    <td className="p-4 align-top space-y-1">
+                      <p>• Կապիտալ ներդրումների և բիզնես գործունեության այլ նպատակների համար[cite: 29]:</p>
+                      <p>• Ծրագրի հիմնական նպատակն է ապահովել ՄՓՄՁ-ների իրացվելիությունը՝ բարելավելով նրանց համար ազգային արժույթով վարկերի հասանելիությունը: Ծրագրին ուղղված չէ տնտեսության որևէ կոնկրետ ճյուղի կամ ոլորտի վարկերի վերաֆինանսավորմանը: Այն պետք է ծառայի տնտեսության ամենատարբեր ճյուղերում բիզնեսի ընթացիկ կարիքների (շրջանառու միջոցներ) և ներդրումների ֆինանսավորմանը (մեքենաներ, սարքավորումներ, ձեռնարկությունների շինություններ և այլն)[cite: 29].</p>
+                    </td>
+                  </tr>
+                  <tr className="border-b border-purple-100">
+                    <td className="p-4 font-bold text-gray-900 text-center align-top">4.</td>
+                    <td className="p-4 font-semibold text-gray-900 align-top">Սահմանաչափերը</td>
+                    <td className="p-4 align-top space-y-1">
+                      <p>• Գրավի դիմաց՝ 3,000,001 - 160,000,000 ՀՀ դրամ[cite: 29]</p>
+                      <p>• Առանց գրավի (նվազագույնը մեկ ֆիզիկական կամ իրավաբանական անձի երաշխավորությամբ)՝ 1,000,000 - 3,000,000 ՀՀ դրամ[cite: 29]</p>
+                    </td>
+                  </tr>
+                  <tr className="border-b border-purple-100 bg-purple-50/30">
+                    <td className="p-4 font-bold text-gray-900 text-center align-top">5.</td>
+                    <td className="p-4 font-semibold text-gray-900 align-top">Տրամադրման եղանակը</td>
+                    <td className="p-4 align-top">անկանխիկ[cite: 29]</td>
+                  </tr>
+                  <tr className="border-b border-purple-100">
+                    <td className="p-4 font-bold text-gray-900 text-center align-top">6.</td>
+                    <td className="p-4 font-semibold text-gray-900 align-top">Մարման ժամկետը</td>
+                    <td className="p-4 align-top">6 - 60 ամիս[cite: 29]</td>
+                  </tr>
+                  <tr className="border-b border-purple-100 bg-purple-50/30">
+                    <td className="p-4 font-bold text-gray-900 text-center align-top">7.</td>
+                    <td className="p-4 font-semibold text-gray-900 align-top">Վարկի մայր գումարի արտոնյալ ժամկետ</td>
+                    <td className="p-4 align-top">Առանձին դեպքերում կարող է տրամադրվել մինչև 3-6 ամիս տևողությամբ[cite: 29]</td>
+                  </tr>
+                  <tr className="border-b border-purple-100">
+                    <td className="p-4 font-bold text-gray-900 text-center align-top">8.</td>
+                    <td className="p-4 font-semibold text-gray-900 align-top">Տարեկան անվանական տոկոսադրույքը</td>
+                    <td className="p-4 align-top space-y-2">
+                      <p>• Մինչև 36 ամիս մարման ժամկետով վարկերի դեպքում՝ <strong>11%</strong>[cite: 29]</p>
+                      <p>• 36-ից - 60 ամիս մարման ժամկետով վարկերի դեպքում՝ <strong>11.5%</strong>[cite: 29]</p>
+                      <p className="text-xs text-gray-500">• Պարտանաճանաչ վարկառու-հաճախորդների դեպքում (որոնք ակտիվորեն օգտվում են բանկի տարբեր ծառայություններից, ապահովում են ոչ տոկոսային եկամուտներ և դրամական շրջանառության բանկային հաշիվներով, ունեն կամ նախատեսվում է կնքել Բանկի հետ համագործակցության համաձայնագրեր (POS, V-POS, աշխատավարձային նախագծեր և այլն)՝ տվյալ ծրագրի շրջանակներում վարկավորման տոկոսադրույքը, լիազոր մարմնի որոշմամբ, կարող է սահմանվել <strong>10% - 11%</strong>[cite: 29].</p>
+                    </td>
+                  </tr>
+                  <tr className="border-b border-purple-100 bg-purple-50/30">
+                    <td className="p-4 font-bold text-gray-900 text-center align-top">9.</td>
+                    <td className="p-4 font-semibold text-gray-900 align-top">Գրավը</td>
+                    <td className="p-4 align-top space-y-2 text-xs">
+                      <p>• Անշարժ և շարժական գույք[cite: 29]</p>
+                      <p>• Ավանդային կամ ընթացիկ հաշիվների դրամական միջոցներ[cite: 29]</p>
+                      <p>• Ոսկու ստանդարտացված ձուլակտորներ կամ զարդեր[cite: 29]</p>
+                      <p>• Պետական կարճաժամկետ պարտատոմսեր կամ այլ արժեթղթեր[cite: 29]</p>
+                      <p>• Անհրաժեշտության դեպքում՝ այլ գրավների առկայության պարագայում կարող են ընդունվել նաև շրջանառու միջոցները և պատրաստի արտադրանքը (հաշվի առնելով այլ գրավների իրացվելիության աստիճանը կամ վարկ/գրավ հարաբերակցության չափը, վարկավորման ժամկետը, հաճախորդի բնութագիրը և այլն)[cite: 29]:</p>
+                      <p>• Լրացուցիչ պայման՝ Բիզնեսի հիմնադիրների/իրական շահառուների անձնական երաշխավորությունների առկայությունը պարտադիր է, ինչպես նաև որպես լրացուցիչ ապահովում Բանկը կարող է պահանջել նաև այլ ֆիզիկական կամ իրավաբանական անձանց երաշխավորություններ[cite: 29]:</p>
+                    </td>
+                  </tr>
+                  <tr className="border-b border-purple-100">
+                    <td className="p-4 font-bold text-gray-900 text-center align-top">10.</td>
+                    <td className="p-4 font-semibold text-gray-900 align-top">Վարկ/գրավ ընդունելի սահմանաչափերը</td>
+                    <td className="p-4 align-top space-y-1 text-xs">
+                      <p>• Անշարժ գույքի և այլ հիմնական միջոցների դեպքում՝ գնահատված արժեքի մինչև <strong>70%-ի</strong> չափով</p>
+                      <p>• Պետական կարճաժամկետ պարտատոմսերի դեպքում՝ անվանական արժեքի մինչև <strong>95%-ի</strong> չափով</p>
+                      <p>• Այլ արժեթղթերի դեպքում՝ գնահատված արժեքի մինչև <strong>70%-ի</strong> չափով</p>
+                      <p>• Ոսկու ստանդարտացված ձուլակտորների և թանկարժեք մետաղների զարդերի դեպքում՝ գնահատված արժեքի մինչև <strong>95%-ի</strong> չափով</p>
+                      <p>• Դրամական միջոցների (ավանդային և ընթացիկ հաշվի) դեպքում՝ մինչև <strong>90%-ի</strong> չափով</p>
+                      <p>• Շրջանառու միջոցների դեպքում՝ գնահատված արժեքի մինչև <strong>50%-ի</strong> չափով</p>
+                    </td>
+                  </tr>
+                  <tr className="border-b border-purple-100 bg-purple-50/30">
+                    <td className="p-4 font-bold text-gray-900 text-center align-top">11.</td>
+                    <td className="p-4 font-semibold text-gray-900 align-top">Ապահովագրություն</td>
+                    <td className="p-4 align-top">Ըստ անհրաժեշտության</td>
+                  </tr>
+                  <tr className="border-b border-purple-100">
+                    <td className="p-4 font-bold text-gray-900 text-center align-top">12.</td>
+                    <td className="p-4 font-semibold text-gray-900 align-top">Պահանջներ երաշխավորների նկատմամբ</td>
+                    <td className="p-4 align-top space-y-1 text-xs">
+                      <p>• ՀՀ ռեզիդենտ իրավաբանական անձ, անհատ ձեռնարկատեր կամ ֆիզիկական անձ</p>
+                      <p>• Ժամկետանց պարտավորությունների բացակայություն, ներառյալ՝ տրամադրված երաշխավորությունների գծով</p>
+                      <p>• Նախորդ 12 ամիսների ընթացքում վարկային պարտավորությունների գծով դասակարգումների բացակայություն, իսկ մարումների գծով ուշացման օրերի հանրագումարը չպետք է գերազանցի 30 օրը</p>
+                    </td>
+                  </tr>
+                  <tr className="border-b border-purple-100 bg-purple-50/30">
+                    <td className="p-4 font-bold text-gray-900 text-center align-top">13.</td>
+                    <td className="p-4 font-semibold text-gray-900 align-top">Պահանջներ միայն երաշխավորությամբ տրամադրվող վարկերի նկատմամբ</td>
+                    <td className="p-4 align-top space-y-2 text-xs">
+                      <p>• Նախորդ 12 ամիսների ընթացքում վարկային պարտավորությունների գծով դասակարգումների բացակայություն, իսկ մարումների գծով ուշացման օրերի հանրագումարը չպետք է գերազանցի 30 օրը.</p>
+                      <p>• Վարկառուի՝ գրավով չապահովված վարկերը առանց ակնկալվող վարկի՝ չպետք է լինեն ավելի, քան հինգը և որպես գումարային մնացորդը չպետք է գերազանցի 5,000,000 ՀՀ դրամը կամ համարժեք արտարժույթը.</p>
+                    </td>
+                  </tr>
+                  <tr className="border-b border-purple-100">
+                    <td className="p-4 font-bold text-gray-900 text-center align-top">14.</td>
+                    <td className="p-4 font-semibold text-gray-900 align-top">Գանձվող վճարներ</td>
+                    <td className="p-4 align-top space-y-1 text-xs">
+                      <p>• Վարկային հայտի ուսումնասիրման վճար – 0</p>
+                      <p>• Վարկային հաշվի սպասարկման վճար – վարկի գումարի 0.5%-ի չափով, բայց ոչ պակաս, քան 20,000 ՀՀ դրամ, առավելագույնը 100,000 ՀՀ դրամ</p>
+                      <p>• Վարկի գումարը կանխիկ ստանալու դեպքում՝ գանձում ենք բանկային հաշվից կանխիկացման վճար՝ ըստ Բանկի գործող սակագների</p>
+                    </td>
+                  </tr>
+                  <tr className="border-b border-purple-100 bg-purple-50/30">
+                    <td className="p-4 font-bold text-gray-900 text-center align-top">15.</td>
+                    <td className="p-4 font-semibold text-gray-900 align-top">Պետական տուրքեր և այլ ծախսեր</td>
+                    <td className="p-4 align-top space-y-1 text-xs">
+                      <p>• ՀՀ պետական իրավասու մարմիններում վճարվող պետտուրք՝ գրավի պայմանագրի վավերացման և գրանցման համար</p>
+                      <p>• Գրավադրվող արժեքների գնահատման ծառայության արժեքը՝ Բանկի հետ համագործակցող անկախ գնահատող կազմակերպությունների սահմանված սակագներին համաձայն</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-bold text-gray-900 text-center align-top">16.</td>
+                    <td className="p-4 font-semibold text-gray-900 align-top">Լրացուցիչ պայմաններ</td>
+                    <td className="p-4 align-top text-xs">
+                      Գործող վարկերի վերաֆինանսավորման հնարավորություն ծրագրով նախատեսված չէ:
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
             {/* նկարի հատվածը */}
         
         {/* Այլ քարտեր բաժին (Swiper Սլայդեր) */}
