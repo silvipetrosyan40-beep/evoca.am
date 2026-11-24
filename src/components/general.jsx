@@ -138,10 +138,15 @@ export default function AllNewsPage() {
   
   {/* Ձախ կողմ՝ Տեքստային հատված */}
   <div className="flex-1 space-y-4">
-    <div className="flex items-center space-x-2">
-      <span className="w-3 h-3 bg-purple-700 rounded-sm inline-block"></span>
-      <span className="text-purple-700 font-bold text-sm sm:text-base">Գլխավոր</span>
-    </div>
+     <Link 
+      to="/news/general" 
+      className="flex items-center space-x-3 group cursor-pointer w-fit"
+    >
+      <span className="w-4 h-4 bg-purple-900 inline-block rounded-xs transition-transform group-hover:scale-110"></span>
+      <span className="text-purple-900 font-bold text-sm sm:text-base tracking-wide uppercase group-hover:text-purple-700 transition-colors">
+        Գլխավոր
+      </span>
+    </Link>
     
     <h2 className="text-3xl sm:text-4xl font-extrabold  leading-tight">
       Evocabank-ը և Norakaruyc.am-ը համագործակցության հուշագիր են ստորագրել

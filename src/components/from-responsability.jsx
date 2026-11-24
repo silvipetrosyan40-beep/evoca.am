@@ -1,0 +1,268 @@
+import React, { useState } from 'react';
+import { Link, useLocation, useSearchParams } from 'react-router-dom';
+import Header from './header';
+import Footer from './footer';
+
+export default function AllNewsPage() {
+  const location = useLocation();
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  // URL-ից ստանում ենք ընթացիկ էջը (եթե չկա, լռելյայն 1-ին էջն է)
+  const currentPage = parseInt(searchParams.get('page') || '1', 10);
+
+  // Ամսաթվերի state-եր զտման համար
+  const [startDate, setStartDate] = useState('');
+  const [endDate, setEndDate] = useState('');
+
+  // Էջերի ցանկը
+
+  
+
+  // Նկարում պատկերված նորությունների տվյալները
+  const newsList = [
+    
+  ];
+
+  return (
+    <div className="min-h-screen bg-white flex flex-col justify-between font-sans">
+      
+      {/* Header */}
+      <Header />
+
+      {/* Հիմնական բովանդակություն */}
+      <main className="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8 w-full">
+        
+        {/* 1. Breadcrumbs (Հացի փշրանքներ) */}
+        <nav className="flex items-center space-x-2 text-xs sm:text-sm text-gray-500 font-medium">
+          <Link to="/" className="hover:text-purple-700 transition-colors flex items-center">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+          </Link>
+          <span className="text-gray-300">›</span>
+          <Link to="/news" className="hover:text-purple-700 transition-colors">
+            Նորություններ
+          </Link>
+          <span className="text-gray-300">›</span>
+          <span className="text-gray-900 font-semibold"> 
+Բանկային
+</span>
+                    <span className="text-gray-300">›</span>
+
+         <span className="text-gray-900 font-semibold">Evocabank-ը ներգրավել է 5 մլն ԱՄՆ դոլար responsAbility-ից
+
+</span>
+
+        </nav>
+
+        {/* 3. Զտման կոճակներ + Ամսաթվերի Ֆիլտր */}
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pt-2">
+          
+          
+          {/* Ամսաթվերի ֆիլտրի բլոկ */}
+          <div className="flex items-center gap-2 bg-gray-50 p-2 rounded-2xl border border-gray-200/80 self-start lg:self-center">
+            <div className="p-1.5 text-gray-400">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+
+            <input
+              type="text"
+              placeholder="Սկսած"
+              onFocus={(e) => (e.target.type = 'date')}
+              onBlur={(e) => !e.target.value && (e.target.type = 'text')}
+              value={startDate}
+              onChange={(e) => setStartDate(e.target.value)}
+              className="w-24 sm:w-28 bg-white border border-gray-200 rounded-xl px-2.5 py-1.5 text-xs text-gray-700 outline-none focus:border-purple-500 text-center"
+            />
+
+            <span className="text-gray-400 font-medium text-xs">-</span>
+
+            <input
+              type="text"
+              placeholder="Մինչև"
+              onFocus={(e) => (e.target.type = 'date')}
+              onBlur={(e) => !e.target.value && (e.target.type = 'text')}
+              value={endDate}
+              onChange={(e) => setEndDate(e.target.value)}
+              className="w-24 sm:w-28 bg-white border border-gray-200 rounded-xl px-2.5 py-1.5 text-xs text-gray-700 outline-none focus:border-purple-500 text-center"
+            />
+          </div>
+
+        </div>
+{/* ՆՈՐՈՒԹՅԱՆ ԲԼՈԿ */}
+<div className="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-gray-100 flex flex-col lg:flex-row items-center gap-10 max-w-7xl mx-auto my-6 font-sans">
+  
+  {/* Ձախ կողմ՝ Տեքստային հատված */}
+  <div className="flex-1 space-y-4">
+    <Link to="/news/banking" className="flex items-center space-x-2 group w-fit no-underline">
+      <span className="w-3 h-3 bg-purple-700 rounded-sm inline-block"></span>
+      <span className="text-purple-700 font-bold text-sm sm:text-base group-hover:underline">Բանկային</span>
+    </Link>
+    
+    <h2 className="text-3xl sm:text-4xl font-extrabold text-purple-900 leading-tight">
+      Evocabank-ը ներգրավել է 5 մլն ԱՄՆ դոլար responsAbility-ից
+
+    </h2>
+
+    <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+Շվեյցարական առաջատար ներդրումային կազմակերպությունից ստացված վարկային միջոցները կուղղվեն ՄՓՄՁ-ների ֆինանսավորմանը:
+
+
+    </p>
+
+    <div className="text-gray-500 text-sm font-medium pt-2">
+     03.12.2024
+    </div>
+  </div>
+
+  {/* Աջ կողմ՝ Նկար */}
+  <div className="w-full lg:w-[520px] h-72 sm:h-96 rounded-2xl overflow-hidden shrink-0 shadow-md bg-gray-100">
+    <img 
+      src="https://www.evoca.am/images-cache/news/1/17332069569872/780x585.png" 
+      alt="Evocabank և Norakaruyc.am համագործակցություն" 
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+</div>
+        {/* 4. Նորությունների Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pt-6">
+          {newsList.map((item) => (
+            <Link
+              key={item.id}
+              to={item.path}
+              className="flex flex-col bg-white rounded-2xl overflow-hidden group cursor-pointer border border-transparent hover:border-purple-100 hover:shadow-lg transition-all duration-300"
+            >
+              <div className="w-full aspect-[4/3] bg-gray-100 overflow-hidden rounded-2xl">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+
+              <div className="py-4 flex flex-col flex-grow justify-between space-y-3">
+                <h3 className="font-bold text-gray-950 text-sm sm:text-base leading-snug group-hover:text-purple-700 transition-colors line-clamp-3">
+                  {item.title}
+                </h3>
+                <div className="text-xs text-gray-400 font-medium">
+                  {item.date}
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+
+            <article className="bg-white p-6 sm:p-12 rounded-3xl shadow-sm border border-purple-100 space-y-6 text-gray-700 text-base sm:text-lg leading-relaxed">
+  <p>
+    <strong className="text-purple-700 font-bold">Evocabank</strong>-ը ներգրավել է <strong className="font-bold text-gray-900">5 մլն ԱՄՆ դոլար</strong> responsAbility-ից: Վարկային միջոցներն ուղղվելու են Հայաստանում միկրո, փոքր և միջին ձեռնարկությունների (ՄՓՄՁ) ֆինանսավորմանը[cite: 19]:
+  </p>
+
+  <p>
+    <strong className="font-bold text-gray-900">Evocabank-ի Վարչության նախագահ Կարեն Եղիազարյանը</strong> նշեց. «responsAbility-ի հետ միասին մենք կարևոր քայլեր ենք ձեռնարկում Հայաստանում միկրո, փոքր և միջին ձեռնարկությունների (ՄՓՄՁ) զարգացման համար՝ աջակցելով տնտեսական աճին և ստեղծելով ավելի կայուն ապագա: Մենք հավատում ենք, որ ՄՓՄՁ-ները Հայաստանի տնտեսության զարգացման շարժիչ ուժն են: Որպես Հայաստանի ամենանորարար թվային բանկ՝ մենք հպարտ ենք մեր հաճախորդներին տրամադրելու լավագույն ֆինանսական լուծումները և շարունակաբար ապահովելու միջոցներ նրանց աճի և ընդլայնման համար»[cite: 19]:
+  </p>
+
+  <p>
+    Ի դեպ, responsAbility-ի և Evocabank-ի համագործակցությունը սկսվել է 2023 թվականին, որի արդյունքում Բանկը մեծ ներդրում է ունեցել ՄՓՄՁ-ների զարգացման մեջ[cite: 19]:
+  </p>
+
+  <h3 className="text-xl font-bold text-purple-700 pt-4">Evocabank-ի մասին</h3>
+  <p>
+    <em>Լինելով mobile-first բանկ՝</em> Evocabank-ը մատուցում է արագ, պարզ ու նորարար ծառայություններ և առանձնանում տեղեկատվական նորագույն տեխնոլոգիաների ակտիվ կիրառմամբ: Բանկը 7-րդ տարին անընդմեջ ճանաչվել է «Լավագույն թվային սպառողական բանկը Հայաստանում» Global Finance հեղինակավոր ամսագրի կողմից: Բանկը շարունակաբար ներդնում և կիրառում է նորարարություններ՝ առաջարկելով հաճախորդներին նորագույն տեխնոլոգիաների լավագույն լուծումները: Evocabank-ը ՀՀ-ում գրանցված առաջին առևտրային բանկն է՝ 1990թ. և ներկայումս ունի գլխամասային գրասենյակ և 13 մասնաճյուղ: Կայք՝ <a href="https://www.evoca.am" target="_blank" rel="noreferrer" className="text-purple-700 underline font-medium hover:text-purple-900 transition-colors">evoca.am</a>[cite: 19]:
+  </p>
+
+  <h3 className="text-xl font-bold text-purple-700 pt-4">responsAbility-ի մասին</h3>
+  <p>
+    <em>responsAbility Investment-ը</em> առաջատար շվեյցարական ներդրումային կազմակերպություն է, որը մասնագիտացված է մասնավոր շուկաներում ներդրումների մեջ: responsAbility-ն ուղղակիորեն նպաստում է Միավորված ազգերի կազմակերպության կայուն զարգացման նպատակներին (United Nations Sustainable Development Goals - SDGs) երեք հիմնական ներդրումային ուղղություններով՝ ՄՓՄՁ-ների ֆինանսավորում, կլիմայի ֆինանսավորում և կայուն սնունդ: responsAbility-ի բոլոր ներդրումային լուծումները նպատակ ունեն չափելի ազդեցություն ունենալ շուկայական եկամուտների կողքին: Սկսած իր հիմնադրումից (2003թ.)՝ responsAbility-ն իրականացրել է ավելի քան 15.7 միլիարդ ԱՄՆ դոլարի ներդրումներ: responsAbility ներդրումային կազմակերպությունն ունի ավելի քան 270 փորձառու մասնագետից բաղկացած անձնակազմ և 8 գրասենյակ աշխարհի տարբեր կետերում: 2024 թվականի սեպտեմբերի 30-ի դրությամբ կազմակերպությունը կառավարում է 5.1 մլրդ ԱՄՆ դոլարի ակտիվ շուրջ 70 երկրի 300 ընկերությունում: Կայք՝ <a href="https://www.responsability.com" target="_blank" rel="noreferrer" className="text-purple-700 underline font-medium hover:text-purple-900 transition-colors">responsability.com</a>[cite: 19]:
+  </p>
+</article>
+
+{/* Այլ նորություններ բաժին */}
+<div className="mt-16 pt-10 border-t border-gray-200">
+  <h3 className="text-xl font-bold text-gray-900 mb-6">Այլ նորություններ</h3>
+  
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {/* Նորություն 1 */}
+    <Link 
+      to="/banking/usd-10-million-subordinated-deft-financing-from-finance-in-motion-to-evocabank" 
+      className="bg-white rounded-2xl overflow-hidden shadow-sm border border-purple-100 flex flex-col justify-between group cursor-pointer hover:shadow-md transition-shadow no-underline"
+    >
+      <div>
+        <div className="h-48 overflow-hidden">
+          <img 
+            src="	https://www.evoca.am/images-cache/news/1/17908437653512/428x321.png" 
+            alt="Evocabank FIM" 
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+          />
+        </div>
+        <div className="p-5">
+          <h4 className="font-bold text-gray-900 text-base mb-2 group-hover:text-purple-700 transition-colors line-clamp-2">
+            Evocabank-ը ներգրավել է $10 մլն ստորադաս փոխառություն FIM-ից
+          </h4>
+        </div>
+      </div>
+      <div className="px-5 pb-5 text-sm text-gray-400 font-medium">
+        05.10.2026
+      </div>
+    </Link>
+
+    {/* Նորություն 2 */}
+    <Link 
+      to="/news/block-transactions" 
+      className="bg-white rounded-2xl overflow-hidden shadow-sm border border-purple-100 flex flex-col justify-between group cursor-pointer hover:shadow-md transition-shadow no-underline"
+    >
+      <div>
+        <div className="h-48 overflow-hidden bg-purple-900 flex items-center justify-center">
+          <img 
+            src="https://www.evoca.am/images-cache/news/1/17852444643548/428x321.png" 
+            alt="Գործարքների արգելափակում" 
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        <div className="p-5">
+          <h4 className="font-bold text-gray-900 text-base mb-2 group-hover:text-purple-700 transition-colors line-clamp-2">
+            Գործարքների արգելափակում 1 կոճակով
+          </h4>
+        </div>
+      </div>
+      <div className="px-5 pb-5 text-sm text-gray-400 font-medium">
+        01.06.2026
+      </div>
+    </Link>
+
+    {/* Նորություն 3 */}
+    <Link 
+      to="/news/moodys-rating" 
+      className="bg-white rounded-2xl overflow-hidden shadow-sm border border-purple-100 flex flex-col justify-between group cursor-pointer hover:shadow-md transition-shadow no-underline"
+    >
+      <div>
+        <div className="h-48 overflow-hidden">
+          <img 
+            src="	https://www.evoca.am/images-cache/news/1/17870544210976/428x321.png" 
+            alt="Moody's rating" 
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        <div className="p-5">
+          <h4 className="font-bold text-gray-900 text-base mb-2 group-hover:text-purple-700 transition-colors line-clamp-2">
+            Ba3 վարկանիշ Moody’s-ից Evocabank-ին
+          </h4>
+        </div>
+      </div>
+      <div className="px-5 pb-5 text-sm text-gray-400 font-medium">
+        18.08.2026
+      </div>
+    </Link>
+  </div>
+</div>
+      </main>
+
+      {/* Footer */}
+      <Footer />
+
+    </div>
+  );
+}

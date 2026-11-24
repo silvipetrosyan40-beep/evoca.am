@@ -199,7 +199,7 @@ export default function AllNewsPage() {
       title: '25% զեղչ Ria դրամական փոխանցումների համար',
       date: '01.12.2022',
       image: 'https://www.evoca.am/images-cache/news/1/1668087474472/510x383.png',
-      path: 'ria-25',
+      path: 'riaa-25',
     }, 
     {   
       id: 25,

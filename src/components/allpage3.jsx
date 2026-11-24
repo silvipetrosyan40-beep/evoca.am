@@ -262,7 +262,7 @@ export default function AllNewsPage() {
       title: 'Վճարիր Evoca Mastercard-ով և վայելիր անվճար Այ Բուրգեր KFC-ից',
       date: '31.03.2025',
       image: 'https://www.evoca.am/images-cache/news/1/17434047457376/510x383.png',
-      path: 'pay-with-evoca-mastercard',
+      path: 'free-burger-from-kfc',
     },  
     {   
       id: 34,

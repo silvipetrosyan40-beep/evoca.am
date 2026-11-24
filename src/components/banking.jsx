@@ -15,7 +15,7 @@ export default function AllNewsPage() {
   const [endDate, setEndDate] = useState('');
 
   // Էջերի ցանկը
-  const pages = [1, 2, 3, 4, 5, 6, 7, 8, 14, 15];
+  const pages = [1, 2, 3, 4, 5, 6,];
 
   // Կատեգորիաների ցանկ
   const categories = [
@@ -47,7 +47,7 @@ export default function AllNewsPage() {
       title: 'Evocabank-ը՝ Armenia-UK Business Forum-ի գլխավոր գործընկեր',
       date: '06.10.2026',
       image: 'https://www.evoca.am/images-cache/news/1/17852444643548/510x383.png',
-      path: '/life-style/evocabank-as-the-general-partner-of-armenia-uk-business-forum',
+      path: '/news/block-transactions',
     },
     {
       id: 3,
@@ -55,240 +55,129 @@ export default function AllNewsPage() {
       title: 'Evocabank-ը՝ TRF 2026-ի ֆինանսական գործընկեր',
       date: '06.10.2026',
       image: 'https://www.evoca.am/images-cache/news/1/17870544210976/510x383.png',
-      path: '/life-style/evocabank-as-the-financial-partner-of-trf-2026',
+      path: '/news/moodys-rating',
     },
     {
       id: 4,
       category: 'Բանկային',
       title: 'Evocabank-ը ներգրավել է $10 մլն ստորադաս փոխառություն FIM-ից',
       date: '05.10.2026',
-      image: 'https://www.evoca.am/imagescache/news/1/17908437653512/510x383.png',
+      image: 'https://www.evoca.am/images-cache/news/1/17908437653512/428x321.png',
       path: '/banking/usd-10-million-subordinated-deft-financing-from-finance-in-motion-to-evocabank',
     },
     {
       id: 5,
-      title: 'Evocabank. Ամենանորարար թվային բանկը Հայաստանում 2026',
-      date: '02.10.2026',
-      image: 'https://www.evoca.am/images-cache/news/1/17909253326841/510x383.png',
-      path: '/prizes/the-most-innovative-digital-bank-2026-by-global-business-and-finance-magazine',
+      title: 'Հայաստանում գործարկվեց Firebird AI-ի «ԱԲ գործարանը»',
+      date: '11.08.2026',
+      image: '	https://www.evoca.am/images-cache/news/1/17864472573391/510x383.png',
+      path: '/news/firebird-ai',
     },
     {
       id: 6,
-      title: 'Evocabank-ը՝ AUA-ի 35-ամյակի միջոցառման հովանավոր',
-      date: '28.09.2026',
-      image: 'https://www.evoca.am/images-cache/news/1/17906855928227/510x383.png',
-      path: '/life-style/evocabank-as-a-legacy-partner-of-aua-35th-anniversary-event',
-    },
-    {
-      id: 7,
-      title: 'Evocabank-ը ներկայացրեց ArCa-UnionPay համատեղ քարտը',
-      date: '27.09.2026',
-      image: '	https://www.evoca.am/images-cache/news/1/17901528701371/510x383.png',
-      path: '/products/evocabank-introduced-the-arca-unionpay-co-badged-card    ',
-    },
-    {
-      id: 8,
-      title: 'Evoca-ն մասնակցում է Armenian Auto Show 2026-ին',
-      date: '22.09.2026',
-      image: '	https://www.evoca.am/images-cache/news/1/17902383376936/510x383.png',
-      path: '/products/evocabank-participates-in-autoshow-2026',
-    },
-    {
-      id: 9,
-      title: 'Թրենդային հագուստ Rien-a-Porter-ից, 15% cashback Evoca-ից',
-      date: '21.09.2026',
-      image: 'https://www.evoca.am/images-cache/news/1/17901523859882/510x383.png',
-      path: '/products/pay-with-evoca-cards-at-rien-a-porter-get-cashback',
-    },
-    {
-      id: 10,
-      title: 'Դիլիջա՜ն, մենք գալիս ենք',
-      date: '11.09.2026',
-      image: '	https://www.evoca.am/images-cache/news/1/17891134831451/510x383.png',
-      path: '/dilijan-we-are-coming',
-    },
-    {
-      id: 11,
-      title: 'Evocabank-ը՝ Retro Fest-ի ֆինանսական գործընկեր',
-      date: '03.09.2026',
-      image: '	https://www.evoca.am/images-cache/news/1/17884237814941/510x383.png',
-      path: '/news/evocabank-retro-fest-partner',
-    },
-    {
-      id: 12,
-      title: 'Գործարքների արգելափակում 1 կոճակով',
-      date: '01.06.2026',
-      image: '	https://www.evoca.am/images-cache/news/1/17852444643548/510x383.png',
-      path: '/news/block-transactions',
-    },
-    {
-      id: 13,
-      title: 'Դեպի նոր ուսումնական տարի՝ մինչև 23% cashback-ով',
-      date: '21.08.2026',
-      image: 'https://www.evoca.am/images-cache/news/1/17873217684586/510x383.png',
-      path: '/news/back-to-school-cashback',
-    },   
-    {
-      id: 14,
-      title: 'Ba3 վարկանիշ Moody’s-ից Evocabank-ին',
-      date: '18.08.2026',
-      image: '	https://www.evoca.am/images-cache/news/1/17870544210976/510x383.png',
-      path: '/news/moodys-rating',
-    },   
-    {
-      id: 15,
-      title: 'Հայաստանում գործարկվեց Firebird AI-ի «ԱԲ գործարանը»',
-      date: '11.08.2026',
-      image: 'https://www.evoca.am/images-cache/news/1/17864472573391/510x383.png',
-      path: '/news/firebird-ai',
-    },   
-    {
-      id: 16,
       title: 'Evocabank-ը և Green Rock-ը մեկնարկեցին Բանկի նոր գլխամասի նախագիծը',
       date: '30.07.2026',
       image: 'https://www.evoca.am/images-cache/news/1/17854167235525/510x383.png',
       path: '/news/green-rock-headquarters',
-    },   
-    {   
-      id: 17,
-      title: 'Evocabank՝ Լավագույն Բանկը Հայաստանում 2026',
-      date: '30.06.2026',
-      image: 'https://www.evoca.am/images-cache/news/1/17847187625556/510x383.png',
-      path: '/prizes/best-bank-in-armenia-2026-by-international-investor-magazine',
     },
-    {   
-      id: 18,
-      title: 'Կարեն Եղիազարյանի նոր հարցազրույցը Banks.am-ին',
-      date: '22.07.2026',
-      image: '	https://www.evoca.am/images-cache/news/1/17845396816254/510x383.png',
-      path: '/interviews/evocabank-ai-interview-banks-am-Karen-Yeghiazaryan',
-    }, 
-    {   
-      id: 19,
+    {
+      id: 7,
       title: 'Evoca-ի ղեկավարները հաջողությամբ ավարտեցին Generative AI դասընթացը',
-      date: '17.07.2026',
-      image: '	https://www.evoca.am/images-cache/news/1/17842875742396/510x383.png',
+      date: '27.09.2026',
+      image: 'https://www.evoca.am/images-cache/news/1/17842875742396/510x383.png',
       path: '/banking/the-executives-have-completed-mit-course',
-    }, 
-    {   
-      id: 20,
-      title: 'Evoca-ն՝ EuroBasket Մ16 մրցաշարի պաշտոնական հովանավոր',
-      date: '09.07.2026',
-      image: 'https://www.evoca.am/images-cache/news/1/17835973514805/510x383.png',
-      path: '/evocabank-is-the-official-sponsor-of-the-fiba-eurobasket',
-    }, 
-    {   
-      id: 21,
-      title: 'Evocabank-ը՝ PREPA Run 2026-ի գլխավոր հովանավոր',
-      date: '25.06.2026',
-      image: 'https://www.evoca.am/images-cache/news/1/17823731739564/510x383.png',
-      path: '/evocabank-is-the-main-sponsor-of-the-prepa-run',
-    },  
-    {   
-      id: 22,
-      title: 'Evocabank-ը՝ Newmag Summerfest 2026-ի գլխավոր հովանավոր',
-      date: '24.06.2026',
-      image: 'https://www.evoca.am/images-cache/news/1/17823755903426/510x383.png',
-      path: '/life-style/evocabank-is-the-main-partner-of-the-newmag-summerfast-2026',
-    }, 
-    {   
-      id: 23,
-      title: 'Evocabank-ը և Norakaruyc.am-ը համագործակցության հուշագիր են ստորագրել',
-      date: '22.06.2026',
-      image: '	https://www.evoca.am/images-cache/news/1/1782137837549/510x383.jpg',
-      path: '/main/evoca-norakaruyc-signing',
-    }, 
-    {   
-      id: 24,
-      title: 'Evocabank-ը՝ AMX AWARDS 2026-ի մրցանակակիր',
-      date: '16.06.2026',
-      image: '	https://www.evoca.am/images-cache/news/1/17815943976247/510x383.png',
-      path: '/news/amx-awards',
-    }, 
-    {   
-      id: 25,
-      title: 'Evocabank-ն ու Wilco-ն ներկայացնում են բացառիկ համատեղ քարտ',
-      date: '15.06.2026',
-      image: '	https://www.evoca.am/images-cache/news/1/17815163976713/510x383.png',
-      path: '/news/wilco-card',
-    }, 
-    {   
-      id: 26,
-      title: 'Evocabank-ը նոր գույներ է տալիս մեր քաղաքին',
-      date: '12.06.2026',
-      image: '	https://www.evoca.am/images-cache/news/1/17812556342544/510x383.png',
-      path: '/life-style/memorandum-of-cooperation-street-arts-by-evoca',
     },
-    {   
-      id: 27,
+    {
+      id: 8,
       title: 'ՊԱՐԶԱԲԱՆՈՒՄ',
       date: '05.06.2026',
-      image: '	https://www.evoca.am/images-cache/news/1/17806626445767/510x383.jpg',
+      image: 'https://www.evoca.am/images-cache/news/1/17806626445767/510x383.jpg',
       path: '/banking/clarification-about-evocabank-on-hetq-am',
-    }, 
-    {   
-      id: 28,
-      title: 'Վճարիր Evoca Mastercard-ով Adidas Armenia-ում և ստացիր 10% զեղչ',
-      date: '03.06.2026',
-      image: '		https://www.evoca.am/images-cache/news/1/17804748057663/780x585.png',
-      path: '/news/adidas-discount',
-    },  
-    {   
-      id: 29,
+    },
+    {
+      id: 9,
       title: 'Վազգեն Գևորկյանն արժանացել է Անանիա Շիրակացու մեդալի',
       date: '29.05.2026',
-      image: 'https://www.evoca.am/images-cache/news/1/17800482277397/510x383.png',
+      image: '	https://www.evoca.am/images-cache/news/1/17800482277397/510x383.png',
       path: '/banking/vazgen-gevorkyan-awarded-anania-shirakatsi-medal',
-    },  
-    {   
-      id: 30,
-      title: 'Վճարիր Evoca Visa քարտով և ստացիր առավելություններ Globbing-ում',
-      date: '14.05.2026',
-      image: 'https://www.evoca.am/images-cache/news/1/1778751542792/510x383.png',
-      path: '/news/globbing-advantages',
-    }, 
-    {   
-      id: 31,
+    },
+    {
+      id: 10,
       title: '«Գյումրի» մասնաճյուղն արդեն գործում է նոր հասցեով',
       date: '12.05.2026',
-      image: '	https://www.evoca.am/images-cache/news/1/17785839458922/510x383.png',
+      image: 'https://www.evoca.am/images-cache/news/1/17785839458922/510x383.png',
       path: '/banking/gyumri-branch-now-operating-at-a-new-address',
-    },   
-    {   
-      id: 32,
-      title: 'Evocabank. Lավագույն ՓՄՁ բանկը Հայաստանում՝ երկրորդ տարին անընդմեջ',
-      date: '08.05.2026',
-      image: '	https://www.evoca.am/images-cache/news/1/17784860353078/510x383.png',
-      path: '/prizes/new-award-best-sme-bank-by-digital-banker-2026',
-    }, 
-    {   
-      id: 33,
-      title: 'Evocabank-ը և Proparco-AFD-ն ստորագրել են 20 միլիոն եվրոյի վարկային համաձայնագիր',
+    },
+    {
+      id: 11,
+      title: 'Evocabank-ը և Proparco-AFD-ն ստորագրել են 20 միլիոն եվրոյի վարկային համաձայնագիր  ',
       date: '06.05.2026',
       image: '	https://www.evoca.am/images-cache/news/1/17780463751358/510x383.png',
       path: '/banking/evocabank-and-proparco-have-signed-a-credit-agreement',
-    },  
-    {   
-      id: 34,
-      title: 'Վճարիր Evoca Mastercard-ով Glovo-ում և ստացիր 10,000 դրամ',
-      date: '30.04.2026',
-      image: '	https://www.evoca.am/images-cache/news/1/17791803423671/510x383.png',
-      path: '/products/new-offer-pay-with-evoca-mastercard-on-glovo-get-amd-10000',
-    },    
-    {   
-      id: 35,
-      title: 'Evocabank-ը մասնակցում է CCF 2026-ին',
-      date: '17.04.2026',
-      image: 'https://www.evoca.am/images-cache/news/1/1776423301974/510x383.png',
-      path: '/life-style/evocabank-participates-in-career-city-fest-2026',
-    },  
-    {   
-      id: 36,
+    },
+    {
+      id: 12,
       title: 'Կարեն Եղիազարյանը` IMF և WBG Spring Meetings 2026-ին',
       date: '13.04.2026',
       image: '	https://www.evoca.am/images-cache/news/1/1776162446379/510x383.png',
       path: '/banking/Karen-Yeghiazaryan-participates-in-the-Spring-Meetings-2026',
-    },    
+    },
+    {
+      id: 13,
+      title: 'ESG կառավարման համակարգը Evocabank-ում',
+      date: '31.03.2026',
+      image: 'https://www.evoca.am/images-cache/news/1/17757342882486/510x383.png',
+      path: '/news/allpage2/coordinator-at-evocabank',
+    },   
+    {
+      id: 14,
+      title: 'Evocabank-ը միացել է AI մեգանախագծի 300 մլն ԱՄՆ դոլարի ֆինանսավորմանը',
+      date: '27.03.2026',
+      image: '	https://www.evoca.am/images-cache/news/1/17746129517291/510x383.png',
+      path: '/news/allpage2/ai-megaproject-financing',
+    },   
+    {
+      id: 15,
+      title: 'Evocabank-ը միացել է AmCham Armenia-ին',
+      date: '10.02.2026',
+      image: '	https://www.evoca.am/images-cache/news/1/17707319421286/510x383.png',
+      path: '/news/allpage2/amcham-armenia',
+    },   
+    {
+      id: 16,
+      title: 'Evocabank-ի «Աջափնյակ» մասնաճյուղն արդեն բաց է',
+      date: '12.01.2026',
+      image: '	https://www.evoca.am/images-cache/news/1/17683825017248/510x383.jpg',
+      path: '/news/allpage2/ajapnyak-is-now-open',
+    },   
+    {   
+      id: 17,
+      title: 'Evoca-ն հուշագիր է ստորագրել CCI France Armenia-ի հետ',
+      date: '15.12.2025',
+      image: '	https://www.evoca.am/images-cache/news/1/1765801881883/510x383.png',
+      path: '/news/allpage2/cci-france-armenia',
+    },
+    {   
+      id: 18,
+      title: 'Evocabank. 20 մլն ԱՄՆ դոլար` շվեյցարական BlueOrchard-ից',
+      date: '08.12.2025',
+      image: '	https://www.evoca.am/images-cache/news/1/17649374043883/510x383.png',
+      path: '/news/allpage2/new-partnership',
+    }, 
+    {   
+      id: 19,
+      title: 'Evocabank-ը՝ Robust Armenia 2025 կոնֆերանսի գլխավոր գործընկեր',
+      date: '06.11.2025',
+      image: 'https://www.evoca.am/images-cache/news/1/17624341580743/510x383.png',
+      path: '/news/allpage2/armenia-conference-2025',
+    }, 
+    {   
+      id: 20,
+      title: 'Evocabank-ը՝ ՆԱԻ-Հայաստան 2025 կոնֆերանսի Արծաթե գործընկեր',
+      date: '03.11.2025',
+      image: 'https://www.evoca.am/images-cache/news/1/17623251404538/510x383.png',
+      path: '/news/allpage2/armenia-2025-conference',
+    }, 
+      
   ];
 
   return (
@@ -443,9 +332,9 @@ export default function AllNewsPage() {
         <div className="w-full pt-10 pb-4 border-t border-gray-100 mt-12 mx-auto">
           <div className="flex items-center justify-center space-x-2 sm:space-x-3 text-sm font-semibold max-w-4xl mx-auto">
             
-            {/* Նախորդ էջի սլաք */}
+          {/* Նախորդ էջի սլաք */}
             <Link
-              to={`/news/allpage${Math.max(currentPage - 1, 1)}`}
+              to={`/hy/about/partners/list-${Math.max(currentPage - 1, 1)}`}
               className={`p-2 rounded-full transition-colors flex items-center justify-center ${
                 currentPage === 1 
                   ? 'text-gray-300 pointer-events-none' 
@@ -458,33 +347,32 @@ export default function AllNewsPage() {
             </Link>
 
             {/* Էջերի հղումներ */}
-            {pages.map((page) => {
-              const isCurrent = currentPage === page;
+            {pages.map((num) => {
+              const isCurrent = currentPage === num;
               return (
                 <Link
-                  key={page}
-                  to={`/news/allpage${page}`}
+                  key={num}
+                  to={`/hy/about/partners/list-${num}`}
                   className={`w-9 h-9 rounded-full flex items-center justify-center transition-colors cursor-pointer text-base ${
                     isCurrent
                       ? 'bg-purple-700 text-white font-bold shadow-xs scale-105'
                       : 'text-gray-700 hover:bg-purple-50 hover:text-purple-700'
                   }`}
                 >
-                  {page}
+                  {num}
                 </Link>
               );
             })}
 
             {/* Հաջորդ էջի սլաք */}
             <Link
-              to={`/news/allpage${currentPage + 1}`}
+              to={`/hy/about/partners/list-${currentPage + 1}`}
               className="p-2 rounded-full text-purple-700 hover:text-purple-900 hover:bg-purple-50/50 transition-colors cursor-pointer flex items-center justify-center"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
-
           </div>
         </div>
 

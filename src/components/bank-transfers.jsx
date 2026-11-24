@@ -1,0 +1,392 @@
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Footer from './footer';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Home } from 'lucide-react';
+
+export default function GeneralInformationPage() {
+  const navigate = useNavigate();
+  // Պահում ենք բացված կատեգորիաների անունները (կարող է մի քանիսը կամ մեկը բաց լինել)
+  const [openCategories, setOpenCategories] = useState({ 'Սպառողական վարկեր': true });
+
+  const handleNavigation = (path) => {
+    navigate(path);
+  };
+
+  const toggleCategory = (categoryName) => {
+    setOpenCategories(prev => ({
+      ...prev,
+      [categoryName]: !prev[categoryName]
+    }));
+  };
+
+  
+
+  const categories = [
+    { 
+  name: 'Քարտեր', 
+  subitems: [
+    { title: 'Վճարային քարտեր', path: '/hy/about/tariffs/commissions' },
+    { title: 'Visa Digital քարտեր', path: '/hy/about/tariffs/cards/digital-cardd' },
+    { title: 'Visa Vision քարտեր', path: '/hy/about/tariffs/cards/vision-cardd' },
+    { title: 'ArCa Classic քարտեր', path: '/hy/about/tariffs/cards/contactless-cardss' },
+    { title: 'Սոցիալական հաշվի (կենսաթոշակային) քարտեր', path: '/hy/about/tariffs/cards/pension-cardsss' },
+    { title: 'Mastercard World Digital քարտեր', path: '/hy/about/tariffs/cards/world-digital-carddd' },
+    { title: 'Evoca Gift Card', path: '/hy/about/tariffs/cards/tariffs-gift-carddd' },
+    { title: 'Mastercard Digital Gift Card', path: '/hy/about/tariffs/cards/terms-and-tariffs' },
+    { title: 'UnionPay քարտեր', path: '/hy/about/tariffs/cards/tariffs-unionpay-carddd' },
+    { title: 'Evoca Travel Card', path: '/hy/about/tariffs/cards/tariffs-travel-cardd' },
+    { title: '4U.am Gift card', path: '/hy/about/tariffs/cards/uam-gift-cards-tariffss' },
+    { title: 'Homplex Gift card', path: '/hy/about/tariffs/cards/Homplex-gift-cards' },
+    { title: 'Dalma Gift Card', path: '/hy/about/tariffs/cards/dalma-gift-card-tariffs' },
+    { title: 'Garage Masters\' Mall Gift Card', path: '/hy/about/tariffs/cards/mall-gift-card-tariffs' },
+    { title: 'Rio Gift Card', path: '/hy/about/tariffs/cards/rio-gift-card-tariffs' },
+    { title: 'MyLer Gift card', path: '/hy/about/tariffs/cards/MyLer-gift-cards-tariffs' },
+    { title: 'Visa Infinite քարտեր', path: '/hy/about/tariffs/cards/tariffs-visa-infinite-cardd' },
+    { title: 'Visa Platinum վճարային քարտեր', path: '/hy/about/tariffs/cards/tariffs-visa-platinum-card' },
+    { title: 'Wilco Card', path: '/hy/about/tariffs/cards/tariffs-Wilco-card' },
+    { title: 'ArCa Union Pay Co-badge քարտեր', path: '/hy/about/tariffs/cards/arca-unionpay-cobadge' }
+  ] 
+},
+    { 
+  name: 'Հաշիվներ', 
+  subitems: [
+    { title: 'Խնայողական հաշիվ', path: '/hy/about/tariffs/accounts/savings' },
+    { title: 'Ընթացիկ հաշիվներ', path: '/hy/about/tariffs/accounts/current' },
+    { title: 'Անվանատիրոջ հատուկ հաշիվներ', path: '/hy/about/tariffs/accounts/nominee' },
+    { title: 'Նոտարի հատուկ հաշիվների բացում և վարում', path: '/hy/about/tariffs/accounts/notary' },
+    { title: 'Սնանկության հատուկ հաշիվների բացում և վարում', path: '/hy/about/tariffs/accounts/bankruptcy' },
+    { title: 'Էսքրոու հաշիվների բացում և վարում', path: '/hy/about/tariffs/accounts/escrow' },
+    { title: 'Կառուցապատողի հատուկ հաշվի բացում և վարում', path: '/hy/about/tariffs/accounts/developer' }
+  ] 
+},
+    { 
+  name: 'Փոխանցումներ', 
+  subitems: [
+    { title: 'Բանկային փոխանցումներ', path: '/hy/about/tariffs/transfers/bank-transfers' },
+    { title: 'UBPay արագ դրամական փոխանցումներ', path: '/hy/about/tariffs/transfers/ubpay' },
+    { title: 'Բանկի վիրտուալ տերմինալների միջոցով տեղական՝ լոկալ քարտից-քարտ (card-to card) փոխանցումների և Visa Direct, Money Send ծառայությունների սպասարկման միջնորդավճար', path: '/hy/about/tariffs/transfers/card-to-card' },
+    { title: 'Անկանխիկ ոսկով փոխանցումներ', path: '/hy/about/tariffs/transfers/gold' }
+  ] 
+},
+   { 
+  name: 'Այլ', 
+  subitems: [
+    { title: 'Դրամարկղային գործառնություններ', path: '/hy/about/tariffs/other/cashier' },
+    { title: 'Հաշիվների հեռակառավարում EvocaTOUCH, EvocaONLINE', path: '/hy/about/tariffs/other/remote-banking' },
+    { title: 'Պահատուփեր', path: '/hy/about/tariffs/other/lockers' },
+    { title: 'Այլ բանկերի թողարկած քարտերի սակագներ, բաց. MIR քարտերի', path: '/hy/about/tariffs/other/other-banks-cards' },
+    { title: 'Բրոքերային ծառայություններ', path: '/hy/about/tariffs/other/brokerage' },
+    { title: 'Պահառութային ծառայություններ', path: '/hy/about/tariffs/other/custody' },
+    { title: 'Ակրեդիտիվներ', path: '/hy/about/tariffs/other/letters-of-credit' },
+    { title: 'Փաստաթղթային ինկասո', path: '/hy/about/tariffs/other/collection' },
+    { title: 'Բանկային երաշխիքներ', path: '/hy/about/tariffs/other/guarantees' },
+    { title: 'Պահատուփերի վարձակալում', path: '/hy/about/tariffs/other/locker-rental' },
+    { title: 'Գրությունների, թույլտվությունների և համաձայնությունների տրամադրում', path: '/hy/about/tariffs/other/letters-permissions' },
+    { title: 'Այլ ծառայություններ', path: '/hy/about/tariffs/other/other-services' }
+  ] 
+},
+  ];
+
+ const paymentCardsData = [
+    { 
+        id: 1, 
+        title: "Ներբանկային փոխանցումներ բոլոր արժույթներով", 
+        desc: "0" 
+      },
+      { 
+        id: 2, 
+        title: "Միջբանկային փոխանցումներ ՀՀ տարածքում (ՀՀ դրամ)", 
+        desc: "• Բանկի գործունեության վայրից՝ 200 ՀՀ դրամ\n• EvocaTouch հավելվածի միջոցով՝ 0" 
+      },
+      { 
+        id: 3, 
+        title: "Միջբանկային փոխանցումներ ՀՀ տարածքում (ԱՄՆ դոլար / Եվրո)", 
+        desc: "0.1% նվազագույնը 3,000 առավելագույնը 10,000 ՀՀ դրամ" 
+      },
+      { 
+        id: 4, 
+        title: "Գույքահարկի գծով վճարումներ «Գույքահարկի բազայի» միջոցով", 
+        desc: "300 ՀՀ դրամ" 
+      },
+      { 
+        id: 5, 
+        title: "Փոխանցումներ ARCA Pay համակարգի անդամ հանդիսացող բանկերի հաճախորդներին", 
+        desc: "0.1%" 
+      },
+      { 
+        id: 6, 
+        title: "ՀՀ տարածքից դուրս փոխանցումներ (ԱՄՆ դոլար - OUR)", 
+        desc: "• ՌԴ և Բելառուսի Հանրապետությունից բացի այլ ուղղություններ՝ 0.15% min 7,000 ՀՀ դրամ max 70,000 ՀՀ դրամ\n• ՌԴ և Բելառուսի Հանրապետություն՝ 0.15% min 50,000 ՀՀ դրամ max 100,000 ՀՀ դրամ" 
+      },
+      { 
+        id: 7, 
+        title: "ՀՀ տարածքից դուրս փոխանցումներ (ԱՄՆ դոլար - Guaranteed OUR)", 
+        desc: "Ծախսերի OUR տարբերակ + ի հավելումն լրացուցիչ 10,000 ՀՀ դրամ" 
+      },
+      { 
+        id: 8, 
+        title: "ՀՀ տարածքից դուրս փոխանցումներ (ԱՄՆ դոլար / Եվրո - BEN)", 
+        desc: "5,000 ՀՀ դրամ" 
+      },
+      { 
+        id: 9, 
+        title: "ՀՀ տարածքից դուրս փոխանցումներ (Եվրո - OUR)", 
+        desc: "• ՌԴ և Բելառուսի Հանրապետությունից բացի այլ ուղղություններ՝ 0.15% min 7,000 ՀՀ դրամ max 70,000 ՀՀ դրամ\n• ՌԴ և Բելառուսի Հանրապետություն՝ 0.15% min 50,000 ՀՀ դրամ max 100,000 ՀՀ դրամ" 
+      },
+      { 
+        id: 10, 
+        title: "ՀՀ տարածքից դուրս փոխանցումներ (ՌԴ ռուբլի - OUR)", 
+        desc: "0.15% min 7,000 ՀՀ դրամ max 30,000 ՀՀ դրամ" 
+      },
+      { 
+        id: 11, 
+        title: "ՀՀ տարածքից դուրս փոխանցումներ (Չինական յուան և ԱՄԷ դիրհամ)", 
+        desc: "0.15% min 7,000 ՀՀ դրամ max 70,000 ՀՀ դրամ" 
+      },
+      { 
+        id: 12, 
+        title: "ՀՀ տարածքից դուրս փոխանցումներ (Այլ արտարժույթ - OUR)", 
+        desc: "0.15% min 10,000 ՀՀ դրամ max 100,000 ՀՀ դրամ" 
+      },
+      { 
+        id: 13, 
+        title: "ՀՀ տարածքից դուրս փոխանցումներ (ԱՄՆ դոլար - CITIGROUP խմբի անդամ բանկեր)", 
+        desc: "0.15% min 15,000 ՀՀ դրամ max 70,000 ՀՀ դրամ" 
+      },
+      { 
+        id: 14, 
+        title: "Արտարժույթով ստացված չպարզաբանված գումարների վերադարձ", 
+        desc: "• Մինչև 100 USD և 100 EUR դեպքում՝ 3000 ՀՀ դրամին համարժեք արտարժույթ\n• 100 USD և 100 EUR-ից բարձր դեպքում՝ 10 000 ՀՀ դրամին համարժեք արտարժույթ" 
+      },
+      { 
+        id: 15, 
+        title: "Վճարային վավերապայմանների փոփոխման հարցումներ (ՀՀ դրամով վճարման հանձնարարականի դեպքում)", 
+        desc: "1,000 ՀՀ դրամ" 
+      },
+      { 
+        id: 16, 
+        title: "Միջազգային վճարման հանձնարարականի դեպքում", 
+        desc: "30,000 ՀՀ դրամ" 
+      },
+      { 
+        id: 17, 
+        title: "Միջազգային վճարման հանձնարարականի չեղյալ համարելու վերաբերյալ հարցումներ", 
+        desc: "30,000 ՀՀ դրամ" 
+      },
+      { 
+        id: 18, 
+        title: "Միջազգային վճարման հանձնարարականով փոխանցված գումարների որոնման հարցումներ", 
+        desc: "30,000 ՀՀ դրամ" 
+      },
+      { 
+        id: 19, 
+        title: "Միջազգային վճարման հանձնարարականի S.W.I.F.T. կրկնօրինակների տրամադրում", 
+        desc: "1,000 ՀՀ դրամ" 
+      }
+    ]
+
+  return (
+    <div className="w-full bg-gray-50 min-h-screen font-sans flex flex-col justify-between">
+      <div>
+        {/* ՀԵԴԵՐ */}
+        <header className="w-full bg-white shadow-sm font-sans">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div className="flex items-center space-x-12">
+              <button 
+                onClick={() => handleNavigation('/')} 
+                className="bg-transparent border-none cursor-pointer flex items-center"
+              >
+                <span className="text-3xl font-black tracking-tight text-neutral-600">evoca</span>
+              </button>
+
+              <nav className="hidden md:flex items-center space-x-8 text-sm font-semibold">
+                <button 
+                  onClick={() => handleNavigation('/hy/about')} 
+                  className="text-gray-700 bg-transparent border-none cursor-pointer hover:text-purple-700 transition-colors"
+                >
+                  Evoca-ի մասին
+                </button>
+                <button 
+                  onClick={() => handleNavigation('/hy/about/tariffs')} 
+                  className="text-purple-700 font-bold bg-transparent border-none cursor-pointer hover:text-purple-900 transition-colors"
+                >
+                  Սակագներ
+                </button>
+                <button 
+                  onClick={() => handleNavigation('/hy/about/reports')} 
+                  className="text-gray-700 bg-transparent border-none cursor-pointer hover:text-purple-700 transition-colors"
+                >
+                  Հաշվետվություններ
+                </button>
+                <button 
+                  onClick={() => handleNavigation('/hy/about/announcements')} 
+                  className="text-gray-700 bg-transparent border-none cursor-pointer hover:text-purple-700 transition-colors"
+                >
+                  Հայտարարություններ
+                </button>
+              </nav>
+            </div>
+
+            <div>
+              <button 
+                onClick={() => handleNavigation('/hy/evocaonline')} 
+                className="px-6 py-2.5 bg-purple-700 hover:bg-purple-800 text-white text-sm font-bold rounded-full transition-colors shadow-sm cursor-pointer border-none"
+              >
+                EvocaONLINE
+              </button>
+            </div>
+          </div>
+
+          <div className="bg-purple-800 text-white shadow-sm overflow-x-auto">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+             <nav className="flex space-x-8 h-12 items-center text-sm font-medium whitespace-nowrap overflow-x-auto">
+  <button 
+    onClick={() => handleNavigation('/hy/about/tariffs')} 
+    className="text-purple-200 hover:text-white transition-colors bg-transparent border-none cursor-pointer whitespace-nowrap shrink-0"
+  >
+    Վարկեր ֆիզիկական անձանց
+  </button>
+  <button 
+    onClick={() => handleNavigation('/hy/about/tariffs/corporate-loans')} 
+    className="text-purple-200 hover:text-white transition-colors bg-transparent border-none cursor-pointer whitespace-nowrap shrink-0"
+  >
+    Վարկեր իրավաբանական անձանց
+  </button>
+  <button 
+    onClick={() => handleNavigation('/hy/about/tariffs/commissions')} 
+    className="text-white font-semibold bg-purple-900 px-3 py-1.5 rounded-lg transition-colors border-none cursor-pointer whitespace-nowrap shadow-inner shrink-0"
+  >
+    Միջնորդավճարների սակագները
+  </button>
+  <button 
+    onClick={() => handleNavigation('/hy/about/tariffs/deposits')} 
+    className="text-purple-200 hover:text-white transition-colors bg-transparent border-none cursor-pointer whitespace-nowrap shrink-0"
+  >
+    Ավանդների սակագներ
+  </button>
+  <button 
+    onClick={() => handleNavigation('/hy/about/tariffs/archive')} 
+    className="text-purple-200 hover:text-white transition-colors bg-transparent border-none cursor-pointer whitespace-nowrap shrink-0"
+  >
+    Արխիվ
+  </button>
+</nav>
+            </div>
+          </div>
+        </header>
+
+        {/* ԲՈՎԱՆԴԱԿՈՒԹՅՈՒՆ */}
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 mb-16">
+          <div className="flex items-center space-x-2 text-sm text-gray-500 mb-6">
+            <button onClick={() => handleNavigation('/')} className="hover:text-purple-700 bg-transparent border-none cursor-pointer flex items-center">
+              <Home className="w-4 h-4" />
+            </button>
+            <span>›</span>
+            <button onClick={() => handleNavigation('/hy/about')} className="hover:text-purple-700 bg-transparent border-none cursor-pointer">Մեր մասին</button>
+            <span>›</span>
+            <button onClick={() => handleNavigation('/hy/about/evoca')} className="hover:text-purple-700 bg-transparent border-none cursor-pointer">Սակագներ</button>
+            <span>›</span>
+            <span className="text-gray-800 font-medium">Միջնորդավճարների սակագները
+</span>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            {/* Ձախ կողմի բացվող-փակվող մենյու */}
+            <div className="lg:col-span-4 space-y-3">
+              {categories.map((cat, idx) => {
+                const isOpen = openCategories[cat.name];
+                return (
+                  <div key={idx} className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden transition-all">
+                    <button 
+                      onClick={() => toggleCategory(cat.name)}
+                      className={`w-full flex items-center justify-between p-4 text-left font-semibold text-sm transition-colors cursor-pointer border-none ${
+                        isOpen ? 'text-purple-900 bg-purple-50/50' : 'text-gray-700 hover:bg-gray-50'
+                      }`}
+                    >
+                      <span className="flex items-center gap-2">
+                        {isOpen && <span className="w-1 h-5 bg-purple-700 rounded-full inline-block"></span>}
+                        {cat.name}
+                      </span>
+                      <span className={`text-purple-700 transition-transform duration-300 text-xs ${isOpen ? 'transform rotate-180' : ''}`}>
+                        ⌄
+                      </span>
+                    </button>
+
+                    {isOpen && cat.subitems.length > 0 && (
+                      <div className="px-4 py-3 space-y-2 bg-purple-50/20 border-t border-purple-100/50">
+                        {cat.subitems.map((sub, sIdx) => (
+                          <button
+                            key={sIdx}
+                            onClick={() => handleNavigation(sub.path)}
+                            className="w-full text-left text-xs font-semibold text-purple-900 py-1.5 pl-3 border-l-2 border-purple-700 hover:bg-purple-100/50 transition-colors bg-transparent cursor-pointer block"
+                          >
+                            {sub.title}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Աջ կողմի աղյուսակ */}
+            <div className="lg:col-span-8 space-y-6">
+              <h2 className="text-2xl font-bold text-neutral-900">
+             Բանկային փոխանցումներ
+              </h2>
+
+              <div className="bg-white rounded-2xl shadow-sm border border-purple-100 overflow-hidden">
+                <table className="w-full text-left border-collapse text-sm text-gray-700">
+                  <tbody>
+                    {paymentCardsData.map((row) => (
+                      <tr key={row.id} className="border-b border-purple-50 hover:bg-purple-50/10 transition-colors">
+                        <td className="p-4 font-medium text-gray-500 w-16 text-center align-top border-r border-purple-50">
+                          {row.id}.
+                        </td>
+                        <td className="p-4 font-semibold text-neutral-900 w-1/3 align-top border-r border-purple-50">
+                          {row.title}
+                        </td>
+                        <td className="p-4 text-gray-700 align-top whitespace-pre-line">
+                          {row.desc}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+                        <div className="w-full max-w-4xl mx-auto px-4 py-12 text-[#1d2b36] space-y-6 text-sm md:text-base">
+  <ol className="space-y-4 text-gray-700 leading-relaxed list-none">
+    <li className="flex items-start gap-3">
+      <span className="text-purple-700 font-bold shrink-0">[1]</span>
+      <div>
+        <span>Մինչև ժ. 15:30 ներկայացված վճարման հանձնարարագրերը Բանկի կողմից կատարվում են նույն բանկային օրը, իսկ ժ. 15:30 ից հետո ներկայացված վճարման հանձնարարագրերը Բանկի կողմից կատարվում են հաջորդ բանկային օրը:[cite: 15]</span>
+        <p className="mt-1 font-semibold text-gray-800">ՀՀ դրամով փոխանցումների կատարման տևողությունը ՀՀ տարածքում կազմում է 1 բանկային օր:[cite: 15]</p>
+      </div>
+    </li>
+    <li className="flex items-start gap-3">
+      <span className="text-purple-700 font-bold shrink-0">[2]</span>
+      <span>Ծախսերը փոխանցող հաճախորդի հաշվին:[cite: 15]</span>
+    </li>
+    <li className="flex items-start gap-3">
+      <span className="text-purple-700 font-bold shrink-0">[3]</span>
+      <span>Գումարը ստացողին հասնում է ամբողջական[cite: 15]</span>
+    </li>
+    <li className="flex items-start gap-3">
+      <span className="text-purple-700 font-bold shrink-0">[4]</span>
+      <span>Ծախսերը շահառուի հաշվին:[cite: 15]</span>
+    </li>
+  </ol>
+</div>
+                              
+        </main>
+      </div>
+
+      <Footer />
+    </div>
+  );
+}

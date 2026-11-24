@@ -33,13 +33,7 @@ export default function AllNewsPage() {
 
   // Նկարում պատկերված նորությունների տվյալները
   const newsList = [
-    {
-      id: 1,
-      title: 'Ընդամենը Evoca Visa քարտ և 30% cashback buy.am-ում',
-      date: '11.03.2025',
-      image: 'https://www.evoca.am/images-cache/news/1/17416830305613/510x383.jpg',
-      path: 'cashback-on-buy-am',
-    },
+   
     {
       id: 2,
       title: 'Նվիրիր նվեր քարտ, մասնակցիր խաղարկությանը և շահիր',
@@ -66,14 +60,14 @@ export default function AllNewsPage() {
       title: '15% զեղչ KinoPark-ում` Evoca Visa քարտապանների համար',
       date: '19.02.2025',
       image: 'https://www.evoca.am/images-cache/news/1/17399680512009/510x383.jpg',
-      path: 'evoca-visa-cardholders',
+      path: '/news/allpage4/evoca-visa-cardholders',
     },
     {
       id: 6,
       title: '15% cashback Myler-ում Evoca Visa քարտապանների համար',
       date: '18.02.2025',
       image: '	https://www.evoca.am/images-cache/news/1/17398763342238/510x383.png',
-      path: 'evoca-visa-cardholders',
+      path: '/news/allpage4/resort-for-evoca-visa-cardholders',
     },
     {
       id: 7,

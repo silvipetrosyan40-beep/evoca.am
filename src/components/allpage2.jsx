@@ -38,7 +38,7 @@ export default function AllNewsPage() {
       title: 'Evoca-ն մասնակցում է Leasing Expo 2026-ին',
       date: '09.04.2026',
       image: 'https://www.evoca.am/images-cache/news/1/17758068998241/510x383.png',
-      path: 'in-leasing-expo-2026',
+      path: '/news/allpage2/in-leasing-expo-2026',
     },
     {
       id: 2,

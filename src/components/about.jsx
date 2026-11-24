@@ -62,7 +62,7 @@ export default function GeneralInformationPage() {
               {/* Հիմնական նավարկություն */}
               <nav className="hidden md:flex items-center space-x-8 text-sm font-semibold">
                 <button 
-                  onClick={() => handleNavigation('/hy/about/evoca')} 
+                  onClick={() => handleNavigation('/hy/about')} 
                   className="text-purple-700 bg-transparent border-none cursor-pointer hover:text-purple-900 transition-colors"
                 >
                   Evoca-ի մասին
@@ -103,7 +103,7 @@ export default function GeneralInformationPage() {
           <div className="bg-purple-800 text-white shadow-sm overflow-x-auto">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <nav className="flex space-x-8 h-12 items-center text-sm font-medium whitespace-nowrap">
-                <button onClick={() => handleNavigation('/hy/about/general')} className="text-white border-b-2 border-white pb-3 pt-3 bg-transparent cursor-pointer border-t-0 border-x-0 shrink-0">Ընդհանուր</button>
+                <button onClick={() => handleNavigation('/hy/about')} className="text-white border-b-2 border-white pb-3 pt-3 bg-transparent cursor-pointer border-t-0 border-x-0 shrink-0">Ընդհանուր</button>
                 <button onClick={() => handleNavigation('/hy/about/structure')} className="text-purple-200 hover:text-white transition-colors bg-transparent border-none cursor-pointer shrink-0">Կառուցվածք</button>
                 <button onClick={() => handleNavigation('/hy/about/shareholders')} className="text-purple-200 hover:text-white transition-colors bg-transparent border-none cursor-pointer shrink-0">Բաժնետերեր</button>
                 <button onClick={() => handleNavigation('/hy/about/management')} className="text-purple-200 hover:text-white transition-colors bg-transparent border-none cursor-pointer shrink-0">Ղեկավարություն</button>

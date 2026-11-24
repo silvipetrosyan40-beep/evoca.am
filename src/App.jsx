@@ -170,7 +170,762 @@ import Accountlending from './components/account-lending'
 import Renewablecreditline from './components/renewable-credit-line'
 import Loanundertheproductivitypromotionprogram from './components/loan-under-the-productivity-promotion-program'
 import Kfwbankprogramloan from './components/kfw-bank-program-loan'
+import Vposterminal from './components/v-pos-terminal'
+import Posterminal from './components/pos-terminal'
+import Tariffs from './components/tariffs'
+import Terminalapplication from './components/terminal-application'
+import Evocamobilepos from './components/evoca-mobile-pos'
+import Individualsafedepositboxes from './components/individual-safe-deposit-boxes'
+import Transferss from './components/transferss'
+import Evocaonline from './components/evoca-online'; 
+import Akntartayinvcharumner from './components/akntartayinvcharumner'
+import Tariffss from './components/tariffss'
+import Investment from './components/investment'
+import Propertysecured from './components/property-secured'
+import Unsecured from './components/unsecured'
+import Pawnshop from './components/pawnshop'
+import Overdraft from './components/overdraft'
+import Visainfinitee from './components/visa-infinitee'
+import Student from './components/student'
+import Evolutionn from './components/evolutionn'
+import Salarypackage from './components/salary-package'
+import Parking from './components/parking'
+import Evocapower from './components/evocapower'
+import Bicycle from './components/bicycle'
+import Teghumaparik from  './components/teghum-aparik'
+import Cashsecured from './components/cash-secured'
+import Apartment from './components/apartment'
+import Floating from './components/floating'
+import Nonresident from './components/non-resident'
+import Commercial from './components/commercial'
+import Ahkacquisition from './components/ahk-acquisition'
+import Ahkrenovation from './components/ahk-renovation'
+import Ahkconstruction from './components/ahk-construction'; // կախված ֆայլիդ տեղից
+import Youth from './components/youth'
+import Karabakh from './components/karabakh'
+import Karabakhrenovation from './components/karabakh-renovation'
+import Karabakhregions from './components/karabakh-regions'
+import Borderline from './components/borderline'
+import Military from './components/military'
+import Land from './components/land'
+import  Microrenovation from './components/micro-renovation'
+import Standard from './components/standard'
+import Businesss from './components/businesss'
+import Instant from './components/instant'
+import Corporateloans from './components/corporate-loans'
+import Creditline from './components/credit-line'
+import Sme from './components/sme'
+import Depositsecured from './components/deposit-secured'
+import Gkfeasme from './components/gkf-ea-sme'
+import Simplebusiness from './components/simple-business'
+import Modernization from './components/modernization'
+import Evocago from './components/evoca-go'
+import Kfwgreen from './components/kfw-green'
+import Bankguarantees from './components/bank-guarantees'
+import Factoring from './components/factoring'
+import Salaryproject from './components/salary-project'
+import Kfwmmsme from './components/kfw-mmsme'
+import Leasing from './components/leasing'
+import Posbusinessloan from './components/pos-business-loan'
+import Posoverdraft from './components/pos-overdraft'
+import Fastbusinessloann from './components/fast-business-loann'
+import Businessrefinancing from './components/business-refinancing'
+import Commissions from './components/commissions'
+import Digitalcardd from './components/digital-cardd'
+import Visioncardd from './components/vision-cardd'
+import Contactlesscardss from './components/contactless-cardss'
+import Pensioncardsss from './components/pension-cardsss'
+import Worlddigitalcarddd from './components/world-digital-carddd'
+import Tariffsgiftcarddd from './components/tariffs-gift-carddd'
+import Termsandtariffs from './components/terms-and-tariffs'
+import Tariffsunionpaycarddd from './components/tariffs-unionpay-carddd'
+import Tariffstravelcardd from './components/tariffs-travel-cardd'
+import Uamgiftcardstariffss from './components/uam-gift-cards-tariffss'
+import Homplexgiftcards from './components/Homplex-gift-cards'
+import Dalmagiftcardtariffs from './components/dalma-gift-card-tariffs'
+import Mallgiftcardtariffs from './components/mall-gift-card-tariffs'
+import Riogiftcardtariffss from './components/rio-gift-card-tariffss'
+import MyLergiftcardstariffs from './components/MyLer-gift-cards-tariffs'
+import Tariffsvisainfinitecardd from './components/tariffs-visa-infinite-cardd'
+import Tariffsvisaplatinumcard from './components/tariffs-visa-platinum-card'
+import TariffsWilcocard from './components/tariffs-Wilco-card'
+import Arcaunionpaycobadge from './components/arca-unionpay-cobadge'
+import Savings from './components/savings'
+import Current from './components/current'
+import Nominee from './components/nominee'
+import Notary from './components/notary'
+import Bankruptcy from './components/bankruptcy'
+import Escrow from './components/escrow'
+import Developer from './components/developer'
+import Banktransfers from './components/bank-transfers'
+import Ubpay from './components/ubpay'
+import Cardtocard from './components/card-to-card'
+import Gold from './components/gold'
+import Cashier from './components/cashier'
+import Remotebanking from './components/remote-banking'
+import Lockers from './components/lockers'
+import Otherbankscards  from './components/other-banks-cards'
+import Brokerage  from './components/brokerage'
+import Custody  from './components/custody'
+import Lettersofcredit from './components/letters-of-credit'
+import Collection from './components/collection'
+import Guarantees from './components/guarantees'
+import Lockerrental from './components/locker-rental'
+import Letterspermissions from './components/letters-permissions'
+import Otherservices from './components/other-services'
+import Depositss from './components/depositss'
+import Onlinee from './components/onlinee'
+import Children from './components/children'
+import Archive from './components/archive'
+import Reports from './components/reports'
+import Financial from './components/financial'
+import Investors from './components/investors'
+import Semiannual from './components/semiannual'
+import Annual from './components/annual'
+import Announcements from './components/announcements'
+import Structure from './components/structure'
+import Shareholders from './components/shareholders'
+import Management from './components/management'
+import Varuzhanavetisyan from './components/varuzhan-avetisyan'
+import Martaezarri from './components/marta-ezarri'
+import Vazgengevorgyan from './components/vazgen-gevorgyan'
+import Marinabuki from './components/marina-buki'
+import Josemariamoreno from './components/jose-maria-moreno'
+import Pierrecaziac from './components/pierre-caziac'
+import Arkadisandler from './components/arkadi-sandler'
+import Karenyeghiazaryan from './components/karen-yeghiazaryan'
+import Armenhakobyan from './components/armen-hakobyan'
+import Tatevikkhachatryan from './components/tatevik-khachatryan'
+import Haykpetrosyan from './components/hayk-petrosyan'
+import Lilitgaboyan from './components/lilit-gaboyan'
+import Emmajaninyan from './components/emma-janinyan'
+import Smbatmartirosyan from './components/smbat-martirosyan'
+import Mhersahakyan from './components/mher-sahakyan'
+import Nazelieghoyan from './components/nazeli-eghoyan'
+import Partners from './components/partners'
+import Evocanorakaruycsigningg from './components/evoca-norakaruyc-signing'
+import Theeuroperegion from './components/the-europe-region'
+import Coordinatoratevocabank from './components/coordinator-at-evocabank'
+import Aimegaprojectfinancing from './components/ai-megaproject-financing'
+import Amchamarmenia from './components/amcham-armenia'
+import Ajapnyakisnowopen from './components/ajapnyak-is-now-open'
+import Ccifrancearmenia from './components/cci-france-armenia'
+import Newpartnership from './components/new-partnership'
+import Armeniaconference2025 from './components/armenia-conference-2025'
+import Armenia2025conference from './components/armenia-2025-conference'
+import List2 from './components/list-2'
+import Evocabank8444 from './components/of-evocabank-8444'
+import Mlntoevocabank from './components/mln-to-evocabank'
+import Vipcustomersandpartners from './components/vip-customers-and-partners'
+import Thingsdoneconference from './components/things-done-conference'
+import ResponsAbility2025 from './components/responsAbility-2025'
+import Boardofevocabank from './components/board-of-evocabank'
+import Conferencebybacee from './components/conference-by-bacee'
+import FromCJSCOJSC from './components/from-CJSC-OJSC'
+import Alfardanexchange from './components/al-fardan-exchange'
+import Tradefinanceprogram from './components/trade-finance-program'
+import Evocabankandebrdcooperation from './components/evocabank-and-ebrd-cooperation'
+import Openinghanrapetutyan from './components/opening-hanrapetutyan'
+import Ofmdccinmiami from './components/of-mdcc-in-miami'
+import Evocaasueufar from './components/evoca-asue-ufar'
+import Innovationandgrowth from './components/innovation-and-growth'
+import Openingyerevanmall from './components/opening-yerevan-mall'
+import Cooperationagreement from './components/cooperation-agreement'
+import Financialinclusion from './components/financial-inclusion'
+import Sanctionedworld from './components/sanctioned-world'
+import Sponsorofmdcc from './components/sponsor-of-mdcc'
+import List3 from './components/list-3'
+import Fromresponsability from './components/from-responsability'
+import Bondplacement from './components/bond-placement'
+import Idramcooperationopenqr from './components/idram-cooperation-open-qr'
+import Arcacooperationarcapay from './components/arca-cooperation-arca-pay'
+import Opportunitiesforsmes from './components/opportunities-for-smes'
+import Investmentsmsmeloan from './components/investments-msme-loan'
+import Dollarsbyevoca from './components/dollars-by-evoca'
+import Opec from './components/opec'
+import Bondplacementt from './components/bond-placementt'
+import Financingthepurpose from './components/financing-the-purpose'
+import Cooperationmsme from './components/cooperation-msme'
+import Openingnewaddress from './components/opening-new-address'
+import Dramsanddollars from './components/drams-and-dollars'
+import Developmentforumvienna from './components/development-forum-vienna'
+import Meetingofshareholders from './components/meeting-of-shareholders'
+import Millionusdattraction from './components/million-usd-attraction'
+import Baceenewcooperation from './components/bacee-new-cooperation'
+import Fitchratings from './components/fitch-ratings'
+import Blendnewcooperation from './components/blend-new-cooperation'
+import Yeghiazaryannewinterview from './components/yeghiazaryan-new-interview'
+import List4 from './components/list-4'
+import Newcooperationmsme from './components/new-cooperation-msme'
+import Symbioticsmsmeloan from './components/symbiotics-msme-loan'
+import Artsakhpeople from './components/Artsakh-people'
+import Bonds20232 from './components/bonds-2023-2'
+import Bonds2023 from './components/bonds-2023'
+import Evocatoptaxpayer from './components/evoca-top-taxpayer'
+import Evocaunistreamnotice from './components/evoca-unistream-notice'
+import Bondmarch from './components/bond-march'
+import Evocanewbond from './components/evoca-new-bond'
+import Bond2023 from './components/bond-2023'
+import Yuandirham from './components/yuan-dirham'
+import Lessorsassociation from './components/lessorsassociation'
+import Goldloansakcia from './components/gold-loans-akcia'
+import Ifcloan from './components/ifc-loan'
+import Artgroupparking from './components/artgroup-parking'
+import Ria15 from './components/ria-15'
+import Riaa20 from './components/riaa-20'
+import Finca from './components/finca'
+import Amxbonds from './components/amx-bonds'
+import Symbiotics from './components/symbiotics'
+import List5 from './components/list-5'
+import Capital from './components/capital'
+import Haypost from './components/haypost'
+import Partatomsteghabashkhum from './components/partatoms-teghabashkhum'
+import Cybergenconference from './components/cybergen-conference'
+import Bonds2022 from './components/bonds-2022'
+import Visaqatar from './components/visa-qatar'
+import Evocalab8 from './components/Evocalab8'
+import Visagoldd from './components/visagold'
+import Partatomsercucakvelen from './components/partatomser-cucakvel-en'
+import Membersassociation from './components/members-association'
+import Armenianleasingcompany from './components/armenian-leasing-company'
+import Nornorkbranch from './components/nor-nork-branch'
+import Nornorkbranchh from './components/nor-nork-branchh'
+import Ofguaranteeddeposits from './components/of-guaranteed-deposits'
+import Andaccountmovements from './components/and-account-movements'
+import Familieswithchildren from './components/families-with-children'
+import Replenisheditscapital from './components/replenished-its-capital'
+import Ofthefirsthalfof2020 from './components/of-the-first-half-of-2020'
+import Ofsaleinstalmentloans from './components/of-sale-instalment-loans'
+import Taxpayerinarmenia from './components/taxpayer-in-armenia'
+import List6 from './components/list-6'
+import Allpage15 from './components/allpage15'
+import Vposterminall from './components/vpos-terminal'
+import Amd2bin50min from './components/amd-2-bin-50-min'
+import Regardedasmovievillains from './components/regarded-as-movie-villains'
+import Bankloanprogram from './components/bank-loan-program'
+import Newdepositinterestaccrual from './components/new-deposit-interest-accrual'
+import Pointofsaleinstallmentloans from './components/point-of-sale-installment-loans'
+import Mortgageinterest from './components/mortgage-interest'
+import Loanrepaymentschedules from './components/loan-repayment-schedules'
+import Outcomesof2019 from './components/outcomes-of-2019'
+import Thethirdquarterof2019 from './components/the-third-quarter-of-2019'
+import Annualmeeting from './components/2019-annual-meeting'
+import Corporatesocialresponsibility from './components/corporate-social-responsibility'
+import Financialmonth2018 from './components/financial-month-2018'
+import Gyumribranchreopened from './components/gyumri-branch-re-opened'
+import Annualmeetingg from './components/annual-meeting'
+import Gareginnzhdehbranch from './components/garegin-nzhdeh-branch'
+import Interviews from './components/interviews'
+import Products from './components/products'
+import Ej1 from './components/ej-1'
+import Ej2 from './components/ej-2'
+import Ej3 from './components/ej-3'
+import Ej4 from './components/ej-4'
+import Ej5 from './components/ej-5'
+import Ej6 from './components/ej-6'
+import Ej7 from './components/ej-7'
+import Ej8 from './components/ej-8'
+import Innovations from './components/innovations'
+import Nor1 from './components/nor-1'
+import Nor2 from './components/nor-2'
+import Lifestyle from './components/lifestyle'
+import Hamar1 from './components/hamar-1'
+import Hamar2 from './components/hamar-2'
+import Hamar3 from './components/hamar-3'
+import Hamar4 from './components/hamar-4'
+import Hamar5 from './components/hamar-5'
+import Hamar6 from './components/hamar-6'
+import Hamar7 from './components/hamar-7'
+import Awards from './components/awards'
+import Tiv1 from './components/tiv-1'
+import Tiv2 from './components/tiv-2'
+import Csr from './components/csr'
+import Other from './components/other'
+import Tivv1 from './components/tivv-1'
+import Tivv2 from './components/tivv-2'
+import Interviewofkarenyeghiazaryanwithlosangelestimesmagazine from './components/interview-of-karen-yeghiazaryan-with-los-angeles-times-magazine'
+import KarenYeghiazaryannewinterviewwithbanksam from './components/Karen-Yeghiazaryan-new-interview-with-banks-am'
+import Interviewofkarenyeghiazaryanwithtimemagazine from './components/interview-of-karen-yeghiazaryan-with-time-magazine'
+import Cashback from './components/cashback'
+import Offerforwomen from './components/offer-for-women'
+import Nowinevocatouch from './components/now-in-evocatouch'
+import Winmylergiftcard from './components/win-myler-gift-card'
+import Getadditionalcashback from './components/get-additional-cashback'
+import Glovoandgetdiscount from './components/glovo-and-get-discount' 
+import Evocamastercardcards from './components/evoca-mastercard-cards'
+import Iphone17pro from './components/iphone-17-pro'
+import Cashbackfromevocabank from './components/cashback-from-evocabank'
+import Infinitecardholders from './components/infinite-cardholders'
+import Percentservicefee from './components/percent-service-fee'
+import Cashbackonbuyam from './components/cashback-on-buy-am'
+import Americanoanddonut from './components/americano-and-donut'
+import Atpartnerbookstores from './components/at-partner-bookstores'
+import Visacardholders from './components/visa-cardholders'
+import Meetjenniferlopez from './components/meet-jennifer-lopez'
+import Comgetcashback from './components/com-get-cashback'
+import Evocatravelcard from './components/evoca-travel-card'
+import Akgdiscountevocavisa from './components/akg-discount-evoca-visa'
+import Onlinecoursesdiscountevocavisa from './components/online-courses-discount-evoca-visa'
+import Discountsinuaeforevocavisa from './components/discounts-in-uae-for-evoca-visa'
+import Discountsforevocavisa from './components/discounts-for-evoca-visa'
+import Paywithevocamastercard from './components/pay-with-evoca-mastercard'
+import Freeburgerfromkfc from './components/free-burger-from-kfc'
+import Buyiphoneevocabank from './components/buy-iphone-evocabank'
+import Getyourdream from './components/get-your-dream'
+import Evocavisacard from './components/evoca-visa-card'
+import Cardandwin from './components/card-and-win'
+import Evocavisacards from './components/evoca-visa-cards'
+import Evocavisacardholders from './components/evoca-visa-cardholders'
+import Resortforevocavisacardholders from './components/resort-for-evoca-visa-cardholders'
+import Travelingwithnolimits from './components/traveling-with-no-limits'
+import Termsandconditions from './components/terms-and-conditions'
+import Mastercardcardholders from './components/mastercard-cardholders'
+import Cardgetcashback from './components/card-get-cashback'
+import Storesgetdiscounts from './components/stores-get-discounts'
+import Visacardholderss from './components/visa-cardholderss'
+import Cashbacknewoffer from './components/cashback-new-offer'
+import Getchancetowingifts from './components/get-chance-to-win-gifts'
+import Cardsblackfriday from './components/cards-black-friday'
+import Systemusaarmenia from './components/system-usa-armenia'
+import Moneytransfersystem from './components/money-transfer-system'
+import Loanspecialoffer from './components/loan-special-offer'
+import Discountforcardholders from './components/discount-for-cardholders'
+import Buyamcashback from './components/buy-am-cashback'
+import Evocaandautogallery from './components/evoca-and-auto-gallery'
+import Visainfinitecardholders from './components/visa-infinite-cardholders'
+import Goldandbusiness from './components/gold-and-business'
+import Newoffercashback from './components/new-offer-cashback'
+import Evocacardholders from './components/evoca-cardholders'
+import Cinemastararmenia from './components/cinema-star-armenia'
+import Productevocahome from './components/product-evocahome'
+import Discountbymastercard from './components/discount-by-mastercard'
+import Glovokfccashback from './components/glovo-kfc-cashback'
+import Ggnewoffer from './components/gg-new-offer'
+import Servicetermination from './components/service-termination'
+import Mastercardcashbacknewoffer from './components/mastercard-cashback-new-offer'
+import Richterpharmacydiscounts from './components/richter-pharmacy-discounts'
+import Visaggdiscount from './components/visa-gg-discount'
+import Unlimitedloungekey from './components/unlimited-lounge-key'
+import Phubbernewcooperation from './components/phubber-new-cooperation'
+import Hundredgifts from './components/hundred-gifts'
+import Mastercatdnewcompetition from './components/mastercatd-new-competition'
+import Goldblackfriday from './components/gold-black-friday'
+import Premiumcardholders from './components/premium-cardholders'
+import Evocapremiumcardholders from './components/evoca-premium-cardholders'
+import Evocariadiscount from './components/evoca-ria-discount'
+import Mastercardsponsorship from './components/mastercard-sponsorship'
+import Evocavisaakg from './components/evoca-visa-akg'
+import Visayandexoffer from './components/visa-yandex-offer'
+import Visaofferflights from './components/visa-offer-flights'
+import Evocavisanewoffer from './components/evoca-visa-new-offer'
+import Mastercardnewoffer from './components/mastercard-new-offer'
+import Visanewoffers from './components/visa-new-offers'
+import Evocadigitalcards from './components/evoca-digital-cards'
+import Mastercardbenefits from './components/mastercard-benefits'
+import Newappevocatouch from './components/new-app-evocatouch'
+import Evocainvest from './components/evocainvest'
+import Loansale from './components/loan-sale'
+import Fastmoney0 from './components/fast-money-0'
+import Visabali from './components/visa-bali'
+import Visathebodyshop from './components/visa-the-body-shop'
+import Ria25 from './components/ria25'
+import Visabenefit from './components/visa-benefit'
+import Mastercardgpay from './components/mastercard-gpay'
+import Riaa25 from './components/riaa-25'
+import Evcars from './components/ev-cars'
+import Evolutionnn from './components/evolutionnn'
+import Leasingg from './components/leasingg'
+import Energyefficiencyloans from './components/energy-efficiency-loans'
+import Contactnumbertransfer from './components/contact-number-transfer'
+import Visavisioncardd from './components/visa-vision-cardd'
+import Tinkoff from './components/tinkoff'
+import Onlinepayment from './components/online-payment'
+import Overdraftconsumer from './components/overdraft-consumer'
+import Symphonicdeposit from './components/symphonic-deposit'
+import Forabank from './components/fora-bank'
+import Hipotekoverdraft from './components/hipotek-overdraft'
+import Evocagiftcardd from './components/evoca-gift-cardd'
+import Mastercardgoldd from './components/mastercard-goldd'
+import Ifcnew from './components/IFC-new'
+import Covidvisa from './components/covid-visa'
+import Mastercardcardholderss from './components/mastercard-cardholderss'
+import Ofsecondtranche from './components/of-second-tranche'
+import Bonds2ndtranche from './components/bonds-2nd-tranche'
+import Trancheofbonds from './components/tranche-of-bonds'
+import Evocabanktoissuebonds from './components/evocabank-to-issue-bonds'
+import Anywhereintheworld from './components/anywhere-in-the-world'
+import Transferswithvisadirect from './components/transfers-with-visa-direct'
+import Energyefficiencyfund from './components/energy-efficiency-fund'
+import Withdrawalinarmenia from './components/withdrawal-in-armenia'
+import Onlinestudentloans from './components/online-student-loans'
+import Forvisacardholders from './components/for-visa-cardholders'
+import Freedelivery from './components/free-delivery'
+import Sponsoredprograms from './components/sponsored-programs'
+import Efficientloansforsme from './components/efficient-loans-for-sme'
+import Doublingyourinterestrate from './components/doubling-your-interest-rate'
+import Depositterms from './components/deposit-terms'
+import Cardsforemployees from './components/cards-for-employees'
+import Ratesonmortgageloans from './components/rates-on-mortgage-loans'
+import Launchofvisainfinite from './components/launch-of-visa-infinite'
+import Uptoamd5000000 from './components/up-to-amd-5.000.000'
+import Shoppingwithevocabank from './components/shopping-with-evocabank'
+import Visainfiniteforinfluencers from './components/visa-infinite-for-influencers'
+import Thefirsthalfof2019 from './components/the-first-half-of-2019'
+import Dinebookinevocatouch from './components/dinebook-in-evocatouch'
+import Visainfinitecardd from './components/visa-infinite-cardd'
+import Highinterestrateplusgifts from './components/high-interest-rate-plus-gifts'
+import Additionalpropertypledging from './components/additional-property-pledging'
+import Retailgrouparmenia from './components/retail-group-armenia'
+import Visacardholderrs from './components/visa-cardholderrs'
+import Onlineforsmeloans from './components/online-for-sme-loans'
+import Withoutextracollateral from './components/without-extra-collateral'
+import Optionsforeveryone from './components/options-for-everyone'
+import Throughevocatouchapp from './components/through-evocatouch-app'
+import Shoppingcardloans from './components/shopping-card-loans'
+import Paymentsonmortgages from './components/payments-on-mortgages'
+import Shoppingcardjune2018 from './components/shopping-card-june-2018'
+import Alreadyfromevocabank from './components/already-from-evocabank'
+import Termsforsingletouch from './components/terms-for-singletouch'
+import Mobidramterminals from './components/mobidram-terminals'
+import Singletouchonlineloans from './components/singletouch-online-loans'
+import Newmortgageloanoffer from './components/new-mortgage-loan-offer'
+import Loandsin5minutes from './components/loands-in-5-minutes'
+import Dalmagiftcardapril2017 from './components/dalma-gift-card-april-2017'
+import Sportsclubarmenia from './components/sports-club-armenia'
+import Commercecreditcard from './components/commerce-credit-card'
+import Evocabankvpos from './components/evocabank-vpos'
+import Functionofevocatouch from './components/function-of-evocatouch'
+import Paymentswithvpos from './components/payments-with-vpos'
+import Esign from './components/e-sign'
+import Visagooglepay from './components/visa-google-pay'
+import Mpos from './components/mpos'
+import Applepay from './components/apple-pay'
+import Digilab from './components/DigiLab'
+import Audionews from './components/audio-news'
+import Qrbooklet from './components/QR-booklet'
+import Logobrandwebsite from './components/logo-brand-website'
+import Dronshowinarmenia from './components/dron-show-in-armenia'
+import Cashwithdrawalusingnfc from './components/cash-withdrawal-using-nfc'
+import Paymentbotinbanking from './components/payment-bot-in-banking'
+import Evocatouchapplication from './components/evocatouch-application'
+import Loansatcrossroad from './components/loans-at-crossroad'
+import Hirobin from './components/hi-robin'
+import Evocathonfintechhackathon from './components/evocathon-fintech-hackathon'
+import Ofdigitaltransformation from './components/of-digital-transformation'
+import Smsreminderservice from './components/sms-reminder-service'
+import Secureonlineshopping from './components/secure-online-shopping'
+import Inleasingexpo2026 from './components/in-leasing-expo-2026'
+import Intoonexpo2026 from './components/in-toon-expo-2026'
+import Managementawards2025 from './components/management-awards-2025'
+import Forevocateam from './components/for-evoca-team'
+import Intoonexpo2025 from './components/in-toon-expo-2025'
+import Projecthavelaunched from './components/project-have-launched'
+import Summerfest2025 from './components/summer-fest-2025'
+import Jenniferlopezliveinarmenia from './components/jennifer-lopez-live-in-armenia'
+import Evocabankcareercityfest2k25 from './components/evocabank-career-city-fest-2k25'
+import Participateincareercityfest2k25 from './components/participate-in-career-city-fest-2k25'
+import Evocageneralpartner from './components/evoca-general-partner'
+import Tourismregionalforum from './components/tourism-regional-forum'
+import Mastercarddigitalcard from './components/mastercard-digital-card'
+import Leadershipconference from './components/leadership-conference'
+import Meridianexpocentre from './components/meridian-expo-centre'
+import Mainfinancialsponsor from './components/main-financial-sponsor'
+import Showexposponsorship from './components/show-expo-sponsorship'
+import Booksandart from './components/books-and-art'
+import Labarmeniasponsorship from './components/lab-armenia-sponsorship'
+import Sponsorshipthewinners from './components/sponsorship-the-winners'
+import Careercity2024 from './components/career-city-2024'
+import Expo2024specialoffer from './components/expo-2024-special-offer'
+import Isnextconference from './components/is-next-conference'
+import Leasingexpo2024 from './components/leasing-expo-2024'
+import Newbookpartner from './components/new-book-partner'
+import Farmbotfinancing from './components/farmbot-financing'
+import Footballsponsorship from './components/football-sponsorship'
+import Blog from './components/blog'
+import Businessss from './components/businessss'
+import Lifestyleblogs from './components/lifestyle-blogs'
+import Investmentt from './components/investmentt'
+import Blogarchive from './components/blog-archive'
+import Bloggg2 from './components/bloggg2'
+import Bloggg3 from './components/bloggg3'
+import Career from './components/career'
+import Careerbenefits from './components/career-benefits'
+import Careerfaq from './components/career-faq'
+import Howwehire from './components/how-we-hire'
+import Workatevoca from './components/work-at-evoca'
+import Job1 from './components/job1'
+import Job2 from './components/job2'
+import Job3 from './components/job3'
+import Job4 from './components/job4'
+import Job5 from './components/job5'
+import Job6 from './components/job6'
+import Job7 from './components/job7'
+import Job8 from './components/job8'
+import Job9 from './components/job9'
+import Job10 from './components/job10'
+import Job11 from './components/job11'
+import Job12 from './components/job12'
+import Job13 from './components/job13'
+import Job14 from './components/job14'
+import Job15 from './components/job15'
+import Job16 from './components/job16'
+import Job17 from './components/job17'
+import Job18 from './components/job18'
+import Job19 from './components/job19'
+import Job20 from './components/job20'
+import Job21 from './components/job21'
+import Job22 from './components/job22'
+import Internship from './components/internship'
+import Evocabridge from './components/evocabridge'
+import Cardsprovisionandservice from './components/cards-provision-and-service'
+import Pensioncards from './components/pension-cards'
+import Depositsimportantinformation from './components/deposits-important-information'
+import Accountopeningservice from './components/account-opening-service'
+import Unallocatedmetalaccounts from './components/unallocated-metal-accounts'
+import Remoteservicefornonresidentclients from './components/remote-service-for-non-resident-clients'
+import Paymentsystems from './components/payment-systems'
+import Bonds from './components/bonds'
+import Reposervices from './components/repo-services'
+import Reporeverserepo from './components/repo-reverse-repo'
+import Evocalnvest from './components/evocalnvest'
+import Help from './components/help'
+import Faqcareers from './components/faq-careers'
+import Mortgagee from './components/mortgagee'
+import Consumerloans from './components/consumer-loans'
+import Evocatouchh from './components/evocatouchh'
+import Transfersss from './components/transfersss'
+import Cardss from './components/cardss'
+import Depositsss from './components/depositsss'
+import Otherr from './components/otherr'
+import Festnewoffer from './components/fest-new-offer'
+import Panarmeniangames from './components/pan-armenian-games'
+import Cocacolasponsorship from './components/coca-cola-sponsorship'
+import Pmconference from './components/pm-conference'
+import Natureofleadership from './components/nature-of-leadership'
+import Newmegsummerfesty from './components/newmeg-summer-festy'
+import Evocapmi from './components/evoca-pmi'
+import Evocasummerfest from './components/evoca-summer-fest'
+import Evocaleasingexpo from './components/evoca-leasing-expo'
+import Leasingexpo2023 from './components/leasing-expo-2023'
+import Yerevantechforum from './components/yerevan-tech-forum'
+import Eurovision2023 from './components/eurovision-2023'
+import Careercityfest2023 from './components/career-city-fest-2023'
+import Careercityfest from './components/career-city-fest'
+import Mastercardalfapharm from './components/mastercard-alfapharm'
+import Mastercardglovo from './components/mastercard-glovo'
+import Evocammr from './components/evoca-mmr'
+import Visaspring from './components/visa-spring'
+import Mastercardcashbackfab from './components/mastercard-cashback-fab'
+import Newmagkim from './components/newmag-kim'
+import Visagooglepaycashback from './components/visa-google-pay-cashback'
+import Mastercardapplepay from './components/mastercard-applepay'
+import Visaapplepay from './components/visa-apple-pay'
+import Visafifa from './components/visa-fifa'
+import Visaoffers from './components/visa-offers'
+import Visadilijan from './components/visa-dilijan'
+import Mastercardbatumi from './components/mastercard-batumi'
+import Visabusinesspromo from './components/visa-business-promo'
+import Visatravel from './components/visa-travel'
+import Cocacolaevent from './components/coca-cola-event'
+import Neww from './components/neww'
+import Yandextaximastercard from './components/yandextaxi-mastercard'
+import Newmagfest from './components/newmag-fest'
+import Visa22 from './components/visa-22'
+import Visaonlinecashback from './components/visa-online-cashback'
+import Siliconmountains from './components/silicon-mountains'
+import Qatarmastercard from './components/qatar-mastercard'
+import Visaglovoo from './components/visa-glovoo'
+import Mastercardiherb from './components/mastercard-iherb'
+import Mastercardyandexgo from './components/mastercard-yandex-go'
+import Visabodyshop from './components/visa-bodyshop'
+import Visaakg from './components/visa-akg'
+import Visanewyear from './components/visa-newyear'
+import Neonncastle from './components/neonn-castle'
+import Visadalma from './components/visa-dalma'
+import Thesymphonyofleadership from './components/the-symphony-of-leadership'
+import Financesaylkerp from './components/Finances-aylkerp'
+import Buildarmenia from './components/buildarmenia'
+import Visayerevanmall from './components/visa-yerevanmall'
+import Guyqahark from './components/guyqahark'
+import Visaggnew from './components/visa-gg-new'
+import Visaaliexpress from './components/visa-aliexpress'
+import Aragdramakanpoxancumner from './components/arag-dramakan-poxancumner'
+import Ggvisacardholders from './components/gg-visa-cardholders'
+import Colouredphotoshoot from './components/coloured-photo-shoot'
+import Evojisfromevocabank from './components/evojis-from-evocabank'
+import Depositcampaign from './components/deposit-campaign'
+import Healthylifestylefans from './components/healthy-lifestyle-fans'
+import Onlineshoppingmarathon from './components/online-shopping-marathon'
+import Andendedinspring from './components/and-ended-in-spring'
+import Showofbadboysforlife from './components/show-of-bad-boys-for-life'
+import Purchases from './components/purchases'
+import Evojisfromevocabankk from './components/evojis-from-evocabankk'
+import Gamefromevocabank from './components/game-from-evocabank'
+import Gifttoeveryone from './components/gift-to-everyone'
+import Trekyerevan2019 from './components/trek-yerevan-2019'
+import Depositprizedraw from './components/deposit-prize-draw'
+import Evojievocabankemojis from './components/evoji-evocabank-emojis'
+import Prizedrawwinners from './components/prize-draw-winners'
+import Eurovisionwithevocaank from './components/eurovision-with-evocaank'
+import Pariswithmastercard from './components/paris-with-mastercard'
+import Shoppingfest2018 from './components/shopping-fest-2018'
+import Ingyumribranch from './components/in-gyumri-branch'
+import Prizedrawjune2018 from './components/prize-draw-june-2018'
+import Whatsapptelegram from './components/whatsapp-telegram'
+import Springdepositcampaign from './components/spring-deposit-campaign'
+import Throughyerazgiftcard from './components/through-yeraz-gift-card'
+import Airconcertfestive from './components/air-concert-festive'
+import Newyearcampaign from './components/new-year-campaign'
+import Fabuloustour from './components/fabulous-tour'
+import Eventoftheyear2017 from './components/event-of-the-year-2017'
+import Winnersofthedraw from './components/winners-of-the-draw'
+import Dubaitripcampaigndetails from './components/dubai-trip-campaign-details'
+import Travelsegmentinnovation from './components/travel-segment-innovation'
+import Poweredmobileapp from './components/powered-mobile-app'
+import Cashlessachievement from './components/cashless-achievement'
+import Financemagazine from './components/finance-magazine'
+import Bankingarmenia2025 from './components/banking-armenia-2025'
+import Investormagazine from './components/investor-magazine'
+import Awardfrombacee from './components/award-from-bacee'
+import Bankinarmenia2025 from './components/bank-in-armenia-2025'
+import Financemagazinee from './components/finance-magazinee'
+import Ratioachievement from './components/ratio-achievement'
+import Productsdevelopment from './components/products-development'
+import Armeniadigitalawards from './components/armenia-digital-awards'
+import Bankinarmenia from './components/bank-in-armenia'
+import Financereview from './components/finance-review'
+import Businessandfinance from './components/business-and-finance'
+import Evocanewawards from './components/evoca-new-awards'
+import Digitalbank2023 from './components/digital-bank-2023'
+import Visaawardevoca from './components/visa-award-evoca'
+import Orinapah from './components/orinapah'
+import Awardmastercard from './components/award-mastercard'
+import GlobalFinanceSME2022 from './components/GlobalFinanceSME2022'
+import Dubaibestdigital from './components/dubai-best-digital'
+import Globalfinance2022 from './components/global-finance-2022'
+import Globalbankingfinance2022 from './components/global-banking-finance-2022'
+import Visaaward from './components/visa-award'
+import GlobalFinanceSME from './components/GlobalFinanceSME'
+import Globalfinance2021 from './components/global_finance_2021'
+import Globalfinancebanking from './components/global-finance-banking'
+import Newwebsiteaward from './components/new-website-award'
+import SMEbestmobilebanking from './components/SME-best-mobile-banking'
+import Digitalbankofarmenia from './components/digital-bank-of-armenia'
+import Bankinarmeniaa from './components/bank-in-armeniaa'
+import Digitalbankinarmenia from './components/digital-bank-in-armenia'
+import Bankofarmenia2019 from './components/bank-of-armenia-2019'
+import Forfuturefoundation from './components/for-future-foundation'
+import Notredamecathedral from './components/notre-dame-cathedral'
+import Allarmenianfund from './components/all-armenian-fund'
+import Etchmiadzinbook from './components/etchmiadzin-book'
+import Globalarmeniansummit from './components/global-armenian-summit'
+import Tavushregions from './components/tavush-regions'
+import Smilecharityfund from './components/smile-charity-fund'
+import Vozninewdonation from './components/vozni-new-donation'
+import Economicsolympiaddonation from './components/economics-olympiad-donation'
+import Christmasconcertdonation from './components/christmas-concert-donation'
+import Carenewdonation from './components/care-new-donation'
+import Fablabdonation from './components/fab-lab-donation'
+import Evocadonation from './components/evoca-donation'
+import Newforest from './components/new-forest'
+import Allarmenianfundd from './components/all-armenian-fundd'
+import Talentum from './components/talentum'
+import Fightcoronavirus from './components/fight-coronavirus'
+import Damecathedralinparis from './components/dame-cathedral-in-paris'
+import Customerservicehours from './components/customer-service-hours'
+import Doublepayments from './components/double-payments'
+import Fundraisingconcerts from './components/fund-raising-concerts'
+import Evocabankcustomerservicehours from './components/evocabank-customer-service-hours'
+import Hayastanallarmenianfund from './components/hayastan-all-armenian-fund'
+import Forcustomerservices from './components/for-customer-services'
+import To15tumanyanst from './components/to-15-tumanyan-st'
+import Motivateanddeveloptheteam from './components/motivate-and-develop-the-team'
+import BranchopeninginYerevan from './components/branch-opening-in-Yerevan'
+import Metresocialdistance from './components/metre-social-distance'
+import Ofinfectionprevention from './components/of-infection-prevention'
+import Explanation from './components/explanation'
+import Suspendedoperations from './components/suspended-operations'
+import Notworkingdays from './components/not-working-days'
+import Aged60from10to12 from './components/aged-60-from-10-to-12'
+import Serviceonsaturdays from './components/service-on-saturdays'
+import Reopenedkotayqbranch from './components/reopened-kotayq-branch'
+import Ivetamukuchyansoloconcert from './components/iveta-mukuchyan-solo-concert'
+import Festiveopenairconcert from './components/festive-open-air-concert'
+import Cooperationagreementt from './components/cooperation-agreementt'
+import Armeniancultureinrussia from './components/armenian-culture-in-russia'
+import Evocalabnovember2017 from './components/evocalab-november-2017'
+import Joingsocialprogramwithcoaf from './components/joing-social-program-with-coaf'
+import Branchesofthebank from './components/branches-of-the-bank'
+import Internationalstandard from './components/international-standard'
+import Bankofarmeniain2011 from './components/bank-of-armenia-in-2011'
+import Howtostartabusiness from './components/how-to-start-a-business'
+import Financialcrises from './components/financial-crises'
+import Atm from './components/atm'
+import Successfulnegotiations from './components/successful-negotiations'
+import Businneess from './components/businneess'
+import Businessethics from './components/business-ethics'
+import Monthlyrecapcreation from './components/monthly-recap-creation'
+import Everythingabouthabittracker from './components/everything-about-habit-tracker'
+import Top5christmasmarketsineurope from './components/top-5-christmas-markets-in-europe'
+import Blackfriday2025completeguidebyevoca from './components/black-friday-2025-complete-guide-by-evoca'
+import Wheeloflifebalance from './components/wheel-of-life-balance'
+import Evocabyai from './components/evoca-by-ai'
+import Withevocadigitalcard from './components/with-evoca-digital-card'
+import Newlogosyerevanmagazine from './components/new-logos-yerevan-magazine'
+import Factstermsofbank from './components/facts-terms-of-bank'
+import Womenbanknewblog from './components/women-bank-new-blog'
+import Mortgageloan from './components/mortgage-loan'
+import Warning from './components/warning'
+import Cardnewyeardreams from './components/card-new-year-dreams'
+import Blackfridaysales from './components/black-friday-sales'
+import May from './components/may'
+import March from './components/march'
+import February from './components/february'
+import Movie22 from './components/movie-22'
+import Newyearplanning from './components/new-year-planning'
+import Thebestfilmsof2021 from './components/the-best-films-of-2021'
+import Mostseriesof2021 from './components/most-series-of-2021'
+import Cardpinprivacy from './components/card-pin-privacy'
+import Howtoabsorbinformationfaster from './components/how-to-absorb-information-faster'
+import Swotanalysis from './components/swot-analysis'
+import Womaninbusiness from './components/woman-in-business'
+import Mostprofessionsfuture from './components/most-professions-future'
+import Cv from './components/cv'
+import Logos from './components/logos'
+import Artificialintelligence from './components/artificial-intelligence'
+import Pantoneultraviolet from './components/pantone-ultra-violet'
+import Filmsabout from './components/films-about'
+import Evocainvesttools from './components/evocainvest-tools'
+import Stagesof from './components/stages-of'
+import Investmentdecisions from './components/investment-decisions'
+import Evocacreate from './components/evoca-create'
+import Classic from './components/classic'
+import Childrenn from './components/childrenn'
+import Evocaonlinee from './components/evoca-onlinee'
+import Menu from './components/menu'
+import Awardss from './components/awardss'
+import Csrr from './components/csrr'
+import Group from './components/group'
+import Regulations from './components/regulations'
+import Property from './components/property'
+import Developers from './components/developers'
+import Partnersalons from './components/partner-salons'
+import Customerrights from './components/customer-rights'
+import Residencycriteria from './components/residency-criteria'
+import Regulation from './components/regulation'
+import Privacypolicy from './components/privacy-policy'
+import Financialombudsman from './components/financial-ombudsman'
+import Financialcooperations from './components/financial-cooperations'
+import Cardholderlinks from './components/cardholder-links'
+import Evocaonlineeee from './components/evocaonline'
+import Safeboxes from './components/safe-boxes'
+import Dibrary from './components/dibrary'
+import Bulletins from './components/bulletins'
+import Contactt from './components/contactt'
+import Sitemap from './components/sitemap'
+import Branches from './components/branches'
 // Գլխավոր էջի բաղադրիչը
+
 function Home() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
@@ -179,16 +934,7 @@ function Home() {
         <section className="w-full">
           <Glxavor />
         </section>
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-            <h1 className="text-2xl font-bold text-gray-900 mb-4">
-              Բարի գալուստ Evoca Online
-            </h1>
-            <p className="text-gray-600">
-              Այստեղ կարող եք կառավարել ձեր վարկերը, քարտերը և կատարել ակնթարթային վճարումներ։
-            </p>
-          </div>
-        </section>
+       
       </main>
       <Footer />
     </div>
@@ -216,9 +962,15 @@ function CardDetailView() {
 export default function App() {
   return (
     <Routes>
+     <Route path="/news/allpage8/loan-sale" element={<Loansale/>} />      
+     <Route path="/news/allpage2/win-myler-gift-card" element={<Winmylergiftcard/>} />      
+     <Route path="/news/allpage2/now-in-evocatouch" element={<Nowinevocatouch/>} />      
+     <Route path="/news/allpage2/offer-for-women" element={<Offerforwomen/>} />      
+     <Route path="/news/allpage2/10-cashback" element={<Cashback/>} />
       <Route path="/" element={<Home />} />
       <Route path="/travel-card" element={<TravelCard />} />
       <Route path="/all-news" element={<Allnews />} />
+
       <Route path="/dilijan-we-are-coming" element={<Dilijanwearecoming />} />
       <Route path="/news/evocabank-retro-fest-partner" element={<Evocabankretrofestpartner />} />
       <Route path="/evocabank-is-the-official-sponsor-of-the-fiba-eurobasket" element={<Evocabankistheofficialsponsorofthefibaeurobasket />} />
@@ -235,6 +987,581 @@ export default function App() {
       <Route path="/visa-vision" element={<Visavision />} />
       <Route path="/firebird-ai" element={<Firebirdai />} />
       <Route path="/hy/special-offer" element={<Specialoffer />} />
+      <Route path="/news/allpage5/meeting-of-shareholders" element={<Meetingofshareholders/>} />
+      <Route path="/news/allpage6/million-usd-attraction" element={<Millionusdattraction/>} />
+      <Route path="/news/allpage6/bacee-new-cooperation" element={<Baceenewcooperation/>} />
+      <Route path="/news/allpage6/fitch-ratings" element={<Fitchratings/>} />
+      <Route path="/news/allpage6/blend-new-cooperation" element={<Blendnewcooperation/>} />
+      <Route path="/news/allpage6/yeghiazaryan-new-interview" element={<Yeghiazaryannewinterview/>} />
+      <Route path="/hy/about/partners/list-4" element={<List4/>} />
+      <Route path="/news/allpage6/new-cooperation-msme" element={<Newcooperationmsme/>} />
+      <Route path="/news/allpage6/symbiotics-msme-loan" element={<Symbioticsmsmeloan/>} />
+      <Route path="/news/allpage6/Artsakh-people" element={<Artsakhpeople/>} />
+      <Route path="/news/allpage7/bonds-2023-2" element={<Bonds20232/>} />
+      <Route path="/news/allpage7/bonds-2023" element={<Bonds2023/>} />
+      <Route path="/news/allpage7/evoca-top-taxpayer" element={<Evocatoptaxpayer/>} />
+      <Route path="/news/allpage7/evoca-unistream-notice" element={<Evocaunistreamnotice/>} />
+      <Route path="/news/allpage8/bond-march" element={<Bondmarch/>} />
+      <Route path="/news/allpage8/evoca-new-bond" element={<Evocanewbond/>} />
+      <Route path="/news/allpage8/bond-2023" element={<Bond2023/>} />
+      <Route path="/news/allpage8/yuan-dirham" element={<Yuandirham/>} />
+      <Route path="/news/allpage8/lessorsassociation" element={<Lessorsassociation/>} />
+      <Route path="/news/allpage8/gold-loans-akcia" element={<Goldloansakcia/>} />
+      <Route path="/news/allpage8/ifc-loan" element={<Ifcloan/>} />
+      <Route path="/news/allpage9/artgroup-parking" element={<Artgroupparking/>} />
+      <Route path="/news/allpage9/ria-15" element={<Ria15/>} />
+      <Route path="/news/allpage9/riaa-20" element={<Riaa20/>} />
+      <Route path="/news/allpage9/finca" element={<Finca/>} />
+      <Route path="/news/allpage9/amx-bonds" element={<Amxbonds/>} />
+      <Route path="/news/allpage9/symbiotics" element={<Symbiotics/>} />
+      <Route path="/hy/about/partners/list-5" element={<List5/>} />
+      <Route path="/news/allpage9/capital" element={<Capital/>} />
+      <Route path="/news/allpage9/partatoms-teghabashkhum" element={<Partatomsteghabashkhum/>} />
+      <Route path="/news/allpage9/cybergen-conference" element={<Cybergenconference/>} />
+      <Route path="/news/allpage9/bonds-2022" element={<Bonds2022/>} />
+      <Route path="/news/allpage10/visa-qatar" element={<Visaqatar/>} />
+      <Route path="/news/allpage10/Evocalab8" element={<Evocalab8/>} />
+      <Route path="/news/allpage10/visagold" element={<Visagoldd/>} />
+      <Route path="/news/allpage10/partatomser-cucakvel-en" element={<Partatomsercucakvelen/>} />
+      <Route path="/news/allpage11/members-association" element={<Membersassociation/>} />
+      <Route path="/news/allpage11/armenian-leasing-company" element={<Armenianleasingcompany/>} />
+      <Route path="/news/allpage11/nor-nork-branch" element={<Nornorkbranch/>} />
+      <Route path="/news/allpage11/nor-nork-branchh" element={<Nornorkbranchh/>} />
+      <Route path="news/allpage11/of-guaranteed-deposits" element={<Ofguaranteeddeposits/>} />
+      <Route path="/news/allpage11/and-account-movements" element={<Andaccountmovements/>} />
+      <Route path="/news/allpage11/families-with-children" element={<Familieswithchildren/>} />
+      <Route path="/news/allpage11/replenished-its-capital" element={<Replenisheditscapital/>} />
+      <Route path="/news/allpage11/of-the-first-half-of-2020" element={<Ofthefirsthalfof2020/>} />
+      <Route path="/news/allpage11/of-sale-instalment-loans" element={<Ofsaleinstalmentloans/>} />
+      <Route path="/news/allpage11/taxpayer-in-armenia" element={<Taxpayerinarmenia/>} />
+      <Route path="/hy/about/partners/list-6" element={<List6/>} />
+      <Route path="/news/allpage4/system-usa-armenia" element={<Systemusaarmenia/>} />
+      <Route path="/news/allpage4/money-transfer-system" element={<Moneytransfersystem/>} />
+      <Route path="/news/allpage5/loan-special-offer" element={<Loanspecialoffer/>} />
+      <Route path="/news/allpage5/discount-for-cardholders" element={<Discountforcardholders/>} />
+      <Route path="/news/allpage5/buy-am-cashback" element={<Buyamcashback/>} />
+      <Route path="/news/allpage5/evoca-and-auto-gallery" element={<Evocaandautogallery/>} />
+      <Route path="/news/allpage5/visa-infinite-cardholders" element={<Visainfinitecardholders/>} />
+      <Route path="/news/allpage5/gold-and-business" element={<Goldandbusiness/>} />
+      <Route path="/news/allpage5/new-offer-cashback" element={<Newoffercashback/>} />
+      <Route path="/news/allpage5/evoca-cardholders" element={<Evocacardholders/>} />
+      <Route path="/news/allpage5/cinema-star-armenia" element={<Cinemastararmenia/>} />
+      <Route path="/news/allpage5/product-evocahome" element={<Productevocahome/>} />
+      <Route path="/news/allpage5/discount-by-mastercard" element={<Discountbymastercard/>} />
+      <Route path="/news/allpage6/glovo-kfc-cashback" element={<Glovokfccashback/>} />
+      <Route path="/news/allpage6/gg-new-offer" element={<Ggnewoffer/>} />
+      <Route path="/news/allpage6/service-termination" element={<Servicetermination/>} />
+      <Route path="/news/allpage6/mastercard-cashback-new-offer" element={<Mastercardcashbacknewoffer/>} />
+      <Route path="/news/allpage6/richter-pharmacy-discounts" element={<Richterpharmacydiscounts/>} />
+      <Route path="/news/allpage6/visa-gg-discount" element={<Visaggdiscount/>} />
+      <Route path="/news/allpage6/unlimited-lounge-key" element={<Unlimitedloungekey/>} />
+      <Route path="/news/allpage6/phubber-new-cooperation" element={<Phubbernewcooperation/>} />
+      <Route path="/news/allpage6/hundred-gifts" element={<Hundredgifts/>} />
+      <Route path="/news/allpage6/mastercatd-new-competition" element={<Mastercatdnewcompetition/>} />
+      <Route path="/news/allpage6/gold-black-friday" element={<Goldblackfriday/>} />
+      <Route path="/news/allpage6/premium-cardholders" element={<Premiumcardholders/>} />
+      <Route path="/news/allpage6/evoca-premium-cardholders" element={<Evocapremiumcardholders/>} />
+      <Route path="/news/allpage7/evoca-ria-discount" element={<Evocariadiscount/>} />
+      <Route path="/news/allpage7/mastercard-sponsorship" element={<Mastercardsponsorship/>} />
+      <Route path="/news/allpage7/evoca-visa-akg" element={<Evocavisaakg/>} />
+      <Route path="/news/allpage7/visa-yandex-offer" element={<Visayandexoffer/>} />
+      <Route path="/news/allpage7/visa-offer-flights" element={<Visaofferflights/>} />
+      <Route path="/news/allpage7/evoca-visa-new-offer" element={<Evocavisanewoffer/>} />
+      <Route path="/news/allpage7/mastercard-new-offer" element={<Mastercardnewoffer/>} />
+      <Route path="/news/allpage7/visa-new-offers" element={<Visanewoffers/>} />
+      <Route path="/news/allpage7/evoca-digital-card" element={<Evocadigitalcards/>} />
+      <Route path="/news/allpage7/mastercard-benefits" element={<Mastercardbenefits/>} />
+      <Route path="/news/allpage7/new-app-evocatouch" element={<Newappevocatouch/>} />
+      <Route path="/news/allpage7/evocainvest" element={<Evocainvest/>} />
+      <Route path="/news/allpage8/fast-money-0" element={<Fastmoney0/>} />
+      <Route path="/news/allpage8/visa-bali" element={<Visabali/>} />
+      <Route path="/news/allpage8/visa-the-body-shop" element={<Visathebodyshop/>} />
+      <Route path="/news/allpage8/ria25" element={<Ria25/>} />
+      <Route path="/news/allpage8/visa-benefit" element={<Visabenefit/>} />
+      <Route path="/news/allpage8/mastercard-gpay" element={<Mastercardgpay/>} />
+      <Route path="/news/allpage8/riaa-25" element={<Riaa25/>} />
+      <Route path="/news/allpage8/ev-cars" element={<Evcars/>} />
+      <Route path="/news/allpage8/evolution" element={<Evolutionnn/>} />
+      <Route path="/news/allpage9/leasing" element={<Leasingg/>} />
+      <Route path="/news/allpage9/energy-efficiency-loans" element={<Energyefficiencyloans/>} />
+      <Route path="/news/allpage9/contact-number-transfer" element={<Contactnumbertransfer/>} />
+      <Route path="/news/allpage9/visa-vision-cardd" element={<Visavisioncardd/>} />
+      <Route path="/news/allpage9/tinkoff" element={<Tinkoff/>} />
+      <Route path="/news/allpage9/online-payment" element={<Onlinepayment/>} />
+      <Route path="/news/allpage10/overdraft-consumer" element={<Overdraftconsumer/>} />
+      <Route path="/news/allpage10/symphonic-deposit" element={<Symphonicdeposit/>} />
+      <Route path="/news/allpage10/fora-bank" element={<Forabank/>} />
+      <Route path="/news/allpage13/the-first-half-of-2019" element={<Thefirsthalfof2019/>} />
+      <Route path="/news/allpage13/dinebook-in-evocatouch" element={<Dinebookinevocatouch/>} />
+      <Route path="/news/allpage13/visa-infinite-cardd" element={<Visainfinitecardd/>} />
+      <Route path="/news/allpage13/high-interest-rate-plus-gifts" element={<Highinterestrateplusgifts/>} />
+      <Route path="/news/allpage13/additional-property-pledging" element={<Additionalpropertypledging/>} />
+      <Route path="/news/allpage13/retail-group-armenia" element={<Retailgrouparmenia/>} />
+      <Route path="/news/allpage13/visa-cardholders" element={<Visacardholderrs/>} />
+      <Route path="/news/allpage13/online-for-sme-loans" element={<Onlineforsmeloans/>} />
+      <Route path="/news/allpage13/without-extra-collateral" element={<Withoutextracollateral/>} />
+      <Route path="/news/allpage13/options-for-everyone" element={<Optionsforeveryone/>} />
+      <Route path="/news/allpage14/through-evocatouch-app" element={<Throughevocatouchapp/>} />
+      <Route path="/news/allpage14/shopping-card-loans" element={<Shoppingcardloans/>} />
+      <Route path="/news/allpage14/payments-on-mortgages" element={<Paymentsonmortgages/>} />
+      <Route path="/news/allpage14/shopping-card-june-2018" element={<Shoppingcardjune2018/>} />
+      <Route path="/news/allpage14/already-from-evocabank" element={<Alreadyfromevocabank/>} />
+      <Route path="/news/allpage14/terms-for-singletouch" element={<Termsforsingletouch/>} />
+      <Route path="/news/allpage14/mobidram-terminals" element={<Mobidramterminals/>} />
+      <Route path="/news/allpage14/singletouch-online-loans" element={<Singletouchonlineloans/>} />
+      <Route path="/news/allpage14/new-mortgage-loan-offer" element={<Newmortgageloanoffer/>} />
+      <Route path="/news/allpage14/loands-in-5-minutes" element={<Loandsin5minutes/>} />
+      <Route path="/news/allpage15/dalma-gift-card-april-2017" element={<Dalmagiftcardapril2017/>} />
+      <Route path="/news/allpage15/sports-club-armenia" element={<Sportsclubarmenia/>} />
+      <Route path="/news/allpage15/commerce-credit-card" element={<Commercecreditcard/>} />
+      <Route path="/news/allpage3/evocabank-vpos" element={<Evocabankvpos/>} />
+      <Route path="/news/allpage3/function-of-evocatouch" element={<Functionofevocatouch/>} />
+      <Route path="/news/allpage3/payments-with-vpos" element={<Paymentswithvpos/>} />
+      <Route path="/news/allpage7/e-sign" element={<Esign/>} />
+      <Route path="/news/allpage8/visa-google-pay" element={<Visagooglepay/>} />
+      <Route path="/news/allpage8/mpos" element={<Mpos/>} />
+      <Route path="/news/allpage9/apple-pay" element={<Applepay/>} />
+      <Route path="/news/allpage9/DigiLab" element={<Digilab/>} />
+      <Route path="/news/allpage10/audio-news" element={<Audionews/>} />
+      <Route path="/news/allpage10/QR-booklet" element={<Qrbooklet/>} />
+      <Route path="/news/allpage11/logo-brand-website" element={<Logobrandwebsite/>} />
+      <Route path="/news/allpage11/dron-show-in-armenia" element={<Dronshowinarmenia/>} />
+      <Route path="/news/allpage11/cash-withdrawal-using-nfc" element={<Cashwithdrawalusingnfc/>} />
+      <Route path="/news/allpage11/payment-bot-in-banking" element={<Paymentbotinbanking/>} />
+      <Route path="/news/allpage11/evocatouch-application" element={<Evocatouchapplication/>} />
+      <Route path="/news/allpage11/loans-at-crossroad" element={<Loansatcrossroad/>} />
+      <Route path="/news/allpage12/hi-robin" element={<Hirobin/>} />
+      <Route path="/news/allpage13/evocathon-fintech-hackathon" element={<Evocathonfintechhackathon/>} />
+      <Route path="/news/allpage13/of-digital-transformation" element={<Ofdigitaltransformation/>} />
+      <Route path="/news/allpage15/sms-reminder-service" element={<Smsreminderservice/>} />
+      <Route path="/news/allpage15/secure-online-shopping" element={<Secureonlineshopping/>} />
+      <Route path="/news/allpage2/in-leasing-expo-2026" element={<Inleasingexpo2026/>} />
+      <Route path="/news/allpage2/management-awards-2025" element={<Managementawards2025/>} />
+      <Route path="/news/allpage2/for-evoca-team" element={<Forevocateam/>} />
+      <Route path="/news/allpage3/in-toon-expo-2025" element={<Intoonexpo2025/>} />
+      <Route path="/news/allpage3/project-have-launched" element={<Projecthavelaunched/>} />
+      <Route path="/news/allpage3/summer-fest-2025" element={<Summerfest2025/>} />
+      <Route path="/news/allpage3/jennifer-lopez-live-in-armenia" element={<Jenniferlopezliveinarmenia/>} />
+      <Route path="/news/allpage3/evocabank-career-city-fest-2k25" element={<Evocabankcareercityfest2k25/>} />
+      <Route path="/news/allpage5/evoca-general-partner" element={<Evocageneralpartner/>} />
+      <Route path="/news/allpage5/tourism-regional-forum" element={<Tourismregionalforum/>} />
+      <Route path="/news/allpage5/mastercard-digital-card" element={<Mastercarddigitalcard/>} />
+      <Route path="/news/allpage5/leadership-conference" element={<Leadershipconference/>} />
+      <Route path="/news/allpage5/meridian-expo-centre" element={<Meridianexpocentre/>} />
+      <Route path="/news/allpage5/main-financial-sponsor" element={<Mainfinancialsponsor/>} />
+      <Route path="/news/allpage5/show-expo-sponsorship" element={<Showexposponsorship/>} />
+      <Route path="/news/allpage6/books-and-art" element={<Booksandart/>} />
+      <Route path="/news/allpage6/lab-armenia-sponsorship" element={<Labarmeniasponsorship/>} />
+      <Route path="/news/allpage6/sponsorship-the-winners" element={<Sponsorshipthewinners/>} />
+      <Route path="/news/allpage6/career-city-2024" element={<Careercity2024/>} />
+      <Route path="/news/allpage6/expo-2024-special-offer" element={<Expo2024specialoffer/>} />
+      <Route path="/news/allpage6/is-next-conference" element={<Isnextconference/>} />
+      <Route path="/news/allpage6/leasing-expo-2024" element={<Leasingexpo2024/>} />
+      <Route path="/news/allpage6/new-book-partner" element={<Newbookpartner/>} />
+      <Route path="/news/allpage6/farmbot-financing" element={<Farmbotfinancing/>} />
+      <Route path="/news/allpage7/football-sponsorship" element={<Footballsponsorship/>} />
+      <Route path="/hy/blog" element={<Blog/>} />
+      <Route path="/blog/businessss" element={<Businessss/>} />
+      <Route path="/hy/blog/lifestyle-blogs" element={<Lifestyleblogs/>} />
+      <Route path="/blog/investment" element={<Investmentt/>} />
+      <Route path="/blog/blog-archive" element={<Blogarchive/>} />
+      <Route path="/news/bloggg2" element={<Bloggg2/>} />
+      <Route path="/news/bloggg3" element={<Bloggg3/>} />
+      <Route path="/hy/career" element={<Career/>} />
+      <Route path="/hy/career-benefits" element={<Careerbenefits/>} />
+      <Route path="/hy/career-faq" element={<Careerfaq/>} />
+      <Route path="/hy/how-we-hire" element={<Howwehire/>} />
+      <Route path="/hy/work-at-evoca" element={<Workatevoca/>} />
+      <Route path="/hy/career/job1" element={<Job1/>} />
+      <Route path="/hy/career/job2" element={<Job2/>} />
+      <Route path="/hy/career/job3" element={<Job3/>} />
+      <Route path="/hy/career/job4" element={<Job4/>} />
+      <Route path="/hy/career/job5" element={<Job5/>} />
+      <Route path="/hy/career/job6" element={<Job6/>} />
+      <Route path="/hy/career/job7" element={<Job7/>} />
+      <Route path="/hy/career/job8" element={<Job8/>} />
+      <Route path="/hy/career/job9" element={<Job9/>} />
+      <Route path="/hy/career/job10" element={<Job10/>} />
+      <Route path="/hy/career/job11" element={<Job11/>} />
+      <Route path="/hy/career/job12" element={<Job12/>} />
+      <Route path="/hy/career/job13" element={<Job13/>} />
+      <Route path="/hy/career/job14" element={<Job14/>} />
+      <Route path="/hy/career/job15" element={<Job15/>} />
+      <Route path="/hy/career/job16" element={<Job16/>} />
+      <Route path="/hy/career/job17" element={<Job17/>} />
+      <Route path="/hy/career/job18" element={<Job18/>} />
+      <Route path="/hy/career/job19" element={<Job19/>} />
+      <Route path="/hy/career/job20" element={<Job20/>} />
+      <Route path="/hy/career/job21" element={<Job21/>} />
+      <Route path="/hy/career/job22" element={<Job22/>} />
+      <Route path="/hy/career/internship" element={<Internship/>} />
+      <Route path="/hy/career/evocabridge" element={<Evocabridge/>} />
+      <Route path="/hy/cards-provision-and-service" element={<Cardsprovisionandservice/>} />
+      <Route path="/hy/pension-cards" element={<Pensioncards/>} />
+      <Route path="/hy/deposits-important-information" element={<Depositsimportantinformation/>} />
+      <Route path="/hy/account-opening-service" element={<Accountopeningservice/>} />
+      <Route path="/hy/unallocated-metal-accounts" element={<Unallocatedmetalaccounts/>} />
+      <Route path="/hy/remote-service-for-non-resident-clients" element={<Remoteservicefornonresidentclients/>} />
+      <Route path="/hy/payment-systems" element={<Paymentsystems/>} />
+      <Route path="/hy/bonds" element={<Bonds/>} />
+      <Route path="/hy/repo-services" element={<Reposervices/>} />
+      <Route path="/hy/repo-reverse-repo" element={<Reporeverserepo/>} />
+      <Route path="/hy/evocalnvest" element={<Evocalnvest/>} />
+      <Route path="/help" element={<Help/>} />
+      <Route path="/help/faq-careers" element={<Faqcareers/>} />
+      <Route path="/hy/mortgagee" element={<Mortgagee/>} />
+      <Route path="/hy/consumer-loans" element={<Consumerloans/>} />
+      <Route path="/hy/evocatouch" element={<Evocatouchh/>} />
+      <Route path="/hy/transfersss" element={<Transfersss/>} />
+      <Route path="/hy/cards" element={<Cardss/>} />
+      <Route path="/hy/deposits" element={<Depositsss/>} />
+      <Route path="/hy/other" element={<Otherr/>} />
+      <Route path="/news/allpage7/fest-new-offer" element={<Festnewoffer/>} />
+      <Route path="/news/allpage7/pan-armenian-games" element={<Panarmeniangames/>} />
+      <Route path="/news/allpage7/coca-cola-sponsorship" element={<Cocacolasponsorship/>} />
+      <Route path="/news/allpage7/pm-conference" element={<Pmconference/>} />
+      <Route path="/news/allpage7/nature-of-leadership" element={<Natureofleadership/>} />
+      <Route path="/news/allpage7/newmeg-summer-festy" element={<Newmegsummerfesty/>} />
+      <Route path="/news/allpage7/evoca-pmi" element={<Evocapmi/>} />
+      <Route path="/news/allpage7/evoca-summer-fest" element={<Evocasummerfest/>} />
+      <Route path="/news/allpage7/evoca-leasing-expo" element={<Evocaleasingexpo/>} />
+      <Route path="/news/allpage7/leasing-expo-2023" element={<Leasingexpo2023/>} />
+      <Route path="/news/allpage7/yerevan-tech-forum" element={<Yerevantechforum/>} />
+      <Route path="/news/allpage7/eurovision-2023" element={<Eurovision2023/>} />
+      <Route path="/news/allpage7/career-city-fest-2023" element={<Careercityfest2023/>} />
+      <Route path="/news/allpage7/career-city-fest" element={<Careercityfest/>} />
+      <Route path="/news/allpage8/mastercard-alfapharm" element={<Mastercardalfapharm/>} />
+      <Route path="/news/allpage8/mastercard-glovo" element={<Mastercardglovo/>} />
+      <Route path="/news/allpage8/evoca-mmr" element={<Evocammr/>} />
+      <Route path="/news/allpage8/visa-spring" element={<Visaspring/>} />
+      <Route path="/news/allpage8/mastercard-cashback-fab" element={<Mastercardcashbackfab/>} />
+      <Route path="/news/allpage8/newmag-kim" element={<Newmagkim/>} />
+      <Route path="/news/allpage8/visa-google-pay-cashback" element={<Visagooglepaycashback/>} />
+      <Route path="/news/allpage8/mastercard-applepay" element={<Mastercardapplepay/>} />
+      <Route path="/news/allpage8/visa-apple-pay" element={<Visaapplepay/>} />
+      <Route path="/news/allpage8/visa-fifa" element={<Visafifa/>} />
+      <Route path="/news/allpage9/visa-offers" element={<Visaoffers/>} />
+      <Route path="/news/allpage9/visa-dilijan" element={<Visadilijan/>} />
+      <Route path="/news/allpage9/mastercard-batumi" element={<Mastercardbatumi/>} />
+      <Route path="/news/allpage9/visa-business-promo" element={<Visabusinesspromo/>} />
+      <Route path="/news/allpage9/visa-travel" element={<Visatravel/>} />
+      <Route path="/news/allpage9/coca-cola-event" element={<Cocacolaevent/>} />
+      <Route path="/news/allpage9/neww" element={<Neww/>} />
+      <Route path="/news/allpage9/yandextaxi-mastercard" element={<Yandextaximastercard/>} />
+      <Route path="/news/allpage9/newmag-fest" element={<Newmagfest/>} />
+      <Route path="/news/allpage9/visa-22" element={<Visa22/>} />
+      <Route path="/news/allpage9/visa-online-cashback" element={<Visaonlinecashback/>} />
+      <Route path="/news/allpage9/silicon-mountains" element={<Siliconmountains/>} />
+      <Route path="/news/allpage9/qatar-mastercard" element={<Qatarmastercard/>} />
+      <Route path="/news/allpage9/visa-glovoo" element={<Visaglovoo/>} />
+      <Route path="/news/allpage10/mastercard-iherb" element={<Mastercardiherb/>} />
+      <Route path="/news/allpage10/mastercard-yandex-go" element={<Mastercardyandexgo/>} />
+      <Route path="/news/allpage10/visa-bodyshop" element={<Visabodyshop/>} />
+      <Route path="/news/allpage10/visa-akg" element={<Visaakg/>} />
+      <Route path="/news/allpage10/visa-newyear" element={<Visanewyear/>} />
+      <Route path="/news/allpage10/neonn-castle" element={<Neonncastle/>} />
+      <Route path="/news/allpage10/visa-dalma" element={<Visadalma/>} />
+      <Route path="/news/allpage10/the-symphony-of-leadership" element={<Thesymphonyofleadership/>} />
+      <Route path="/news/allpage10/Finances-aylkerp" element={<Financesaylkerp/>} />
+      <Route path="/news/allpage10/buildarmenia" element={<Buildarmenia/>} />
+      <Route path="/news/allpage10/visa-yerevanmall" element={<Visayerevanmall/>} />
+      <Route path="/news/allpage10/guyqahark" element={<Guyqahark/>} />
+      <Route path="/news/allpage10/visa-gg-new" element={<Visaggnew/>} />
+      <Route path="/news/allpage10/visa-aliexpress" element={<Visaaliexpress/>} />
+      <Route path="/news/allpage10/arag-dramakan-poxancumner" element={<Aragdramakanpoxancumner/>} />
+      <Route path="/news/allpage11/gg-visa-cardholders" element={<Ggvisacardholders/>} />
+      <Route path="/news/allpage11/coloured-photo-shoot" element={<Colouredphotoshoot/>} />
+      <Route path="/news/allpage11/evojis-from-evocabank" element={<Evojisfromevocabank/>} />
+      <Route path="/news/allpage12/deposit-campaign" element={<Depositcampaign/>} />
+      <Route path="/news/allpage12/healthy-lifestyle-fans" element={<Healthylifestylefans/>} />
+      <Route path="/news/allpage12/online-shopping-marathon" element={<Onlineshoppingmarathon/>} />
+      <Route path="/news/allpage12/and-ended-in-spring" element={<Andendedinspring/>} />
+      <Route path="/news/allpage12/show-of-bad-boys-for-life" element={<Showofbadboysforlife/>} />
+      <Route path="/news/allpage12/purchases" element={<Purchases/>} />
+      <Route path="/news/allpage13/evojis-from-evocabank" element={<Evojisfromevocabankk/>} />
+
+      <Route path="/news/allpage13/game-from-evocabank" element={<Gamefromevocabank/>} />
+      <Route path="/news/allpage13/gift-to-everyone" element={<Gifttoeveryone/>} />
+      <Route path="/news/allpage13/trek-yerevan-2019" element={<Trekyerevan2019/>} />
+      <Route path="/news/allpage13/deposit-prize-draw" element={<Depositprizedraw/>} />
+      <Route path="/news/allpage13/evoji-evocabank-emojis" element={<Evojievocabankemojis/>} />
+      <Route path="/news/allpage13/prize-draw-winners" element={<Prizedrawwinners/>} />
+      <Route path="/news/allpage13/eurovision-with-evocaank" element={<Eurovisionwithevocaank/>} />
+      <Route path="/news/allpage13/paris-with-mastercard" element={<Pariswithmastercard/>} />
+      <Route path="/news/allpage13/shopping-fest-2018" element={<Shoppingfest2018/>} />
+      <Route path="/news/allpage14/in-gyumri-branch" element={<Ingyumribranch/>} />
+      <Route path="/news/allpage14/whatsapp-telegram" element={<Whatsapptelegram/>} />
+      <Route path="/news/allpage14/spring-deposit-campaign" element={<Springdepositcampaign/>} />
+      <Route path="/news/allpage14/through-yeraz-gift-card" element={<Throughyerazgiftcard/>} />
+      <Route path="/news/allpage14/air-concert-festive" element={<Airconcertfestive/>} />
+      <Route path="/news/allpage14/new-year-campaign" element={<Newyearcampaign/>} />
+      <Route path="/news/allpage14/fabulous-tour" element={<Fabuloustour/>} />
+      <Route path="/news/allpage14/event-of-the-year-2017" element={<Eventoftheyear2017/>} />
+      <Route path="/news/allpage14/winners-of-the-draw" element={<Winnersofthedraw/>} />
+      <Route path="/news/allpage15/dubai-trip-campaign-details" element={<Dubaitripcampaigndetails/>} />
+      <Route path="/news/allpage2/travel-segment-innovation" element={<Travelsegmentinnovation/>} />
+      <Route path="/news/allpage2/powered-mobile-app" element={<Poweredmobileapp/>} />
+      <Route path="/news/allpage2/cashless-achievement" element={<Cashlessachievement/>} />
+      <Route path="/news/allpage2/finance-magazine" element={<Financemagazine/>} />
+      <Route path="/news/allpage2/banking-armenia-2025" element={<Bankingarmenia2025/>} />
+      <Route path="/news/allpage3/investor-magazine" element={<Investormagazine/>} />
+      <Route path="/news/allpage3/award-from-bacee" element={<Awardfrombacee/>} />
+      <Route path="/news/allpage3/bank-in-armenia-2025" element={<Bankinarmenia2025/>} />
+      <Route path="/news/allpage4/finance-magazine" element={<Financemagazinee/>} />
+      <Route path="/news/allpage4/products-development" element={<Productsdevelopment/>} />
+      <Route path="/news/allpage4/ratio-achievement" element={<Ratioachievement/>} />
+      <Route path="/news/allpage5/armenia-digital-awards" element={<Armeniadigitalawards/>} />
+      <Route path="/news/allpage5/bank-in-armenia" element={<Bankinarmenia/>} />
+      <Route path="/news/allpage5/finance-review" element={<Financereview/>} />
+      <Route path="/news/allpage6/business-and-finance" element={<Businessandfinance/>} />
+      <Route path="/news/allpage7/evoca-new-awards" element={<Evocanewawards/>} />
+      <Route path="/news/allpage7/digital-bank-2023" element={<Digitalbank2023/>} />
+      <Route path="/news/allpage8/visa-award-evoca" element={<Visaawardevoca/>} />
+      <Route path="/news/allpage8/orinapah" element={<Orinapah/>} />
+      <Route path="/news/allpage8/award-mastercard" element={<Awardmastercard/>} />
+      <Route path="/news/allpage8/GlobalFinanceSME2022" element={<GlobalFinanceSME2022/>} />
+      <Route path="/news/allpage8/dubai-best-digital" element={<Dubaibestdigital/>} />
+      <Route path="/news/allpage9/global-finance-2022" element={<Globalfinance2022/>} />
+      <Route path="/news/allpage9/global-banking-finance-2022" element={<Globalbankingfinance2022/>} />
+      <Route path="/news/allpage10/visa-award" element={<Visaaward/>} />
+      <Route path="/news/allpage10/GlobalFinanceSME" element={<GlobalFinanceSME/>} />
+      <Route path="/news/allpage10/global_finance_2021" element={<Globalfinance2021/>} />
+      <Route path="/news/allpage10/global-finance-banking" element={<Globalfinancebanking/>} />
+      <Route path="/news/allpage10/new-website-award" element={<Newwebsiteaward/>} />
+      <Route path="/news/allpage10/SME-best-mobile-banking" element={<SMEbestmobilebanking/>} />
+      <Route path="/news/allpage11/digital-bank-of-armenia" element={<Digitalbankofarmenia/>} />
+      <Route path="/news/allpage12/bank-in-armenia" element={<Bankinarmeniaa/>} />
+      <Route path="/news/allpage12/digital-bank-in-armenia" element={<Digitalbankinarmenia/>} />
+      <Route path="/news/allpage13/bank-of-armenia-2019" element={<Bankofarmenia2019/>} />
+      <Route path="/news/allpage4/for-future-foundation" element={<Forfuturefoundation/>} />
+      <Route path="/news/allpage4/notre-dame-cathedral" element={<Notredamecathedral/>} />
+      <Route path="/news/allpage4/all-armenian-fund" element={<Allarmenianfund/>} />
+      <Route path="/news/allpage5/etchmiadzin-book" element={<Etchmiadzinbook/>} />
+      <Route path="/news/allpage5/global-armenian-summit" element={<Globalarmeniansummit/>} />
+      <Route path="/news/allpage5/tavush-regions" element={<Tavushregions/>} />
+      <Route path="/news/allpage5/smile-charity-fund" element={<Smilecharityfund/>} />
+      <Route path="/news/allpage6/vozni-new-donation" element={<Vozninewdonation/>} />
+      <Route path="/news/allpage6/economics-olympiad-donation" element={<Economicsolympiaddonation/>} />
+      <Route path="/news/allpage6/christmas-concert-donation" element={<Christmasconcertdonation/>} />
+      <Route path="/news/allpage6/care-new-donation" element={<Carenewdonation/>} />
+      <Route path="/news/allpage6/fab-lab-donation" element={<Fablabdonation/>} />
+      <Route path="/news/allpage7/evoca-donation" element={<Evocadonation/>} />
+      <Route path="/news/allpage7/new-forest" element={<Newforest/>} />
+      <Route path="/news/allpage8/all-armenian-fund" element={<Allarmenianfundd/>} />
+      <Route path="/news/allpage9/talentum" element={<Talentum/>} />
+      <Route path="/news/allpage12/fight-coronavirus" element={<Fightcoronavirus/>} />
+      <Route path="/news/allpage13/dame-cathedral-in-paris" element={<Damecathedralinparis/>} />
+      <Route path="/news/allpage11/customer-service-hours" element={<Customerservicehours/>} />
+      <Route path="/news/allpage11/double-payments" element={<Doublepayments/>} />
+      <Route path="/news/allpage11/fund-raising-concerts" element={<Fundraisingconcerts/>} />
+      <Route path="/news/allpage11/evocabank-customer-service-hours" element={<Evocabankcustomerservicehours/>} />
+      <Route path="/news/allpage11/hayastan-all-armenian-fund" element={<Hayastanallarmenianfund/>} />
+      <Route path="/news/allpage11/for-customer-services" element={<Forcustomerservices/>} />
+      <Route path="/news/allpage11/to-15-tumanyan-st" element={<To15tumanyanst/>} />
+      <Route path="/news/allpage12/motivate-and-develop-the-team" element={<Motivateanddeveloptheteam/>} />
+      <Route path="/news/allpage12/branch-opening-in-Yerevan" element={<BranchopeninginYerevan/>} />
+      <Route path="/news/allpage12/metre-social-distance" element={<Metresocialdistance/>} />
+      <Route path="/news/allpage12/of-infection-prevention" element={<Ofinfectionprevention/>} />
+      <Route path="/news/allpage12/explanation" element={<Explanation/>} />
+      <Route path="/news/allpage12/suspended-operations" element={<Suspendedoperations/>} />
+      <Route path="/news/allpage12/not-working-days" element={<Notworkingdays/>} />
+      <Route path="/news/allpage12/aged-60-from-10-to-12" element={<Aged60from10to12/>} />
+      <Route path="/news/allpage14/service-on-saturdays" element={<Serviceonsaturdays/>} />
+      <Route path="/news/allpage14/reopened-kotayq-branch" element={<Reopenedkotayqbranch/>} />
+      <Route path="/news/allpage14/iveta-mukuchyan-solo-concert" element={<Ivetamukuchyansoloconcert/>} />
+      <Route path="/news/allpage14/festive-open-air-concert" element={<Festiveopenairconcert/>} />
+      <Route path="/news/allpage14/cooperation-agreement" element={<Cooperationagreementt/>} />
+      <Route path="/news/allpage14/armenian-culture-in-russia" element={<Armeniancultureinrussia/>} />
+      <Route path="/news/allpage14/evocalab-november-2017" element={<Evocalabnovember2017/>} />
+      <Route path="/news/allpage15/joing-social-program-with-coaf" element={<Joingsocialprogramwithcoaf/>} />
+      <Route path="/news/allpage15/branches-of-the-bank" element={<Branchesofthebank/>} />
+      <Route path="/news/allpage15/international-standard" element={<Internationalstandard/>} />
+      <Route path="/news/allpage15/bank-of-armenia-in-2011" element={<Bankofarmeniain2011/>} />
+      <Route path="/blog/business/atm" element={<Atm/>} />
+      <Route path="/blog/business/how-to-start-a-business" element={<Howtostartabusiness/>} />
+      <Route path="/blog/business/financial-crises" element={<Financialcrises/>} />
+      <Route path="/blog/business/successful-negotiations" element={<Successfulnegotiations/>} />
+      <Route path="/blog/business/businneess" element={<Businneess/>} />
+      <Route path="/blog/business/business-ethics" element={<Businessethics/>} />
+      <Route path="/blog/lifestyle-blogs/monthly-recap-creation" element={<Monthlyrecapcreation/>} />
+      <Route path="/blog/lifestyle-blogs/everything-about-habit-tracker" element={<Everythingabouthabittracker/>} />
+      <Route path="/blog/lifestyle-blogs/top-5-christmas-markets-in-europe" element={<Top5christmasmarketsineurope/>} />
+      <Route path="/blog/lifestyle-blogs/black-friday-2025-complete-guide-by-evoca" element={<Blackfriday2025completeguidebyevoca/>} />
+      <Route path="/blog/lifestyle-blogs/wheel-of-life-balance" element={<Wheeloflifebalance/>} />
+      <Route path="/blog/lifestyle-blogs/evoca-by-ai" element={<Evocabyai/>} />
+      <Route path="/blog/lifestyle-blogs/with-evoca-digital-card" element={<Withevocadigitalcard/>} />
+      <Route path="/hy/blog/lifestyle-blogs/new-logos-yerevan-magazine" element={<Newlogosyerevanmagazine/>} />
+      <Route path="/blog/lifestyle-blogs/facts-terms-of-bank" element={<Factstermsofbank/>} />
+      <Route path="/blog/lifestyle-blogs/women-bank-new-blog" element={<Womenbanknewblog/>} />
+      <Route path="/blog/lifestyle-blogs/mortgage-loan" element={<Mortgageloan/>} />
+      <Route path="/blog/lifestyle-blogs/warning" element={<Warning/>} />
+      <Route path="/blog/lifestyle-blogs/card-new-year-dreams" element={<Cardnewyeardreams/>} />
+      <Route path="/blog/lifestyle-blogs/black-friday-sales" element={<Blackfridaysales/>} />
+      <Route path="/blog/lifestyle-blogs/may" element={<May/>} />
+      <Route path="/blog/lifestyle-blogs/march" element={<March/>} />
+      <Route path="/blog/lifestyle-blogs/february" element={<February/>} />
+      <Route path="/blog/lifestyle-blogs/movie-22" element={<Movie22/>} />
+      <Route path="/blog/lifestyle-blogs/new-year-planning" element={<Newyearplanning/>} />
+      <Route path="/blog/lifestyle-blogs/the-best-films-of-2021" element={<Thebestfilmsof2021/>} />
+      <Route path="/blog/lifestyle-blogs/most-series-of-2021" element={<Mostseriesof2021/>} />
+      <Route path="/blog/lifestyle-blogs/card-pin-privacy" element={<Cardpinprivacy/>} />
+      <Route path="/blog/lifestyle-blogs/how-to-absorb-information-faster" element={<Howtoabsorbinformationfaster/>} />
+      <Route path="/blog/lifestyle-blogs/swot-analysis" element={<Swotanalysis/>} />
+      <Route path="/blog/lifestyle-blogs/woman-in-business" element={<Womaninbusiness/>} />
+      <Route path="/blog/lifestyle-blogs/most-professions-future" element={<Mostprofessionsfuture/>} />
+      <Route path="/blog/lifestyle-blogs/cv" element={<Cv/>} />
+      <Route path="/blog/lifestyle-blogs/logos" element={<Logos/>} />
+      <Route path="/blog/lifestyle-blogs/artificial-intelligence" element={<Artificialintelligence/>} />
+      <Route path="/blog/lifestyle-blogs/pantone-ultra-violet" element={<Pantoneultraviolet/>} />
+      <Route path="/blog/investment/films-about" element={<Filmsabout/>} />
+      <Route path="/blog/investment/evocainvest-tools" element={<Evocainvesttools/>} />
+      <Route path="/blog/investment/stages-of" element={<Stagesof/>} />
+      <Route path="/blog/investment/investment-decisions" element={<Investmentdecisions/>} />
+      <Route path="/blog/investment/evoca-create" element={<Evocacreate/>} />
+      <Route path="/deposits/classic" element={<Classic/>} />
+      <Route path="/deposits/children" element={<Childrenn/>} />
+      <Route path="/deposits/evoca-online" element={<Evocaonlinee/>} />
+      <Route path="/menu" element={<Menu/>} />
+      <Route path="/hy/about/awards" element={<Awardss/>} />
+      <Route path="/hy/about/csr" element={<Csrr/>} />
+      <Route path="/hy/about/group" element={<Group/>} />
+      <Route path="/hy/about/regulations" element={<Regulations/>} />
+      <Route path="/hy/about/property" element={<Property/>} />
+      <Route path="/hy/about/Developers" element={<Developers/>} />
+      <Route path="/hy/about/partner-salons" element={<Partnersalons/>} />
+      <Route path="/hy/customer-rights" element={<Customerrights/>} />
+      <Route path="/hy/residency-criteria" element={<Residencycriteria/>} />
+      <Route path="/hy/regulation" element={<Regulation/>} />
+      <Route path="/hy/privacy-policy" element={<Privacypolicy/>} />
+      <Route path="/hy/financial-ombudsman" element={<Financialombudsman/>} />
+      <Route path="/hy/financial-cooperations" element={<Financialcooperations/>} />
+      <Route path="/hy/cardholder-links" element={<Cardholderlinks/>} />
+      <Route path="/hy/evocaonline" element={<Evocaonlineeee/>} />
+      <Route path="/hy/safe-boxes" element={<Safeboxes/>} />
+      <Route path="/hy/dibrary" element={<Dibrary/>} />
+      <Route path="/hy/bulletins" element={<Bulletins/>} />
+      <Route path="/hy/contact" element={<Contactt/>} />
+      <Route path="/hy/sitemap" element={<Sitemap/>} />
+      <Route path="/branches" element={<Branches/>} />
+
+
+
+
+
+      <Route path="/news/allpage10/hipotek-overdraft" element={<Hipotekoverdraft/>} />
+      <Route path="/news/allpage10/evoca-gift-cardd" element={<Evocagiftcardd/>} />
+      <Route path="/news/allpage10/mastercard-goldd" element={<Mastercardgoldd/>} />
+      <Route path="/news/allpage10/IFC-new" element={<Ifcnew/>} />
+      <Route path="/news/allpage10/covid-visa" element={<Covidvisa/>} />
+      <Route path="/news/allpage10/mastercard-cardholders" element={<Mastercardcardholderss/>} />
+      <Route path="/news/allpage11/of-second-tranche" element={<Ofsecondtranche/>} />
+      <Route path="/news/allpage11/bonds-2nd-tranche" element={<Bonds2ndtranche/>} />
+      <Route path="/news/allpage11/tranche-of-bonds" element={<Trancheofbonds/>} />
+      <Route path="/news/allpage11/evocabank-to-issue-bonds" element={<Evocabanktoissuebonds/>} />
+      <Route path="/news/allpage11/anywhere-in-the-world" element={<Anywhereintheworld/>} />
+      <Route path="/news/allpage11/transfers-with-visa-direct" element={<Transferswithvisadirect/>} />
+      <Route path="/news/allpage11/energy-efficiency-fund" element={<Energyefficiencyfund/>} />
+      <Route path="/news/allpage12/withdrawal-in-armenia" element={<Withdrawalinarmenia/>} />
+      <Route path="/news/allpage12/online-student-loans" element={<Onlinestudentloans/>} />
+      <Route path="/news/allpage12/for-visa-cardholders" element={<Forvisacardholders/>} />
+      <Route path="/news/allpage12/free-delivery" element={<Freedelivery/>} />
+      <Route path="/news/allpage12/sponsored-programs" element={<Sponsoredprograms/>} />
+      <Route path="/news/allpage12/efficient-loans-for-sme" element={<Efficientloansforsme/>} />
+      <Route path="/news/allpage12/doubling-your-interest-rate" element={<Doublingyourinterestrate/>} />
+      <Route path="/news/allpage12/deposit-terms" element={<Depositterms/>} />
+      <Route path="/news/allpage12/cards-for-employees" element={<Cardsforemployees/>} />
+      <Route path="/news/allpage13/rates-on-mortgage-loans" element={<Ratesonmortgageloans/>} />
+      <Route path="/news/allpage13/launch-of-visa-infinite" element={<Launchofvisainfinite/>} />
+      <Route path="/news/allpage13/up-to-amd-5.000.000" element={<Uptoamd5000000/>} />
+      <Route path="/news/allpage13/shopping-with-evocabank" element={<Shoppingwithevocabank/>} />
+      <Route path="/news/allpage13/visa-infinite-for-influencers" element={<Visainfiniteforinfluencers/>} />
+      <Route path="/news/allpage15" element={<Allpage15/>} />
+      <Route path="/news/allpage12/vpos-terminal" element={<Vposterminall/>} />
+      <Route path="/news/allpage12/amd-2-bin-50-min" element={<Amd2bin50min/>} />
+      <Route path="/news/allpage12/regarded-as-movie-villains" element={<Regardedasmovievillains/>} />
+      <Route path="/news/allpage12/bank-loan-program" element={<Bankloanprogram/>} />
+      <Route path="/news/allpage12/new-deposit-interest-accrual" element={<Newdepositinterestaccrual/>} />
+      <Route path="/news/allpage12/point-of-sale-installment-loans" element={<Pointofsaleinstallmentloans/>} />
+      <Route path="/news/allpage12/mortgage-interest" element={<Mortgageinterest/>} />
+      <Route path="/news/allpage12/loan-repayment-schedules" element={<Loanrepaymentschedules/>} />
+      <Route path="/news/allpage12/outcomes-of-2019" element={<Outcomesof2019/>} />
+      <Route path="/news/allpage13/the-third-quarter-of-2019" element={<Thethirdquarterof2019/>} />
+      <Route path="/news/allpage13/2019-annual-meeting" element={<Annualmeeting/>} />
+      <Route path="/news/allpage13/corporate-social-responsibility" element={<Corporatesocialresponsibility/>} />
+      <Route path="/news/allpage13/financial-month-2018" element={<Financialmonth2018/>} />
+      <Route path="/news/allpage14/gyumri-branch-re-opened" element={<Gyumribranchreopened/>} />
+      <Route path="/news/allpage14/annual-meeting" element={<Annualmeetingg/>} />
+      <Route path="/news/allpage14/garegin-nzhdeh-branch" element={<Gareginnzhdehbranch/>} />
+      <Route path="/news/interviews" element={<Interviews/>} />
+      <Route path="/news/products" element={<Products/>} />
+      <Route path="/hy/press/ej-1" element={<Ej1/>} />
+      <Route path="/hy/press/ej-2" element={<Ej2/>} />
+      <Route path="/hy/press/ej-3" element={<Ej3/>} />
+      <Route path="/hy/press/ej-4" element={<Ej4/>} />
+      <Route path="/hy/press/ej-5" element={<Ej5/>} />
+      <Route path="/hy/press/ej-6" element={<Ej6/>} />
+      <Route path="/hy/press/ej-7" element={<Ej7/>} />
+      <Route path="/hy/press/ej-8" element={<Ej8/>} />
+      <Route path="/news/innovations" element={<Innovations/>} />
+      <Route path="/hy/innovations/nor-1" element={<Nor1/>} />
+      <Route path="/hy/innovations/nor-2" element={<Nor2/>} />
+      <Route path="/news/lifestyle" element={<Lifestyle/>} />
+      <Route path="/hy/lifestyle/hamar-1" element={<Hamar1/>} />
+      <Route path="/hy/lifestyle/hamar-2" element={<Hamar2/>} />
+      <Route path="/hy/lifestyle/hamar-3" element={<Hamar3/>} />
+      <Route path="/hy/lifestyle/hamar-4" element={<Hamar4/>} />
+      <Route path="/hy/lifestyle/hamar-5" element={<Hamar5/>} />
+      <Route path="/hy/lifestyle/hamar-6" element={<Hamar6/>} />
+      <Route path="/hy/lifestyle/hamar-7" element={<Hamar7/>} />
+      <Route path="/news/awards" element={<Awards/>} />
+      <Route path="/hy/awards/tiv-1" element={<Tiv1/>} />
+      <Route path="/hy/awards/tiv-2" element={<Tiv2/>} />
+      <Route path="/news/csr" element={<Csr/>} />
+      <Route path="/news/other" element={<Other/>} />
+      <Route path="/hy/other/tivv-1" element={<Tivv1/>} />
+      <Route path="/hy/other/tivv-2" element={<Tivv2/>} />
+      <Route path="/interviews/interview-of-karen-yeghiazaryan-with-los-angeles-times-magazine" element={<Interviewofkarenyeghiazaryanwithlosangelestimesmagazine/>} />
+      <Route path="/interviews/Karen-Yeghiazaryan-new-interview-with-banks-am" element={<KarenYeghiazaryannewinterviewwithbanksam/>} />
+      <Route path="/interviews/interview-of-karen-yeghiazaryan-with-time-magazine" element={<Interviewofkarenyeghiazaryanwithtimemagazine/>} />
+      <Route path="/news/allpage2/get-additional-cashback" element={<Getadditionalcashback/>} />
+      <Route path="/news/allpage2/glovo-and-get-discount" element={<Glovoandgetdiscount/>} />
+      <Route path="/news/allpage2/evoca-mastercard-cards" element={<Evocamastercardcards/>} />
+      <Route path="/news/allpage2/iphone-17-pro" element={<Iphone17pro/>} />
+      <Route path="/news/allpage2/cashback-from-evocabank" element={<Cashbackfromevocabank/>} />
+      <Route path="/news/allpage2/infinite-cardholders" element={<Infinitecardholders/>} />
+      <Route path="/news/allpage3/percent-service-fee" element={<Percentservicefee/>} />
+      <Route path="/news/allpage3/cashback-on-buy-am" element={<Cashbackonbuyam/>} />
+      <Route path="/news/allpage3/americano-and-donut" element={<Americanoanddonut/>} />
+      <Route path="/news/allpage3/at-partner-bookstores" element={<Atpartnerbookstores/>} />
+      <Route path="/news/allpage3/visa-cardholders" element={<Visacardholders/>} />
+      <Route path="/news/allpage3/meet-jennifer-lopez" element={<Meetjenniferlopez/>} />
+      <Route path="/news/allpage3/com-get-cashback" element={<Comgetcashback/>} />
+      <Route path="/news/allpage3/evoca-travel-card" element={<Evocatravelcard/>} />
+      <Route path="/news/allpage3/akg-discount-evoca-visa" element={<Akgdiscountevocavisa/>} />
+      <Route path="/news/allpage3/online-courses-discount-evoca-visa" element={<Onlinecoursesdiscountevocavisa/>} />
+      <Route path="/news/allpage3/discounts-in-uae-for-evoca-visa" element={<Discountsinuaeforevocavisa/>} />
+      <Route path="/news/allpage3/discounts-for-evoca-visa" element={<Discountsforevocavisa/>} />
+      <Route path="/news/allpage3/pay-with-evoca-mastercard" element={<Paywithevocamastercard/>} />
+      <Route path="/news/allpage3/free-burger-from-kfc" element={<Freeburgerfromkfc/>} />
+      <Route path="/news/allpage3/buy-iphone-evocabank" element={<Buyiphoneevocabank/>} />
+      <Route path="/news/allpage3/get-your-dream" element={<Getyourdream/>} />
+      <Route path="/news/allpage3/evoca-visa-card" element={<Evocavisacard/>} />
+      <Route path="/news/allpage4/card-and-win" element={<Cardandwin/>} />
+      <Route path="/news/allpage4/evoca-visa-cards" element={<Evocavisacards/>} />
+      <Route path="/news/allpage4/evoca-visa-cardholders" element={<Evocavisacardholders/>} />
+      <Route path="/news/allpage4/resort-for-evoca-visa-cardholders" element={<Resortforevocavisacardholders/>} />
+      <Route path="/news/allpage4/traveling-with-no-limits" element={<Travelingwithnolimits/>} />
+      <Route path="/news/allpage4/terms-and-conditions" element={<Termsandconditions/>} />
+      <Route path="/news/allpage4/mastercard-cardholders" element={<Mastercardcardholders/>} />
+      <Route path="/hy/press/ej-3/card-get-cashback" element={<Cardgetcashback/>} />
+      <Route path="/news/allpage4/stores-get-discounts" element={<Storesgetdiscounts/>} />
+      <Route path="/news/allpage4/visa-cardholders" element={<Visacardholderss/>} />
+      <Route path="/news/allpage4/cashback-new-offer" element={<Cashbacknewoffer/>} />
+      <Route path="/news/allpage4/get-chance-to-win-gifts" element={<Getchancetowingifts/>} />
+      <Route path="/news/allpage4/cards-black-friday" element={<Cardsblackfriday/>} />
+      <Route path="/news/allpage2/in-toon-expo-2026" element={<Intoonexpo2026/>} />
+      <Route path="/news/allpage14/prize-draw-june-2018" element={<Prizedrawjune2018/>} />
+
       
       {/* Քարտերի ուղիներ */}
       <Route path="/cards/arca-union-pay" element={<Arcaunionpay />} />
@@ -380,6 +1707,186 @@ export default function App() {
       <Route path="/business-loans/renewable-credit-line" element={<Renewablecreditline/>} />
       <Route path="/business-loans/loan-under-the-productivity-promotion-program" element={<Loanundertheproductivitypromotionprogram/>} />
       <Route path="/business-loans/kfw-bank-program-loan" element={<Kfwbankprogramloan/>} />
+      <Route path="/hy/v-pos-terminal" element={<Vposterminal/>} />
+      <Route path="/hy/pos-terminal" element={<Posterminal/>} />
+      <Route path="/hy/tariffs" element={<Tariffs/>} />
+      <Route path="/hy/terminal-application" element={<Terminalapplication/>} />
+      <Route path="/hy/evoca-mobile-pos" element={<Evocamobilepos/>} />
+      <Route path="/hy/individual-safe-deposit-boxes" element={<Individualsafedepositboxes/>} />
+      <Route path="/hy/transfers" element={<Transferss/>} />
+      <Route path="/evoca-online" element={<Evocaonline/>} />
+      <Route path="/hy/akntartayinvcharumner" element={<Akntartayinvcharumner/>} />
+      <Route path="/hy/about/tariffs" element={<Tariffss/>} />
+      <Route path="/hy/about/tariffs/individuals-loans/investment" element={<Investment/>} />
+      <Route path="/hy/about/tariffs/individuals-loans/property-secured" element={<Propertysecured/>} />
+      <Route path="/hy/about/tariffs/individuals-loans/unsecured" element={<Unsecured/>} />
+      <Route path="/hy/about/tariffs/individuals-loans/pawnshop" element={<Pawnshop/>} />
+      <Route path="/hy/about/tariffs/individuals-loans/overdraft" element={<Overdraft/>} />
+      <Route path="/hy/about/tariffs/individuals-loans/visa-infinite" element={<Visainfinitee/>} />
+      <Route path="/hy/about/tariffs/individuals-loans/student" element={<Student/>} />
+      <Route path="/hy/about/tariffs/individuals-loans/evolution" element={<Evolutionn/>} />
+      <Route path="/hy/about/tariffs/individuals-loans/salary-package" element={<Salarypackage/>} />
+      <Route path="/hy/about/tariffs/individuals-loans/parking" element={<Parking/>} />
+      <Route path="/hy/about/tariffs/individuals-loans/evocapower" element={<Evocapower/>} />
+      <Route path="/hy/about/tariffs/individuals-loans/bicycle" element={<Bicycle/>} />
+      <Route path="/hy/about/tariffs/individuals-loans/teghum-aparik" element={<Teghumaparik/>} />
+      <Route path="/hy/about/tariffs/individuals-loans/cash-secured" element={<Cashsecured/>} />
+      <Route path="/hy/about/tariffs/mortgage/apartment" element={<Apartment/>} />
+      <Route path="/hy/about/tariffs/mortgage/floating" element={<Floating/>} />
+      <Route path="/hy/about/tariffs/mortgage/non-resident" element={<Nonresident/>} />
+      <Route path="/hy/about/tariffs/mortgage/commercial" element={<Commercial/>} />
+      <Route path="/hy/about/tariffs/mortgage/ahk-acquisition" element={<Ahkacquisition/>} />
+      <Route path="/hy/about/tariffs/mortgage/ahk-renovation" element={<Ahkrenovation/>} />
+      <Route path="/hy/about/tariffs/mortgage/ahk-construction" element={<Ahkconstruction/>} />
+      <Route path="/hy/about/tariffs/mortgage/youth" element={<Youth/>} />
+      <Route path="/hy/about/tariffs/mortgage/karabakh" element={<Karabakh/>} />
+      <Route path="/hy/about/tariffs/mortgage/karabakh-renovation" element={<Karabakhrenovation/>} />
+      <Route path="/hy/about/tariffs/mortgage/karabakh-regions" element={<Karabakhregions/>} />
+      <Route path="/hy/about/tariffs/mortgage/borderline" element={<Borderline/>} />
+      <Route path="/hy/about/tariffs/mortgage/military" element={<Military/>} />
+      <Route path="/hy/about/tariffs/mortgage/land" element={<Land/>} />
+      <Route path="/hy/about/tariffs/mortgage/micro-renovation" element={<Microrenovation/>} />
+      <Route path="/hy/about/tariffs/autoloans/standard" element={<Standard/>} />
+      <Route path="/hy/about/tariffs/leasing/business" element={<Businesss/>} />
+      <Route path="/hy/about/tariffs/online-loans/instant" element={<Instant/>} />
+      <Route path="/hy/about/tariffs/corporate-loans" element={<Corporateloans/>} />
+      <Route path="/hy/about/tariffs/corporate-loans/credit-line" element={<Creditline/>} />
+      <Route path="/hy/about/tariffs/corporate-loans/sme" element={<Sme/>} />
+      <Route path="/hy/about/tariffs/corporate-loans/deposit-secured" element={<Depositsecured/>} />
+      <Route path="/hy/about/tariffs/corporate-loans/gkf-ea-sme" element={<Gkfeasme/>} />
+      <Route path="/hy/about/tariffs/corporate-loans/simple-business" element={<Simplebusiness/>} />
+      <Route path="/hy/about/tariffs/corporate-loans/modernization" element={<Modernization/>} />
+      <Route path="/hy/about/tariffs/corporate-loans/evoca-go" element={<Evocago/>} />
+      <Route path="/hy/about/tariffs/corporate-loans/kfw-green" element={<Kfwgreen/>} />
+      <Route path="/hy/about/tariffs/corporate-loans/bank-guarantees" element={<Bankguarantees/>} />
+      <Route path="/hy/about/tariffs/corporate-loans/factoring" element={<Factoring/>} />
+      <Route path="/hy/about/tariffs/corporate-loans/salary-project" element={<Salaryproject/>} />
+      <Route path="/hy/about/tariffs/corporate-loans/kfw-mmsme" element={<Kfwmmsme/>} />
+      <Route path="/hy/about/tariffs/corporate-loans/leasing" element={<Leasing/>} />
+      <Route path="/hy/about/tariffs/corporate-loans/pos-business-loan" element={<Posbusinessloan/>} />
+      <Route path="/hy/about/tariffs/corporate-loans/pos-overdraft" element={<Posoverdraft/>} />
+      <Route path="/hy/about/tariffs/corporate-loans/fast-business-loan" element={<Fastbusinessloann/>} />
+      <Route path="/hy/about/tariffs/corporate-loans/business-refinancing" element={<Businessrefinancing/>} />
+      <Route path="/hy/about/tariffs/commissions" element={<Commissions/>} />
+      <Route path="/hy/about/tariffs/cards/digital-cardd" element={<Digitalcardd/>} />
+      <Route path="/hy/about/tariffs/cards/vision-cardd" element={<Visioncardd/>} />
+      <Route path="/hy/about/tariffs/cards/contactless-cardss" element={<Contactlesscardss/>} />
+      <Route path="/hy/about/tariffs/cards/pension-cardsss" element={<Pensioncardsss/>} />
+      <Route path="/hy/about/tariffs/cards/world-digital-carddd" element={<Worlddigitalcarddd/>} />
+      <Route path="/hy/about/tariffs/cards/tariffs-gift-carddd" element={<Tariffsgiftcarddd/>} />
+      <Route path="/hy/about/tariffs/cards/terms-and-tariffs" element={<Termsandtariffs/>} />
+      <Route path="/hy/about/tariffs/cards/tariffs-unionpay-carddd" element={<Tariffsunionpaycarddd/>} />
+      <Route path="/hy/about/tariffs/cards/tariffs-travel-cardd" element={<Tariffstravelcardd/>} />
+      <Route path="/hy/about/tariffs/cards/uam-gift-cards-tariffss" element={<Uamgiftcardstariffss/>} />
+      <Route path="/hy/about/tariffs/cards/Homplex-gift-cards" element={<Homplexgiftcards/>} />
+      <Route path="/hy/about/tariffs/cards/dalma-gift-card-tariffs" element={<Dalmagiftcardtariffs/>} />
+      <Route path="/hy/about/tariffs/cards/mall-gift-card-tariffs" element={<Mallgiftcardtariffs/>} />
+      <Route path="/hy/about/tariffs/cards/rio-gift-card-tariffs" element={<Riogiftcardtariffss/>} />
+      <Route path="/hy/about/tariffs/cards/MyLer-gift-cards-tariffs" element={<MyLergiftcardstariffs/>} />
+      <Route path="/hy/about/tariffs/cards/tariffs-visa-infinite-cardd" element={<Tariffsvisainfinitecardd/>} />
+      <Route path="/hy/about/tariffs/cards/tariffs-visa-platinum-card" element={<Tariffsvisaplatinumcard/>} />
+      <Route path="/hy/about/tariffs/cards/tariffs-Wilco-card" element={<TariffsWilcocard/>} />
+      <Route path="/hy/about/tariffs/cards/arca-unionpay-cobadge" element={<Arcaunionpaycobadge/>} />
+      <Route path="/hy/about/tariffs/accounts/savings" element={<Savings/>} />
+      <Route path="/hy/about/tariffs/accounts/current" element={<Current/>} />
+      <Route path="/hy/about/tariffs/accounts/nominee" element={<Nominee/>} />
+      <Route path="/hy/about/tariffs/accounts/notary" element={<Notary/>} />
+      <Route path="/hy/about/tariffs/accounts/bankruptcy" element={<Bankruptcy/>} />
+      <Route path="/hy/about/tariffs/accounts/escrow" element={<Escrow/>} />
+      <Route path="/hy/about/tariffs/accounts/developer" element={<Developer/>} />
+      <Route path="/hy/about/tariffs/transfers/bank-transfers" element={<Banktransfers/>} />
+      <Route path="/hy/about/tariffs/transfers/ubpay" element={<Ubpay/>} />
+      <Route path="/hy/about/tariffs/transfers/card-to-card" element={<Cardtocard/>} />
+      <Route path="/hy/about/tariffs/transfers/gold" element={<Gold/>} />
+      <Route path="/hy/about/tariffs/other/cashier" element={<Cashier/>} />
+      <Route path="/hy/about/tariffs/other/remote-banking" element={<Remotebanking />} />    
+      <Route path="/hy/about/tariffs/other/lockers" element={<Lockers />} />    
+      <Route path="/hy/about/tariffs/other/other-banks-cards" element={<Otherbankscards />} />    
+      <Route path="/hy/about/tariffs/other/brokerage" element={<Brokerage />} />    
+      <Route path="/hy/about/tariffs/other/custody" element={<Custody />} />    
+      <Route path="/hy/about/tariffs/other/letters-of-credit" element={<Lettersofcredit />} />    
+      <Route path="/hy/about/tariffs/other/collection" element={<Collection />} />    
+      <Route path="/hy/about/tariffs/other/guarantees" element={<Guarantees/>} />    
+      <Route path="/hy/about/tariffs/other/locker-rental" element={<Lockerrental/>} />    
+      <Route path="/hy/about/tariffs/other/letters-permissions" element={<Letterspermissions/>} />    
+      <Route path="/hy/about/tariffs/other/other-services" element={<Otherservices/>} />    
+      <Route path="/hy/about/tariffs/deposits" element={<Depositss/>} />    
+      <Route path="/hy/about/tariffs/deposits/online" element={<Onlinee/>} />    
+      <Route path="/hy/about/tariffs/deposits/children" element={<Children/>} />    
+      <Route path="/hy/about/tariffs/archive" element={<Archive/>} />    
+      <Route path="/hy/about/reports" element={<Reports/>} />    
+      <Route path="/hy/about/reports/financial" element={<Financial/>} />    
+      <Route path="/hy/about/reports/investors" element={<Investors/>} />    
+      <Route path="/hy/about/reports/semiannual" element={<Semiannual/>} />    
+      <Route path="/hy/about/reports/annual" element={<Annual/>} />    
+      <Route path="/hy/about/announcements" element={<Announcements/>} />    
+      <Route path="/hy/about/structure" element={<Structure/>} />    
+      <Route path="/hy/about/shareholders" element={<Shareholders/>} />    
+      <Route path="/hy/about/management" element={<Management/>} />    
+      <Route path="/hy/about/management/varuzhan-avetisyan" element={<Varuzhanavetisyan/>} />    
+      <Route path="/hy/about/management/marta-ezarri" element={<Martaezarri/>} />    
+      <Route path="/hy/about/management/vazgen-gevorgyan" element={<Vazgengevorgyan/>} />    
+      <Route path="/hy/about/management/marina-buki" element={<Marinabuki/>} />    
+      <Route path="/hy/about/management/jose-maria-moreno" element={<Josemariamoreno/>} />    
+      <Route path="/hy/about/management/pierre-caziac" element={<Pierrecaziac/>} />    
+      <Route path="/hy/about/management/arkadi-sandler" element={<Arkadisandler/>} />    
+      <Route path="/hy/about/management/karen-yeghiazaryan" element={<Karenyeghiazaryan/>} />    
+      <Route path="/hy/about/management/armen-hakobyan" element={<Armenhakobyan/>} />    
+      <Route path="/hy/about/management/tatevik-khachatryan" element={<Tatevikkhachatryan/>} />    
+      <Route path="/hy/about/management/hayk-petrosyan" element={<Haykpetrosyan/>} />    
+      <Route path="/hy/about/management/lilit-gaboyan" element={<Lilitgaboyan/>} />    
+      <Route path="/hy/about/management/emma-janinyan" element={<Emmajaninyan/>} />    
+      <Route path="/hy/about/management/smbat-martirosyan" element={<Smbatmartirosyan/>} />    
+      <Route path="/hy/about/management/mher-sahakyan" element={<Mhersahakyan/>} />    
+      <Route path="/hy/about/management/nazeli-eghoyan" element={<Nazelieghoyan/>} />    
+      <Route path="/hy/about/partners" element={<Partners/>} />    
+      <Route path="/news/general/evoca-norakaruyc-signing" element={<Evocanorakaruycsigningg/>} />    
+      <Route path="/news/banking/the-europe-region" element={<Theeuroperegion/>} />    
+      <Route path="/news/allpage2/ai-megaproject-financing" element={<Aimegaprojectfinancing/>} />    
+      <Route path="/news/allpage2/amcham-armenia" element={<Amchamarmenia/>} />    
+      <Route path="/news/allpage2/ajapnyak-is-now-open" element={<Ajapnyakisnowopen/>} />    
+      <Route path="/news/allpage2/cci-france-armenia" element={<Ccifrancearmenia/>} />    
+      <Route path="/news/allpage2/new-partnership" element={<Newpartnership/>} />    
+      <Route path="/news/allpage2/armenia-conference-2025" element={<Armeniaconference2025/>} />    
+      <Route path="/news/allpage2/armenia-2025-conference" element={<Armenia2025conference/>} />    
+      <Route path="/hy/about/partners/list-2" element={<List2/>} />    
+      <Route path="/news/allpage2/of-evocabank-8444" element={<Evocabank8444/>} />    
+      <Route path="/news/allpage2/mln-to-evocabank" element={<Mlntoevocabank/>} />    
+      <Route path="/news/allpage2/vip-customers-and-partners" element={<Vipcustomersandpartners/>} />    
+      <Route path="/news/allpage2/things-done-conference" element={<Thingsdoneconference/>} />    
+      <Route path="/news/allpage2/responsAbility-2025" element={<ResponsAbility2025/>} />    
+      <Route path="/news/allpage3/board-of-evocabank" element={<Boardofevocabank/>} />    
+      <Route path="/news/allpage3/conference-by-bacee" element={<Conferencebybacee/>} />    
+      <Route path="/news/allpage3/from-CJSC-OJSC" element={<FromCJSCOJSC/>} />    
+      <Route path="/news/allpage3/al-fardan-exchange" element={<Alfardanexchange/>} />    
+      <Route path="/news/allpage3/trade-finance-program" element={<Tradefinanceprogram/>} />    
+      <Route path="/news/allpage3/evocabank-and-ebrd-cooperation" element={<Evocabankandebrdcooperation/>} />    
+      <Route path="/news/allpage4/opening-hanrapetutyan" element={<Openinghanrapetutyan/>} />    
+      <Route path="/news/allpage4/of-mdcc-in-miami" element={<Ofmdccinmiami/>} />    
+      <Route path="/news/allpage4/evoca-asue-ufar" element={<Evocaasueufar/>} />    
+      <Route path="/news/allpage4/innovation-and-growth" element={<Innovationandgrowth/>} />    
+      <Route path="/news/allpage4/opening-yerevan-mall" element={<Openingyerevanmall/>} />    
+      <Route path="/news/allpage4/cooperation-agreement" element={<Cooperationagreement/>} />    
+      <Route path="/news/allpage4/financial-inclusion" element={<Financialinclusion/>} />    
+      <Route path="/news/allpage4/sanctioned-world" element={<Sanctionedworld/>} />    
+      <Route path="/news/allpage4/sponsor-of-mdcc" element={<Sponsorofmdcc/>} />    
+      <Route path="/hy/about/partners/list-3" element={<List3/>} />    
+      <Route path="/news/allpage4/from-responsability" element={<Fromresponsability/>} />    
+      <Route path="/news/allpage4/bond-placement" element={<Bondplacement/>} />    
+      <Route path="/news/allpage4/idram-cooperation-open-qr" element={<Idramcooperationopenqr/>} />    
+      <Route path="/news/allpage4/arca-cooperation-arca-pay" element={<Arcacooperationarcapay/>} />    
+      <Route path="/news/allpage5/opportunities-for-smes" element={<Opportunitiesforsmes/>} />    
+      <Route path="/news/allpage5/investments-msme-loan" element={<Investmentsmsmeloan/>} />    
+      <Route path="/news/allpage5/dollars-by-evoca" element={<Dollarsbyevoca/>} />    
+      <Route path="/news/allpage5/opec" element={<Opec/>} />    
+      <Route path="/news/allpage5/bond-placement" element={<Bondplacementt/>} />    
+      <Route path="/news/allpage5/financing-the-purpose" element={<Financingthepurpose/>} />    
+      <Route path="/news/allpage5/cooperation-msme" element={<Cooperationmsme/>} />    
+      <Route path="/news/allpage5/opening-new-address" element={<Openingnewaddress/>} />    
+      <Route path="/news/allpage5/drams-and-dollars" element={<Dramsanddollars/>} />    
+      <Route path="/news/allpage5/development-forum-vienna" element={<Developmentforumvienna/>} />    
+      <Route path="/news/allpage9/haypost" element={<Haypost/>} />    
+      <Route path="/news/allpage3/participate-in-career-city-fest-2k25" element={<Participateincareercityfest2k25/>} />    
 
 
       {/* Ուղղված ենթաուղիներ */}
@@ -388,6 +1895,7 @@ export default function App() {
       <Route path="/cards/4u-gift" element={<UGiftcard />} />
       <Route path="/cards/rio-gift-card-tariffs" element={<RioGiftCardTariffs />} />
       <Route path="/cards/dalma-gift-card" element={<DalmaGiftCard />} />
+      <Route path="/news/allpage2/coordinator-at-evocabank" element={<Coordinatoratevocabank/>} />
 
 
       {/* Ժամանակավոր / մշակման փուլում գտնվող էջեր */}
@@ -406,5 +1914,16 @@ export default function App() {
 // <button onClick={() => handleNavigation('/online-apps/sme-lending')} className="w-full py-4 bg-purple-700 hover:bg-purple-800 text-white font-bold rounded-2xl shadow-md transition-all cursor-pointer border-none text-center block">
 //                 Դիմել առցանց
 //               </button>
+
+
+
+
+
+
+// <Link to="/news/products" className="flex items-center space-x-2 group w-fit no-underline">
+//   <span className="w-3 h-3 bg-pink-500 rounded-sm inline-block"></span>
+//   <span className="text-purple-700 font-bold text-sm sm:text-base group-hover:underline">Պրոդուկտներ</span>
+// </Link>
+
 
 

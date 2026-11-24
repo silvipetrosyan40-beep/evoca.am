@@ -343,7 +343,7 @@ export default function LoansPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <nav className="flex space-x-8 h-12 items-center text-sm font-medium">
               <button 
-                onClick={() => handleNavigation('/hy/leasing-evoca')} 
+                onClick={() => handleNavigation('/hy/business-account-opening-and-services')} 
                 className="text-white hover:text-purple-200 transition-colors bg-transparent border-none cursor-pointer"
               >
                Հաշիվների բացում և սպասարկում

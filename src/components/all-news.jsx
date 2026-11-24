@@ -143,7 +143,7 @@ export default function NewsHeaderSection() {
           {/* Աջի 4 փոքր քարտերը */}
           <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-6">
             
-            <Link to="/news/sme-award" className="flex flex-col space-y-3 bg-white group cursor-pointer">
+            <Link to="/prizes/new-award-best-sme-bank-by-digital-banker-2026" className="flex flex-col space-y-3 bg-white group cursor-pointer">
               <div className="w-full aspect-[16/10] rounded-2xl overflow-hidden bg-gray-100 shadow-xs">
                 <img src="https://www.evoca.am/images-cache/news/1/17784860353078/450x295.png" alt="Մրցանակներ" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
@@ -159,7 +159,7 @@ export default function NewsHeaderSection() {
               </div>
             </Link>
 
-            <Link to="/news/crypto-account" className="flex flex-col space-y-3 bg-white group cursor-pointer">
+            <Link to="/news/allpage2/now-in-evocatouch" className="flex flex-col space-y-3 bg-white group cursor-pointer">
               <div className="w-full aspect-[16/10] rounded-2xl overflow-hidden bg-gray-100 shadow-xs">
                 <img src="https://www.evoca.am/images-cache/news/1/17722002491716/450x295.png" alt="Պրոդուկտներ" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
@@ -175,7 +175,7 @@ export default function NewsHeaderSection() {
               </div>
             </Link>
 
-            <Link to="/news/karen-interview" className="flex flex-col space-y-3 bg-white group cursor-pointer">
+            <Link to="/interviews/interview-of-karen-yeghiazaryan-with-los-angeles-times-magazine" className="flex flex-col space-y-3 bg-white group cursor-pointer">
               <div className="w-full aspect-[16/10] rounded-2xl overflow-hidden bg-gray-100 shadow-xs">
                 <img src="https://www.evoca.am/images-cache/news/1/17720089281517/450x295.png" alt="Հարցազրույցներ" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
@@ -191,7 +191,7 @@ export default function NewsHeaderSection() {
               </div>
             </Link>
 
-            <Link to="/news/ajapnyak-branch" className="flex flex-col space-y-3 bg-white group cursor-pointer">
+            <Link to="/news/allpage2/ajapnyak-is-now-open" className="flex flex-col space-y-3 bg-white group cursor-pointer">
               <div className="w-full aspect-[16/10] rounded-2xl overflow-hidden bg-gray-100 shadow-xs">
                 <img src="https://www.evoca.am/images-cache/news/1/17683825017248/450x295.jpg" alt="Բանկային" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
@@ -273,7 +273,7 @@ export default function NewsHeaderSection() {
           </Link>
 
           {/* Քարտ 2 */}
-          <Link to="/news/esg-system" className="flex flex-col space-y-4 bg-white group cursor-pointer">
+          <Link to="/news/allpage2/coordinator-at-evocabank" className="flex flex-col space-y-4 bg-white group cursor-pointer">
             <div className="w-full aspect-[16/11] rounded-3xl overflow-hidden bg-gray-100 shadow-xs">
               <img src="https://www.evoca.am/images-cache/news/1/17757342882486/438x328.png" alt="Բանկային" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
             </div>
@@ -290,7 +290,7 @@ export default function NewsHeaderSection() {
           </Link>
 
           {/* Քարտ 3 */}
-          <Link to="/news/amcham-armenia" className="flex flex-col space-y-4 bg-white group cursor-pointer">
+          <Link to="/news/allpage2/amcham-armenia" className="flex flex-col space-y-4 bg-white group cursor-pointer">
             <div className="w-full aspect-[16/11] rounded-3xl overflow-hidden bg-gray-100 shadow-xs">
               <img src="https://www.evoca.am/images-cache/news/1/17707319421286/438x328.png" alt="Բանկային" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
             </div>
