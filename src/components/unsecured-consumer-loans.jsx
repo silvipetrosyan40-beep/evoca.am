@@ -414,7 +414,7 @@ export default function LoansPage() {
           </div>
         </main>
       </div>
-
+        
       {/* Ֆութերի միացումը */}
       <Footer />
     </div>
