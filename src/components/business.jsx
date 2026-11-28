@@ -60,74 +60,180 @@ export default function LoansPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-10 text-xs sm:text-sm border-b border-gray-100">
               
-              {/* Ձախ կողմի հղումներ */}
-              <nav className="flex space-x-6 items-center overflow-x-auto">
-                <button onClick={() => handleNavigation('/hy/loans')} className="text-gray-600 hover:text-gray-900 transition-colors bg-transparent border-none cursor-pointer whitespace-nowrap">
-                  {t("Անհատ")}
-                </button>
-                <button 
-                  onClick={() => handleNavigation('/hy/business')}
-                  className="font-semibold text-purple-700 hover:text-purple-900 pb-1 border-b-2 border-purple-700 cursor-pointer bg-transparent border-t-0 border-x-0 whitespace-nowrap"
-                >
-                  {t("Բիզնես")}
-                </button>
-                <button onClick={() => handleNavigation('/hy/akntartayinvcharumner')} className="text-gray-600 hover:text-gray-900 transition-colors bg-transparent border-none cursor-pointer whitespace-nowrap">{t("Ակնթարթային վճարումներ")}</button>
-                <button onClick={() => handleNavigation('/hy/about')} className="text-gray-600 hover:text-gray-900 transition-colors bg-transparent border-none cursor-pointer whitespace-nowrap">{t("Մեր մասին")}</button>
-                <button onClick={() => handleNavigation('/all-news')} className="text-gray-600 hover:text-gray-900 transition-colors bg-transparent border-none cursor-pointer whitespace-nowrap">{t("Նորություններ")}</button>
-                <button onClick={() => handleNavigation('/hy/blog')} className="text-gray-600 hover:text-gray-900 transition-colors bg-transparent border-none cursor-pointer whitespace-nowrap">{t("Բլոգ")}</button>
-                <button onClick={() => handleNavigation('/hy/career')} className="text-gray-600 hover:text-gray-900 transition-colors bg-transparent border-none cursor-pointer whitespace-nowrap">{t("Կարիերա")}</button>
-
-                {/* Առցանց հայտեր Dropdown */}
-                <div className="relative shrink-0">
-                  <button 
-                    onClick={() => { setIsOnlineAppsOpen(!isOnlineAppsOpen); setIsContactOpen(false); }}
-                    className="flex items-center space-x-1 font-semibold text-purple-700 hover:text-purple-900 transition-colors cursor-pointer bg-transparent border-none whitespace-nowrap"
-                  >
-                    <span>{t("Առցանց հայտեր")}</span>
-                    <ChevronDown className={`w-4 h-4 transition-transform ${isOnlineAppsOpen ? 'rotate-180' : ''}`} />
-                  </button>
-
-                  {isOnlineAppsOpen && (
-                    <div className="absolute left-0 mt-2 w-56 bg-white rounded-2xl shadow-xl border border-gray-100 py-3 z-50">
-                      <button onClick={() => { handleNavigation('/online-apps/sme-lending'); setIsOnlineAppsOpen(false); }} className="w-full text-left px-5 py-2.5 text-sm font-medium text-gray-800 hover:bg-purple-50 hover:text-purple-700 transition-colors bg-transparent border-none cursor-pointer">
-                        {t("ՓՄՁ վարկավորում")}
-                      </button>
-                      <button onClick={() => { handleNavigation('/cards/visa-infinite'); setIsOnlineAppsOpen(false); }} className="w-full text-left px-5 py-2.5 text-sm font-medium text-gray-800 hover:bg-purple-50 hover:text-purple-700 transition-colors bg-transparent border-none cursor-pointer">
-                        {t("Visa Infinite")}
-                      </button>
-                      <button onClick={() => { handleNavigation('/cards/mastercard-gold'); setIsOnlineAppsOpen(false); }} className="w-full text-left px-5 py-2.5 text-sm font-medium text-gray-800 hover:bg-purple-50 hover:text-purple-700 transition-colors bg-transparent border-none cursor-pointer">
-                        {t("MasterCard Gold")}
-                      </button>
-                      <button onClick={() => { handleNavigation('/cards/visa-gold'); setIsOnlineAppsOpen(false); }} className="w-full text-left px-5 py-2.5 text-sm font-medium text-gray-800 hover:bg-purple-50 hover:text-purple-700 transition-colors bg-transparent border-none cursor-pointer">
-                        {t("Visa Gold")}
-                      </button>
-                    </div>
-                  )}
-                </div>
-
-                {/* Հետադարձ կապ Dropdown */}
-                <div className="relative shrink-0">
-                  <button 
-                    onClick={() => { setIsContactOpen(!isContactOpen); setIsOnlineAppsOpen(false); }}
-                    className="flex items-center space-x-1 font-semibold text-purple-700 hover:text-purple-900 transition-colors cursor-pointer bg-transparent border-none whitespace-nowrap"
-                  >
-                    <span>{t("Հետադարձ կապ")}</span>
-                    <ChevronDown className={`w-4 h-4 transition-transform ${isContactOpen ? 'rotate-180' : ''}`} />
-                  </button>
-
-                  {isContactOpen && (
-                    <div className="absolute left-0 mt-2 w-64 bg-white rounded-2xl shadow-xl border border-gray-100 py-4 px-2 z-50 space-y-2 text-sm">
-                      <a href="tel:+37410605555" className="block px-4 py-2 font-semibold text-gray-800 hover:bg-purple-50 hover:text-purple-700 rounded-xl transition-colors">+374 10 605555</a>
-                      <a href="tel:+37498205555" className="block px-4 py-2 font-semibold text-gray-800 hover:bg-purple-50 hover:text-purple-700 rounded-xl transition-colors">+374 98 205555</a>
-                      <a href="tel:+37499605555" className="block px-4 py-2 font-semibold text-gray-800 hover:bg-purple-50 hover:text-purple-700 rounded-xl transition-colors">+374 99 605555</a>
-                      <a href="tel:8444" className="block px-4 py-2 font-semibold text-gray-800 hover:bg-purple-50 hover:text-purple-700 rounded-xl transition-colors">8444</a>
-                      <button onClick={() => { handleNavigation('/callback-order'); setIsContactOpen(false); }} className="w-full text-left px-4 py-2.5 font-bold text-purple-700 hover:bg-purple-50 rounded-xl transition-colors bg-transparent border-none cursor-pointer">
-                        {t("Պատվիրել զանգ")}
-                      </button>
-                    </div>
-                  )}
-                </div>
-              </nav>
+                  {/* Ձախ կողմի հղումներ */}
+             <nav className="flex flex-wrap items-center gap-x-6 gap-y-1 overflow-visible">
+               <button
+                 type="button"
+                 onClick={() => handleNavigation('/hy/loans')}
+                 className="text-gray-600 hover:text-gray-900 transition-colors bg-transparent border-none cursor-pointer whitespace-nowrap"
+               >
+                 {t("Անհատ")}
+               </button>
+             
+               <button
+                 type="button"
+                 onClick={() => handleNavigation('/hy/business')}
+                 className="font-semibold text-purple-700 hover:text-purple-900 pb-1 border-b-2 border-purple-700 cursor-pointer bg-transparent border-t-0 border-x-0 whitespace-nowrap"
+               >
+                 {t("Բիզնես")}
+               </button>
+             
+               <button
+                 type="button"
+                 onClick={() => handleNavigation('/hy/akntartayinvcharumner')}
+                 className="text-gray-600 hover:text-gray-900 transition-colors bg-transparent border-none cursor-pointer whitespace-nowrap"
+               >
+                 {t("Ակնթարթային վճարումներ")}
+               </button>
+             
+               <button
+                 type="button"
+                 onClick={() => handleNavigation('/hy/about')}
+                 className="text-gray-600 hover:text-gray-900 transition-colors bg-transparent border-none cursor-pointer whitespace-nowrap"
+               >
+                 {t("Մեր մասին")}
+               </button>
+             
+               <button
+                 type="button"
+                 onClick={() => handleNavigation('/all-news')}
+                 className="text-gray-600 hover:text-gray-900 transition-colors bg-transparent border-none cursor-pointer whitespace-nowrap"
+               >
+                 {t("Նորություններ")}
+               </button>
+             
+               <button
+                 type="button"
+                 onClick={() => handleNavigation('/hy/blog')}
+                 className="text-gray-600 hover:text-gray-900 transition-colors bg-transparent border-none cursor-pointer whitespace-nowrap"
+               >
+                 {t("Բլոգ")}
+               </button>
+             
+               <button
+                 type="button"
+                 onClick={() => handleNavigation('/hy/career')}
+                 className="text-gray-600 hover:text-gray-900 transition-colors bg-transparent border-none cursor-pointer whitespace-nowrap"
+               >
+                 {t("Կարիերա")}
+               </button>
+             
+               {/* Առցանց հայտեր Dropdown */}
+               <div className="relative shrink-0 overflow-visible">
+                 <button
+                   type="button"
+                   onClick={() => {
+                     setIsOnlineAppsOpen(!isOnlineAppsOpen);
+                     setIsContactOpen(false);
+                     setIsLangOpen(false);
+                   }}
+                   className="flex items-center space-x-1 font-semibold text-purple-700 hover:text-purple-900 transition-colors cursor-pointer bg-transparent border-none whitespace-nowrap"
+                 >
+                   <span>{t("Առցանց հայտեր")}</span>
+                   <ChevronDown className={`w-4 h-4 transition-transform ${isOnlineAppsOpen ? 'rotate-180' : ''}`} />
+                 </button>
+             
+                 {isOnlineAppsOpen && (
+                   <div className="absolute left-0 top-full mt-2 w-60 bg-white rounded-2xl shadow-2xl border border-gray-100 py-3 z-[9999] overflow-visible">
+                     <button
+                       type="button"
+                       onClick={() => {
+                         handleNavigation('/online-apps/sme-lending');
+                         setIsOnlineAppsOpen(false);
+                       }}
+                       className="w-full text-left px-5 py-2.5 text-sm font-medium text-gray-800 hover:bg-purple-50 hover:text-purple-700 transition-colors bg-transparent border-none cursor-pointer"
+                     >
+                       {t("ՓՄՁ վարկավորում")}
+                     </button>
+                     <button
+                       type="button"
+                       onClick={() => {
+                         handleNavigation('/cards/visa-infinite');
+                         setIsOnlineAppsOpen(false);
+                       }}
+                       className="w-full text-left px-5 py-2.5 text-sm font-medium text-gray-800 hover:bg-purple-50 hover:text-purple-700 transition-colors bg-transparent border-none cursor-pointer"
+                     >
+                       {t("Visa Infinite")}
+                     </button>
+                     <button
+                       type="button"
+                       onClick={() => {
+                         handleNavigation('/cards/mastercard-gold');
+                         setIsOnlineAppsOpen(false);
+                       }}
+                       className="w-full text-left px-5 py-2.5 text-sm font-medium text-gray-800 hover:bg-purple-50 hover:text-purple-700 transition-colors bg-transparent border-none cursor-pointer"
+                     >
+                       {t("MasterCard Gold")}
+                     </button>
+                     <button
+                       type="button"
+                       onClick={() => {
+                         handleNavigation('/cards/visa-gold');
+                         setIsOnlineAppsOpen(false);
+                       }}
+                       className="w-full text-left px-5 py-2.5 text-sm font-medium text-gray-800 hover:bg-purple-50 hover:text-purple-700 transition-colors bg-transparent border-none cursor-pointer"
+                     >
+                       {t("Visa Gold")}
+                     </button>
+                   </div>
+                 )}
+               </div>
+             
+               {/* Հետադարձ կապ Dropdown */}
+               <div className="relative shrink-0 overflow-visible">
+                 <button
+                   type="button"
+                   onClick={() => {
+                     setIsContactOpen(!isContactOpen);
+                     setIsOnlineAppsOpen(false);
+                     setIsLangOpen(false);
+                   }}
+                   className="flex items-center space-x-1 font-semibold text-purple-700 hover:text-purple-900 transition-colors cursor-pointer bg-transparent border-none whitespace-nowrap"
+                 >
+                   <span>{t("Հետադարձ կապ")}</span>
+                   <ChevronDown className={`w-4 h-4 transition-transform ${isContactOpen ? 'rotate-180' : ''}`} />
+                 </button>
+             
+                 {isContactOpen && (
+                   <div className="absolute left-0 top-full mt-2 w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 py-4 px-2 z-[9999] space-y-2 text-sm overflow-visible">
+                     <a
+                       href="tel:+37410605555"
+                       className="block px-4 py-2 font-semibold text-gray-800 hover:bg-purple-50 hover:text-purple-700 rounded-xl transition-colors"
+                     >
+                       +374 10 605555
+                     </a>
+                     <a
+                       href="tel:+37498205555"
+                       className="block px-4 py-2 font-semibold text-gray-800 hover:bg-purple-50 hover:text-purple-700 rounded-xl transition-colors"
+                     >
+                       +374 98 205555
+                     </a>
+                     <a
+                       href="tel:+37499605555"
+                       className="block px-4 py-2 font-semibold text-gray-800 hover:bg-purple-50 hover:text-purple-700 rounded-xl transition-colors"
+                     >
+                       +374 99 605555
+                     </a>
+                     <a
+                       href="tel:8444"
+                       className="block px-4 py-2 font-semibold text-gray-800 hover:bg-purple-50 hover:text-purple-700 rounded-xl transition-colors"
+                     >
+                       8444
+                     </a>
+                     <button
+                       type="button"
+                       onClick={() => {
+                         handleNavigation('/callback-order');
+                         setIsContactOpen(false);
+                       }}
+                       className="w-full text-left px-4 py-2.5 font-bold text-purple-700 hover:bg-purple-50 rounded-xl transition-colors bg-transparent border-none cursor-pointer"
+                     >
+                       {t("Պատվիրել զանգ")}
+                     </button>
+                   </div>
+                 )}
+               </div>
+             </nav>
 
               {/* Աջ կողմի գործիքներ և իքոնկեք */}
               <div className="flex items-center space-x-5 text-gray-700 shrink-0">
